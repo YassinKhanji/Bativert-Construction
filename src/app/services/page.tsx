@@ -35,7 +35,7 @@ export default function Services() {
           {/* Highlighted Services (From Old Design) */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center mb-32">
             <div className="aspect-square bg-(--color-surface-container) half-frame-accent">
-               <img src="https://lh3.googleusercontent.com/aida/ADBb0uhcAPns0nh3IVlhyy7I5f8WaBKUW5ANcmHXspY26j8UUg0-0tXzJ8OW4jQuKyQzbSUFdwnDIH75oqEOkXP5HeWgn4Cai2IjUGAtv97ZwbXyBiIt02QwvXntRt2Tb503WjomY6WfYmjblrxdpK9jFwUf0Qhr-qnOC1Oy2GjN_uChfGy34Ghm52g0HkvgdUTWaN0wSx4MC4t82PJiIY1D_jHk6xUivw3URSZf1Oi9qqISkNEAy0S5Mqlkdm8" alt={t.service1Title} className="w-full h-full object-cover" />
+               <img src="/services/service-1.jpg" alt={t.service1Title} className="w-full h-full object-cover" />
             </div>
             <div>
               <div className="w-16 h-16 border border-subtle p-4 bg-white mb-6 flex items-center justify-center rounded-sm">
@@ -71,7 +71,7 @@ export default function Services() {
               <Button href="/contact" variant="outline">{t.service2Btn}</Button>
             </div>
             <div className="aspect-square bg-(--color-surface-container) half-frame-accent order-1 md:order-2">
-               <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPtm9h5deDJXkQyLF7sW6J3hjJZ3wxhd0Qn3NS_duPnDWXWsuKkiDEFzKA8CJTpEZPyr_J4ifkgMMAzo70kcDex5Y2w9gcdPUG718MnC-TH6fck1NzBoYdPGqVRZQ2oy9_-5CSzpAa7Qy1RZ8OhZUmurf0rdFx1MMB6zMQQJQdXw8Y0_4fW6fOGIDUoGYD48jIsJWP2hd2OP1YXEN_vUCjbMIbw57kgb1unhL8H8DkxmgiMnd1kDxgMHrz2OGUjzv546Q_vJ6go3I" alt={t.service2Title} className="w-full h-full object-cover" />
+               <img src="/services/service-2.jpg" alt={t.service2Title} className="w-full h-full object-cover" />
             </div>
           </div>
           
