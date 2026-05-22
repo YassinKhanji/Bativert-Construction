@@ -15,8 +15,12 @@ const workSans = Work_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "BATI VERT | Building Your Sustainable Future",
-  description: "Expertise in Turnkey Services, Bespoke Design, and Master Renovations.",
+  title: "BATI VERT | General Contracting & Construction in Montreal",
+  description: "Expert general contracting, sustainable construction, and turnkey services in Montreal. BATI VERT specializes in bespoke design and master renovations.",
+  metadataBase: new URL('https://bativertconstruction.org'),
+  alternates: {
+    canonical: '/',
+  },
 };
 
 export default function RootLayout({
@@ -31,6 +35,26 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col">
         <LanguageProvider>
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": ["GeneralContractor", "LocalBusiness"],
+                name: "BATI VERT",
+                url: "https://bativertconstruction.org",
+                logo: "https://bativertconstruction.org/icon.svg",
+                description: "Expert general contracting, sustainable construction, and turnkey services in Montreal. BATI VERT specializes in bespoke design and master renovations.",
+                email: "Bativertconstruction@gmail.com",
+                telephone: "+1-438-992-2468",
+                areaServed: {
+                  "@type": "City",
+                  name: "Montreal",
+                  sameAs: "https://en.wikipedia.org/wiki/Montreal"
+                }
+              })
+            }}
+          />
           {children}
         </LanguageProvider>
       </body>

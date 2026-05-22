@@ -44,14 +44,15 @@ export default function Footer() {
             <p className="text-sm leading-relaxed text-(--color-on-surface-variant) mb-4">
               {t.footer.inquiryText}
               <br />
-              <a
-                href="mailto:Bativertconstruction@gmail.com"
-                className="text-(--color-primary) underline font-medium break-all"
+              <span
+                onClick={() => window.location.href = `mailto:Bativertconstruction${'@'}gmail.com`}
+                className="text-(--color-primary) underline font-medium break-all cursor-pointer"
               >
-                Bativertconstruction@gmail.com
-              </a>
+                Bativertconstruction{'@'}gmail.com
+              </span>
             </p>
             <p className="text-sm text-(--color-on-surface-variant)">+1 438 992 2468</p>
+            <p className="text-sm text-(--color-on-surface-variant) mt-2">📍 Serving Montreal & Surrounding Regions</p>
           </div>
         </div>
         <div className="pt-8 border-t border-subtle flex flex-col md:flex-row justify-between items-center text-[10px] uppercase tracking-widest text-(--color-on-surface-variant) font-bold">
