@@ -11,6 +11,13 @@ const SLUG_MAP: Record<string, keyof typeof translations.en.servicePages> = {
   "architectural-design": "architecturalDesign",
   "high-end-renovations": "highEndRenovations",
   "turnkey-construction": "turnkeyConstruction",
+  "conception": "conception",
+  "interior-design": "interiorDesign",
+  "engineering": "engineering",
+  "new-construction": "newConstruction",
+  "home-expansion": "homeExpansion",
+  "renovation": "renovation",
+  "landscaping": "landscaping",
 };
 
 export async function generateStaticParams() {

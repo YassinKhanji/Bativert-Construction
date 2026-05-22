@@ -39,13 +39,47 @@ export default function Navigation() {
             BATI VERT
           </div>
         </Link>
-        <div className="hidden md:flex items-center space-x-10 text-[10px] uppercase tracking-[0.2em] font-semibold">
+        <div className="hidden md:flex items-center space-x-10 text-[10px] uppercase tracking-[0.2em] font-semibold h-full">
           <Link href="/about" className="relative hover:text-(--color-primary) transition-colors after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[1px] after:bg-(--color-primary) after:transition-all after:duration-300 hover:after:w-full">
             {t.nav.about}
           </Link>
-          <Link href="/services" className="relative hover:text-(--color-primary) transition-colors after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[1px] after:bg-(--color-primary) after:transition-all after:duration-300 hover:after:w-full">
-            {t.nav.services}
-          </Link>
+          
+          <div className="group h-full flex items-center cursor-pointer">
+            <Link href="/services" className="relative hover:text-(--color-primary) transition-colors after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[1px] after:bg-(--color-primary) after:transition-all after:duration-300 group-hover:after:w-full">
+              {t.nav.services}
+            </Link>
+            
+            {/* Mega Menu Full Width */}
+            <div className="absolute top-20 left-0 w-full bg-(--color-surface) border-t border-b border-subtle opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 shadow-xl overflow-hidden pointer-events-none group-hover:pointer-events-auto">
+              <div className="max-w-7xl mx-auto px-6 lg:px-12 py-10">
+                <div className="grid grid-cols-4 gap-8">
+                  {/* First Column */}
+                  <div className="flex flex-col space-y-6">
+                    <Link href="/services/architectural-design" className="text-[11px] font-bold hover:text-(--color-primary) transition-colors">ARCHITECTURAL DESIGN</Link>
+                    <Link href="/services/high-end-renovations" className="text-[11px] font-bold hover:text-(--color-primary) transition-colors">HIGH-END RENOVATIONS</Link>
+                    <Link href="/services/turnkey-construction" className="text-[11px] font-bold hover:text-(--color-primary) transition-colors">TURNKEY CONSTRUCTION</Link>
+                  </div>
+                  {/* Second Column */}
+                  <div className="flex flex-col space-y-6">
+                    <Link href="/services/conception" className="text-[11px] font-bold hover:text-(--color-primary) transition-colors">CONCEPTION</Link>
+                    <Link href="/services/interior-design" className="text-[11px] font-bold hover:text-(--color-primary) transition-colors">INTERIOR DESIGN</Link>
+                    <Link href="/services/engineering" className="text-[11px] font-bold hover:text-(--color-primary) transition-colors">ENGINEERING</Link>
+                  </div>
+                  {/* Third Column */}
+                  <div className="flex flex-col space-y-6">
+                    <Link href="/services/new-construction" className="text-[11px] font-bold hover:text-(--color-primary) transition-colors">NEW CONSTRUCTION</Link>
+                    <Link href="/services/home-expansion" className="text-[11px] font-bold hover:text-(--color-primary) transition-colors">HOME EXPANSION</Link>
+                    <Link href="/services/renovation" className="text-[11px] font-bold hover:text-(--color-primary) transition-colors">RENOVATION</Link>
+                  </div>
+                  {/* Fourth Column */}
+                  <div className="flex flex-col space-y-6">
+                    <Link href="/services/landscaping" className="text-[11px] font-bold hover:text-(--color-primary) transition-colors">LANDSCAPING</Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <Link href="/projects" className="relative hover:text-(--color-primary) transition-colors after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[1px] after:bg-(--color-primary) after:transition-all after:duration-300 hover:after:w-full">
             {t.nav.projects}
           </Link>

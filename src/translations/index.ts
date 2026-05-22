@@ -278,6 +278,62 @@ export const translations = {
         step2: { title: "Full Management", desc: "We coordinate all specialized trades and engineering." },
         step3: { title: "Turnkey Reveal", desc: "You simply turn the key to your newly completed space." },
         cta: "Start Your Build"
+      },
+      conception: {
+        problem: "Have a vision but don't know where to start?",
+        solution: "We provide comprehensive architectural and conceptual planning to bring your ideas to life.",
+        step1: { title: "Initial Consultation", desc: "Understanding your vision and requirements." },
+        step2: { title: "Drafting & 3D Modeling", desc: "Creating visual representations of your future space." },
+        step3: { title: "Final Blueprint", desc: "Delivering a ready-to-build architectural plan." },
+        cta: "Start Your Concept"
+      },
+      interiorDesign: {
+        problem: "Want a space that perfectly reflects your style?",
+        solution: "Our interior design experts craft bespoke environments tailored to your lifestyle.",
+        step1: { title: "Style Assessment", desc: "Discovering your unique aesthetic preferences." },
+        step2: { title: "Material Selection", desc: "Curating premium finishes and furnishings." },
+        step3: { title: "Implementation", desc: "Executing the design with flawless precision." },
+        cta: "Design Your Space"
+      },
+      engineering: {
+        problem: "Facing complex structural challenges?",
+        solution: "Our engineering team ensures your project is structurally sound, safe, and efficient.",
+        step1: { title: "Structural Analysis", desc: "Evaluating the integrity of the existing structure." },
+        step2: { title: "Technical Planning", desc: "Developing rigorous engineering solutions." },
+        step3: { title: "Quality Assurance", desc: "Overseeing implementation for maximum safety." },
+        cta: "Consult an Engineer"
+      },
+      newConstruction: {
+        problem: "Ready to build your dream property from the ground up?",
+        solution: "We manage complete new builds with uncompromised quality and sustainability.",
+        step1: { title: "Site Preparation", desc: "Clearing and preparing the land for construction." },
+        step2: { title: "Foundation & Framing", desc: "Building a solid core structure." },
+        step3: { title: "Complete Build", desc: "Delivering a finished, move-in ready property." },
+        cta: "Start Your Build"
+      },
+      homeExpansion: {
+        problem: "Need more space but love your current home?",
+        solution: "Seamlessly integrate new additions that enhance your property's value and livability.",
+        step1: { title: "Space Planning", desc: "Determining the best way to expand your footprint." },
+        step2: { title: "Structural Integration", desc: "Ensuring the new addition blends perfectly with the old." },
+        step3: { title: "Finishing", desc: "Completing the expansion to match your interior." },
+        cta: "Expand Your Home"
+      },
+      renovation: {
+        problem: "Looking to modernize and upgrade your property?",
+        solution: "We execute high-quality renovations that breathe new life into outdated spaces.",
+        step1: { title: "Demolition & Prep", desc: "Safely clearing the old to make way for the new." },
+        step2: { title: "Upgrades", desc: "Installing new systems and structural improvements." },
+        step3: { title: "Final Polish", desc: "Adding the finishing touches for a perfect result." },
+        cta: "Plan Your Renovation"
+      },
+      landscaping: {
+        problem: "Want an outdoor space as stunning as your interior?",
+        solution: "Transform your exterior with our premium landscaping and hardscaping services.",
+        step1: { title: "Terrain Assessment", desc: "Analyzing soil, drainage, and layout." },
+        step2: { title: "Design & Hardscaping", desc: "Planning patios, walkways, and greenery." },
+        step3: { title: "Planting & Reveal", desc: "Bringing the outdoor oasis to life." },
+        cta: "Transform Your Exterior"
       }
     },
     faq: {
@@ -571,6 +627,62 @@ export const translations = {
         step2: { title: "Gestion Complète", desc: "Nous coordonnons tous les métiers spécialisés et l'ingénierie." },
         step3: { title: "Livraison Clés en Main", desc: "Vous n'avez plus qu'à tourner la clé de votre nouvel espace." },
         cta: "Démarrer votre projet"
+      },
+      conception: {
+        problem: "Vous avez une vision mais ne savez pas par où commencer?",
+        solution: "Nous fournissons une planification architecturale et conceptuelle complète pour donner vie à vos idées.",
+        step1: { title: "Consultation Initiale", desc: "Comprendre votre vision et vos exigences." },
+        step2: { title: "Rédaction et Modélisation 3D", desc: "Création de représentations visuelles de votre futur espace." },
+        step3: { title: "Plan Final", desc: "Livraison d'un plan architectural prêt à construire." },
+        cta: "Démarrer Votre Concept"
+      },
+      interiorDesign: {
+        problem: "Vous voulez un espace qui reflète parfaitement votre style?",
+        solution: "Nos experts en design intérieur créent des environnements sur mesure adaptés à votre style de vie.",
+        step1: { title: "Évaluation du Style", desc: "Découverte de vos préférences esthétiques uniques." },
+        step2: { title: "Sélection des Matériaux", desc: "Sélection de finitions et de meubles haut de gamme." },
+        step3: { title: "Mise en Œuvre", desc: "Exécution du design avec une précision irréprochable." },
+        cta: "Concevoir Votre Espace"
+      },
+      engineering: {
+        problem: "Vous faites face à des défis structurels complexes?",
+        solution: "Notre équipe d'ingénierie s'assure que votre projet est structurellement solide, sûr et efficace.",
+        step1: { title: "Analyse Structurelle", desc: "Évaluation de l'intégrité de la structure existante." },
+        step2: { title: "Planification Technique", desc: "Développement de solutions d'ingénierie rigoureuses." },
+        step3: { title: "Assurance Qualité", desc: "Supervision de la mise en œuvre pour une sécurité maximale." },
+        cta: "Consulter un Ingénieur"
+      },
+      newConstruction: {
+        problem: "Prêt à construire la propriété de vos rêves de A à Z?",
+        solution: "Nous gérons les nouvelles constructions avec une qualité et une durabilité sans compromis.",
+        step1: { title: "Préparation du Site", desc: "Dégagement et préparation du terrain pour la construction." },
+        step2: { title: "Fondation et Charpente", desc: "Construction d'une structure de base solide." },
+        step3: { title: "Construction Complète", desc: "Livraison d'une propriété finie, prête à être habitée." },
+        cta: "Démarrer Votre Construction"
+      },
+      homeExpansion: {
+        problem: "Besoin de plus d'espace mais vous aimez votre maison actuelle?",
+        solution: "Intégrez de manière transparente de nouveaux ajouts qui augmentent la valeur de votre propriété.",
+        step1: { title: "Planification de l'Espace", desc: "Déterminer la meilleure façon d'agrandir votre empreinte." },
+        step2: { title: "Intégration Structurelle", desc: "S'assurer que le nouvel ajout se marie parfaitement à l'ancien." },
+        step3: { title: "Finition", desc: "Achèvement de l'agrandissement pour correspondre à votre intérieur." },
+        cta: "Agrandir Votre Maison"
+      },
+      renovation: {
+        problem: "Vous cherchez à moderniser et améliorer votre propriété?",
+        solution: "Nous exécutons des rénovations de haute qualité qui redonnent vie aux espaces désuets.",
+        step1: { title: "Démolition et Préparation", desc: "Dégagement en toute sécurité pour faire place au neuf." },
+        step2: { title: "Améliorations", desc: "Installation de nouveaux systèmes et améliorations structurelles." },
+        step3: { title: "Touche Finale", desc: "Ajout des touches finales pour un résultat parfait." },
+        cta: "Planifier Votre Rénovation"
+      },
+      landscaping: {
+        problem: "Vous voulez un espace extérieur aussi impressionnant que votre intérieur?",
+        solution: "Transformez votre extérieur avec nos services d'aménagement paysager haut de gamme.",
+        step1: { title: "Évaluation du Terrain", desc: "Analyse du sol, du drainage et de l'aménagement." },
+        step2: { title: "Design et Aménagement", desc: "Planification des patios, des allées et de la verdure." },
+        step3: { title: "Plantation et Révélation", desc: "Donner vie à votre oasis extérieure." },
+        cta: "Transformer Votre Extérieur"
       }
     },
     faq: {

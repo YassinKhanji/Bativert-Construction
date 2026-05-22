@@ -33,7 +33,7 @@ export default function RootLayout({
       lang="en"
       className={`${libreCaslon.variable} ${workSans.variable} h-full antialiased scroll-smooth`}
     >
-      <body className="min-h-full flex flex-col">
+      <body className="min-h-full flex flex-col overflow-x-hidden">
         <LanguageProvider>
           <script
             type="application/ld+json"
