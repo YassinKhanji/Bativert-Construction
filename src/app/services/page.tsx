@@ -38,7 +38,7 @@ export default function Services() {
                <img src="/services/service-1.jpg" alt={t.service1Title} className="w-full h-full object-cover" />
             </div>
             <div>
-              <div className="w-16 h-16 border border-subtle p-4 bg-white mb-6 flex items-center justify-center rounded-sm">
+              <div className="w-16 h-16 border border-subtle p-4 mb-6 flex items-center justify-center rounded-sm">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="w-full h-full text-(--color-primary)"><path d="m12 19 7-7 3 3-7 7-3-3z"/><path d="m18 13-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="m2 2 7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg>
               </div>
               <SectionHeader subtitle={t.service1Subtitle} title={t.service1Title} className="mb-8" />
@@ -56,7 +56,7 @@ export default function Services() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center mb-48">
             <div className="order-2 md:order-1">
-              <div className="w-16 h-16 border border-subtle p-4 bg-white mb-6 flex items-center justify-center rounded-sm">
+              <div className="w-16 h-16 border border-subtle p-4 mb-6 flex items-center justify-center rounded-sm">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="w-full h-full text-(--color-primary)"><path d="m15 12-8.5 8.5c-.83.83-2.17.83-3 0 0 0 0 0 0 0a2.12 2.12 0 0 1 0-3L12 9"/><path d="M17.64 15 22 10.64"/><path d="m20.91 11.7-1.25-1.25c-.6-.6-.93-1.4-.93-2.25v-.86L16.01 4.6a5.56 5.56 0 0 0-3.94-1.64H11.2l-2.65 2.65c-.39.39-.39 1.03 0 1.42l5.03 5.03c.39.39 1.03.39 1.42 0l2.65-2.65h.86c.85 0 1.65.33 2.25.93l1.25 1.25c.39.39 1.02.39 1.41 0 0 0 0 0 0 0 .39-.39.39-1.02 0-1.41z"/></svg>
               </div>
               <SectionHeader subtitle={t.service2Subtitle} title={t.service2Title} className="mb-8" />
@@ -80,7 +80,7 @@ export default function Services() {
             <SectionHeader subtitle={t.turnkeySubtitle} title={t.turnkeyTitle} className="mb-16" />
             <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
               {t.turnkeyServices.map((service, index) => (
-                <div key={index} className="bg-white border border-subtle p-8 flex items-center shadow-sm">
+                <div key={index} className="bg-transparent border border-subtle p-8 flex items-center shadow-sm">
                   <h3 className="font-bold text-sm tracking-widest uppercase">{service}</h3>
                 </div>
               ))}
@@ -125,7 +125,7 @@ export default function Services() {
           {/* Regions */}
           <div>
             <div className="flex flex-col md:flex-row items-start md:items-end gap-6 mb-16">
-              <div className="w-16 h-16 border border-subtle p-4 bg-white flex items-center justify-center shrink-0 rounded-sm">
+              <div className="w-16 h-16 border border-subtle p-4 flex items-center justify-center shrink-0 rounded-sm">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="w-full h-full text-(--color-primary)"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
               </div>
               <SectionHeader subtitle={t.coverageSubtitle} title={t.coverageTitle} className="mb-0" />
