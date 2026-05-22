@@ -33,9 +33,6 @@ export default function Footer() {
                 <Link href="/projects" className="hover:text-(--color-primary) transition-colors">{t.nav.projects}</Link>
               </li>
               <li>
-                <Link href="/gallery" className="hover:text-(--color-primary) transition-colors">{t.nav.gallery}</Link>
-              </li>
-              <li>
                 <Link href="/contact" className="hover:text-(--color-primary) transition-colors">{t.nav.contact}</Link>
               </li>
             </ul>
@@ -48,10 +45,10 @@ export default function Footer() {
               {t.footer.inquiryText}
               <br />
               <a
-                href="mailto:hello@bativert.com"
-                className="text-(--color-primary) underline font-medium"
+                href="mailto:Bativertconstruction@gmail.com"
+                className="text-(--color-primary) underline font-medium break-all"
               >
-                hello@bativert.com
+                Bativertconstruction@gmail.com
               </a>
             </p>
             <p className="text-sm text-(--color-on-surface-variant)">+1 438 992 2468</p>

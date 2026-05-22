@@ -259,26 +259,26 @@ export default function Home() {
         <section className="py-32 px-6 lg:px-12 max-w-7xl mx-auto">
           <SectionHeader subtitle={t.about.statsSub} title={t.about.statsTitle} />
           <div className="grid grid-cols-2 lg:grid-cols-4 border-t border-subtle">
-            <div className="p-10 border-r border-subtle">
-              <div className="text-5xl serif-heading mb-4 text-(--color-on-surface)">15+</div>
+            <div className="p-6 lg:p-10 border-r border-subtle">
+              <div className="text-4xl lg:text-5xl serif-heading mb-4 text-(--color-on-surface)">15+</div>
               <div className="text-[10px] uppercase tracking-widest text-(--color-on-surface-variant) font-bold">
                 {t.about.stat1}
               </div>
             </div>
-            <div className="p-10 border-r border-subtle">
-              <div className="text-5xl serif-heading mb-4 text-(--color-on-surface)">100%</div>
+            <div className="p-6 lg:p-10 border-r border-subtle">
+              <div className="text-4xl lg:text-5xl serif-heading mb-4 text-(--color-on-surface)">100%</div>
               <div className="text-[10px] uppercase tracking-widest text-(--color-on-surface-variant) font-bold">
                 {t.about.stat2}
               </div>
             </div>
-            <div className="p-10 border-r border-subtle">
-              <div className="text-5xl serif-heading mb-4 text-(--color-on-surface)">400+</div>
+            <div className="p-6 lg:p-10 border-r border-subtle">
+              <div className="text-4xl lg:text-5xl serif-heading mb-4 text-(--color-on-surface)">400+</div>
               <div className="text-[10px] uppercase tracking-widest text-(--color-on-surface-variant) font-bold">
                 {t.about.stat3}
               </div>
             </div>
-            <div className="p-10">
-              <div className="text-5xl serif-heading mb-4 text-(--color-on-surface)">25</div>
+            <div className="p-6 lg:p-10">
+              <div className="text-4xl lg:text-5xl serif-heading mb-4 text-(--color-on-surface)">25</div>
               <div className="text-[10px] uppercase tracking-widest text-(--color-on-surface-variant) font-bold">
                 {t.about.stat4}
               </div>

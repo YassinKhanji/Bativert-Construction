@@ -25,7 +25,7 @@ export default function Contact() {
               </div>
               <div>
                 <h4 className="text-[12px] uppercase mb-2 text-(--color-primary) font-bold">{t.contact.contactTitle}</h4>
-                <p className="text-sm text-(--color-on-surface-variant)"><a href="mailto:hello@bativert.com" className="underline">hello@bativert.com</a><br />+1 438 992 2468</p>
+                <p className="text-sm text-(--color-on-surface-variant)"><a href="mailto:Bativertconstruction@gmail.com" className="underline break-all">Bativertconstruction@gmail.com</a><br />+1 438 992 2468</p>
               </div>
             </div>
           </div>
@@ -41,7 +41,7 @@ export default function Contact() {
                   <li>{t.contact.msgList3}</li>
                 </ul>
               </div>
-              <a href="mailto:hello@bativert.com?subject=Contact%20Message" className="w-full text-center px-8 py-4 uppercase text-[10px] tracking-[0.3em] font-bold transition-all bg-(--color-primary) text-white hover:bg-(--color-on-primary-fixed-variant) mt-4 block">
+              <a href="mailto:Bativertconstruction@gmail.com?subject=Contact%20Message" className="w-full text-center px-8 py-4 uppercase text-[10px] tracking-[0.3em] font-bold transition-all bg-(--color-primary) text-white hover:bg-(--color-on-primary-fixed-variant) mt-4 block">
                 {t.contact.submitBtn}
               </a>
             </div>
