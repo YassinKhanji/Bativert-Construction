@@ -51,7 +51,35 @@ export const translations = {
       leadershipQuote: "\"I promise to deliver uncompromising quality and sustainable engineering on every project, treating your vision as my own.\"",
       ctaTitle: "Ready to build sustainably?",
       ctaDesc: "Our experts are ready to consult on your next eco-conscious development. Let's build a greener future together.",
-      ctaBtn: "Get a Quote"
+      ctaBtn: "Get a Quote",
+      comparison: {
+        title: "The BATI VERT Difference",
+        subtitle: "Why We Lead",
+        standardLabel: "Standard Contractors",
+        ourLabel: "BATI VERT",
+        points: [
+          {
+            title: "Estimate Turnaround",
+            standard: "Weeks of waiting",
+            ours: "Detailed estimates within 48 hours"
+          },
+          {
+            title: "Project Management",
+            standard: "You manage multiple subcontractors",
+            ours: "True Turnkey: We manage everything"
+          },
+          {
+            title: "Quality & Focus",
+            standard: "Volume and speed over quality",
+            ours: "Bespoke design & sustainable excellence"
+          },
+          {
+            title: "Communication",
+            standard: "Scattered updates",
+            ours: "Dedicated project manager"
+          }
+        ]
+      }
     },
     // About Page
     about: {
@@ -316,7 +344,35 @@ export const translations = {
       leadershipQuote: "\"Je m'engage à fournir une qualité sans compromis et une ingénierie durable sur chaque projet, en traitant votre vision comme la mienne.\"",
       ctaTitle: "Prêt à construire de façon durable ?",
       ctaDesc: "Nos experts sont prêts à vous conseiller sur votre prochain développement éco-responsable. Bâtissons ensemble un avenir plus vert.",
-      ctaBtn: "Obtenir une Soumission"
+      ctaBtn: "Obtenir une Soumission",
+      comparison: {
+        title: "La Différence BATI VERT",
+        subtitle: "Pourquoi Nous Dominons",
+        standardLabel: "Entrepreneurs Standards",
+        ourLabel: "BATI VERT",
+        points: [
+          {
+            title: "Délai d'Estimation",
+            standard: "Des semaines d'attente",
+            ours: "Estimations détaillées en 48 heures"
+          },
+          {
+            title: "Gestion de Projet",
+            standard: "Vous gérez plusieurs sous-traitants",
+            ours: "Clés en main : Nous gérons tout"
+          },
+          {
+            title: "Qualité et Objectif",
+            standard: "Volume et rapidité avant la qualité",
+            ours: "Design sur mesure et excellence durable"
+          },
+          {
+            title: "Communication",
+            standard: "Mises à jour éparpillées",
+            ours: "Gestionnaire de projet dédié"
+          }
+        ]
+      }
     },
     // About Page
     about: {

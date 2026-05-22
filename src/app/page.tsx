@@ -130,6 +130,54 @@ export default function About() {
             </div>
           </div>
         </section>
+        {/* Comparison Section */}
+        <section className="px-6 lg:px-12 py-32 max-w-7xl mx-auto border-b border-subtle">
+          <div className="text-center mb-16">
+            <SectionHeader subtitle={t.home.comparison.subtitle} title={t.home.comparison.title} className="justify-center" />
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+            {/* Standard Column */}
+            <div className="bg-surface border border-subtle p-8 md:p-12 opacity-80 grayscale">
+              <h3 className="serif-heading text-2xl lg:text-3xl mb-8 text-center text-(--color-on-surface-variant)">
+                {t.home.comparison.standardLabel}
+              </h3>
+              <div className="space-y-8">
+                {t.home.comparison.points.map((point: any, i: number) => (
+                  <div key={`std-${i}`} className="text-center md:text-left border-t border-subtle pt-6">
+                    <span className="block text-[10px] uppercase tracking-widest text-(--color-on-surface-variant) font-bold mb-2">{point.title}</span>
+                    <span className="text-lg text-(--color-on-surface) opacity-60 line-through decoration-(--color-on-surface-variant)/40">{point.standard}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Bati Vert Column */}
+            <div className="bg-(--color-primary) text-white p-8 md:p-12 relative shadow-2xl transform md:-translate-y-4">
+              <div className="absolute top-0 right-0 p-4">
+                <svg className="w-12 h-12 text-white/10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M5 13l4 4L19 7" />
+                </svg>
+              </div>
+              <h3 className="serif-heading text-3xl lg:text-4xl mb-8 text-center">
+                {t.home.comparison.ourLabel}
+              </h3>
+              <div className="space-y-8">
+                {t.home.comparison.points.map((point: any, i: number) => (
+                  <div key={`ours-${i}`} className="text-center md:text-left border-t border-white/20 pt-6">
+                    <span className="block text-[10px] uppercase tracking-widest text-white/70 font-bold mb-2">{point.title}</span>
+                    <span className="text-xl font-bold flex flex-col md:flex-row items-center md:items-start gap-3">
+                      <svg className="w-6 h-6 flex-shrink-0 text-white mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
+                      </svg>
+                      {point.ours}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
 
         {/* Leadership Section */}
         <section className="px-6 lg:px-12 py-32 max-w-7xl mx-auto">
