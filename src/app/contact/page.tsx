@@ -3,6 +3,7 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import SectionHeader from "@/components/SectionHeader";
+import Accordion from "@/components/Accordion";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 export default function Contact() {
@@ -46,6 +47,34 @@ export default function Contact() {
               </button>
             </div>
           </div>
+        </div>
+
+        {/* FAQ Section */}
+        <div className="mt-32 max-w-4xl mx-auto">
+          <SectionHeader subtitle="FAQ" title={t.faq.title} />
+          <Accordion items={[
+            { question: t.faq.q1, answer: t.faq.a1 },
+            { question: t.faq.q2, answer: t.faq.a2 },
+            { question: t.faq.q3, answer: t.faq.a3 },
+            { question: t.faq.q4, answer: t.faq.a4 },
+          ]} />
+          
+          {/* FAQPage JSON-LD */}
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "FAQPage",
+                mainEntity: [
+                  { "@type": "Question", name: t.faq.q1, acceptedAnswer: { "@type": "Answer", text: t.faq.a1 } },
+                  { "@type": "Question", name: t.faq.q2, acceptedAnswer: { "@type": "Answer", text: t.faq.a2 } },
+                  { "@type": "Question", name: t.faq.q3, acceptedAnswer: { "@type": "Answer", text: t.faq.a3 } },
+                  { "@type": "Question", name: t.faq.q4, acceptedAnswer: { "@type": "Answer", text: t.faq.a4 } }
+                ]
+              })
+            }}
+          />
         </div>
       </main>
       <Footer />

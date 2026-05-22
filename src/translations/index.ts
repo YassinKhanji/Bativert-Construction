@@ -225,6 +225,43 @@ export const translations = {
         "Montreal (South: Lachine to Verdun)",
         "Montreal (West Island: Pierrefonds to Senneville)"
       ]
+    },
+    servicePages: {
+      architecturalDesign: {
+        problem: "Need visionary design but worried about structural feasibility?",
+        solution: "We combine technical precision with aesthetic vision to solve unique structural challenges.",
+        step1: { title: "Consultation & Feasibility", desc: "We evaluate your space and discuss your vision." },
+        step2: { title: "Bespoke Design & Permits", desc: "We collaborate with top designers and handle all municipal permits." },
+        step3: { title: "Execution & Delivery", desc: "Our experts bring the plans to life with rigorous standards." },
+        cta: "Request a Design Consultation"
+      },
+      highEndRenovations: {
+        problem: "Outgrown your space but love your location?",
+        solution: "We revitalize existing structures with meticulous attention to detail and premium materials.",
+        step1: { title: "Planning & Sourcing", desc: "Selecting the highest quality materials for your budget." },
+        step2: { title: "Structural Updates", desc: "Handling complex upgrades while preserving architectural integrity." },
+        step3: { title: "Finishing Touches", desc: "Delivering a flawless, luxury interior." },
+        cta: "Discuss Your Renovation"
+      },
+      turnkeyConstruction: {
+        problem: "Overwhelmed by managing multiple contractors?",
+        solution: "From conception to completion, we manage every phase of your high-end project under one roof.",
+        step1: { title: "Initial Concept", desc: "Defining the scope, budget, and architectural goals." },
+        step2: { title: "Full Management", desc: "We coordinate all specialized trades and engineering." },
+        step3: { title: "Turnkey Reveal", desc: "You simply turn the key to your newly completed space." },
+        cta: "Start Your Build"
+      }
+    },
+    faq: {
+      title: "Frequently Asked Questions",
+      q1: "Are you fully licensed and insured?",
+      a1: "Yes, BATI VERT holds an active RBQ license (5778-4803-01) and we are fully insured for all residential and commercial projects in Quebec.",
+      q2: "Do you provide turnkey services?",
+      a2: "Absolutely. We specialize in turnkey construction, meaning we manage everything from the initial architectural design and permits to the final finishing touches.",
+      q3: "Which regions do you serve?",
+      a3: "We proudly serve the Greater Montreal area, including Laval, Montérégie, and the West Island.",
+      q4: "How do you handle project timelines?",
+      a4: "Every project comes with a detailed structural timeline. Our turnkey approach ensures that all specialized trades are coordinated efficiently to prevent delays."
     }
   },
   fr: {
@@ -453,6 +490,43 @@ export const translations = {
         "Montréal (Sud: Lachine à Verdun)",
         "Montréal (Ouest: Pierrefonds à Senneville)"
       ]
+    },
+    servicePages: {
+      architecturalDesign: {
+        problem: "Vous voulez un design visionnaire mais craignez pour la faisabilité structurelle?",
+        solution: "Nous combinons précision technique et vision esthétique pour relever des défis structurels uniques.",
+        step1: { title: "Consultation et Faisabilité", desc: "Nous évaluons votre espace et discutons de votre vision." },
+        step2: { title: "Design Sur Mesure et Permis", desc: "Nous collaborons avec les meilleurs designers et gérons les permis." },
+        step3: { title: "Exécution et Livraison", desc: "Nos experts concrétisent vos plans selon des normes rigoureuses." },
+        cta: "Demander une consultation"
+      },
+      highEndRenovations: {
+        problem: "Votre espace ne vous convient plus mais vous aimez votre emplacement?",
+        solution: "Nous revitalisons les structures existantes avec une attention méticuleuse aux détails et des matériaux de première qualité.",
+        step1: { title: "Planification et Approvisionnement", desc: "Sélection des meilleurs matériaux pour votre budget." },
+        step2: { title: "Mises à jour Structurelles", desc: "Gestion des améliorations complexes tout en préservant l'intégrité." },
+        step3: { title: "Touches Finales", desc: "Livraison d'un intérieur de luxe sans défaut." },
+        cta: "Discuter de votre rénovation"
+      },
+      turnkeyConstruction: {
+        problem: "Dépassé par la gestion de multiples entrepreneurs?",
+        solution: "De la conception à l'achèvement, nous gérons chaque phase de votre projet haut de gamme sous un même toit.",
+        step1: { title: "Concept Initial", desc: "Définition de la portée, du budget et des objectifs." },
+        step2: { title: "Gestion Complète", desc: "Nous coordonnons tous les métiers spécialisés et l'ingénierie." },
+        step3: { title: "Livraison Clés en Main", desc: "Vous n'avez plus qu'à tourner la clé de votre nouvel espace." },
+        cta: "Démarrer votre projet"
+      }
+    },
+    faq: {
+      title: "Foire Aux Questions",
+      q1: "Êtes-vous certifié et assuré?",
+      a1: "Oui, BATI VERT détient une licence RBQ active (5778-4803-01) et nous sommes entièrement assurés pour tous les projets résidentiels et commerciaux au Québec.",
+      q2: "Offrez-vous des services clés en main?",
+      a2: "Absolument. Nous sommes spécialisés dans la construction clés en main, c'est-à-dire que nous gérons tout, de la conception architecturale initiale jusqu'aux finitions finales.",
+      q3: "Quelles régions desservez-vous?",
+      a3: "Nous desservons avec fierté la grande région de Montréal, incluant Laval, la Montérégie et l'Ouest-de-l'Île.",
+      q4: "Comment gérez-vous les échéanciers des projets?",
+      a4: "Chaque projet est accompagné d'un échéancier détaillé. Notre approche clés en main garantit une coordination efficace de tous les corps de métier spécialisés afin d'éviter les retards."
     }
   }
 };
