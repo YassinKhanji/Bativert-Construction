@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Project Archive | BATI VERT</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;700&amp;family=Work+Sans:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "surface-tint": "#1A2821",
+                        "tertiary-fixed-dim": "#ffb1c8",
+                        "tertiary-fixed": "#ffd9e2",
+                        "inverse-primary": "#9dd499",
+                        "secondary-fixed": "#d2e9cc",
+                        "on-tertiary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-low": "#f2f4ed",
+                        "on-secondary-container": "#556a53",
+                        "inverse-on-surface": "#f0f2ea",
+                        "error": "#ba1a1a",
+                        "tertiary": "#3e0920",
+                        "on-secondary": "#ffffff",
+                        "surface-variant": "#e1e3dc",
+                        "on-tertiary-fixed": "#3a061d",
+                        "on-error-container": "#93000a",
+                        "surface-bright": "#f8faf3",
+                        "inverse-surface": "#2e312c",
+                        "error-container": "#ffdad6",
+                        "on-primary": "#ffffff",
+                        "outline-variant": "#c1c9bc",
+                        "on-primary-fixed": "#002105",
+                        "on-background": "#191c18",
+                        "on-tertiary-container": "#d4859d",
+                        "outline": "#72796f",
+                        "on-secondary-fixed": "#0d200e",
+                        "surface-container": "#edefe7",
+                        "on-primary-container": "#1A2821",
+                        "surface-container-highest": "#e1e3dc",
+                        "background": "#f8faf3",
+                        "primary": "#1A2821",
+                        "primary-fixed-dim": "#9dd499",
+                        "on-primary-fixed-variant": "#1A2821",
+                        "primary-container": "#1A2821", 
+                        "secondary-container": "#d2e9cc",
+                        "surface-dim": "#d9dbd4",
+                        "secondary": "#4f644d",
+                        "on-secondary-fixed-variant": "#384c37",
+                        "secondary-fixed-dim": "#b6cdb1",
+                        "primary-fixed": "#b8f1b4",
+                        "on-surface-variant": "#191c18",
+                        "tertiary-container": "#591f35",
+                        "on-tertiary-fixed-variant": "#713248",
+                        "surface-container-high": "#e7e9e2",
+                        "surface": "#f8faf3",
+                        "on-surface": "#191c18",
+                        "brand-green": "#1A2821" 
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.125rem",
+                        lg: "0.25rem",
+                        xl: "0.5rem",
+                        full: "0.75rem"
+                    },
+                    spacing: {
+                        "section-gap-desktop": "160px",
+                        "margin-mobile": "20px",
+                        "margin-desktop": "64px",
+                        "section-gap-mobile": "80px",
+                        "base": "8px",
+                        "gutter": "24px"
+                    },
+                    fontFamily: {
+                        "headline-lg-mobile": ["Libre Caslon Text"],
+                        "label-caps": ["Work Sans"],
+                        "headline-md": ["Libre Caslon Text"],
+                        "display-lg": ["Libre Caslon Text"],
+                        "body-md": ["Work Sans"],
+                        "headline-lg": ["Libre Caslon Text"],
+                        "body-lg": ["Work Sans"]
+                    },
+                    fontSize: {
+                        "headline-lg-mobile": ["32px", {lineHeight: "40px", fontWeight: "400"}],
+                        "label-caps": ["12px", {lineHeight: "16px", letterSpacing: "0.1em", fontWeight: "600"}],
+                        "headline-md": ["32px", {lineHeight: "40px", fontWeight: "400"}],
+                        "display-lg": ["72px", {lineHeight: "80px", letterSpacing: "-0.02em", fontWeight: "400"}],
+                        "body-md": ["16px", {lineHeight: "24px", fontWeight: "400"}],
+                        "headline-lg": ["48px", {lineHeight: "56px", fontWeight: "400"}],
+                        "body-lg": ["18px", {lineHeight: "28px", fontWeight: "400"}]
+                    }
+                },
+            },
+        };
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24;
+            font-size: 20px;
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .animate-entrance {
+            animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+
+        .loading-dots:after {
+            content: ' .';
+            animation: dots 1s steps(5, end) infinite;
+        }
+        @keyframes dots {
+            0%, 20% { content: ' .'; }
+            40% { content: ' ..'; }
+            60% { content: ' ...'; }
+            80%, 100% { content: ''; }
+        }
+
+        .corner-frame {
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            pointer-events: none;
+        }
+        .corner-frame-tl {
+            top: 12px;
+            left: 12px;
+            border-top: 1px solid #1A2821;
+            border-left: 1px solid #1A2821;
+        }
+        .corner-frame-br {
+            bottom: 12px;
+            right: 12px;
+            border-bottom: 1px solid #1A2821;
+            border-right: 1px solid #1A2821;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- Header: TopNavBar -->
+<nav class="w-full top-0 sticky bg-surface border-b border-outline-variant z-50">
+<div class="flex justify-between items-center px-margin-desktop py-base max-w-[1440px] mx-auto">
+<span class="text-headline-md font-headline-md tracking-tighter text-primary uppercase">BATI VERT</span>
+<div class="hidden md:flex items-center space-x-gutter">
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">About</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Expertise</a>
+<a class="font-label-caps text-label-caps text-primary border-b border-brand-green pb-1" href="#">Projects</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Contact</a>
+</div>
+<button class="font-label-caps text-label-caps border border-primary px-6 py-2 hover:bg-primary hover:text-on-primary transition-all duration-300 cursor-pointer active:opacity-70">
+            Consultation
+        </button>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<header class="max-w-[1440px] mx-auto px-margin-desktop pt-section-gap-desktop pb-section-gap-mobile">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-end">
+<div class="md:col-span-8">
+<h1 class="font-display-lg text-display-lg text-primary mb-base">Project Archive</h1>
+<div class="w-24 h-px bg-brand-green mb-gutter"></div>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+                    A definitive record of construction excellence and structural integrity by BATI VERT CONSTRUCTION INC. Serving Montreal, Laval, and the Montérégie region with high-end craftsmanship since 1986.
+                </p>
+</div>
+<div class="md:col-span-4 text-right hidden md:block">
+<span class="font-label-caps text-label-caps text-on-surface-variant">ESTABLISHED</span><br/>
+<span class="font-headline-md text-headline-md text-primary">MCMLXXXVI</span>
+</div>
+</div>
+</header>
+<!-- Filter/Search Section -->
+<section class="bg-surface-container-low sticky top-[64px] z-40 border-b border-outline-variant">
+<div class="max-w-[1440px] mx-auto px-margin-desktop py-gutter">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-gutter">
+<div class="flex flex-wrap gap-gutter">
+<div class="group">
+<label class="font-label-caps text-label-caps block mb-1 text-brand-green">YEAR</label>
+<select class="bg-transparent border-b border-outline-variant focus:border-brand-green outline-none py-2 pr-8 font-body-md appearance-none cursor-pointer">
+<option>All Eras</option>
+<option>2020 — 2024</option>
+<option>2010 — 2019</option>
+<option>2000 — 2009</option>
+<option>1986 — 1999</option>
+</select>
+</div>
+<div class="group">
+<label class="font-label-caps text-label-caps block mb-1 text-brand-green">CATEGORY</label>
+<select class="bg-transparent border-b border-outline-variant focus:border-brand-green outline-none py-2 pr-8 font-body-md appearance-none cursor-pointer">
+<option>All Types</option>
+<option>Residential</option>
+<option>Commercial</option>
+<option>Infrastructure</option>
+</select>
+</div>
+<div class="group">
+<label class="font-label-caps text-label-caps block mb-1 text-brand-green">REGION</label>
+<select class="bg-transparent border-b border-outline-variant focus:border-brand-green outline-none py-2 pr-8 font-body-md appearance-none cursor-pointer">
+<option>Greater Montreal</option>
+<option>Montreal City</option>
+<option>Laval</option>
+<option>Montérégie</option>
+<option>International</option>
+</select>
+</div>
+</div>
+<div class="relative min-w-[280px]">
+<label class="font-label-caps text-label-caps block mb-1 text-brand-green">SEARCH</label>
+<input class="w-full bg-transparent border-b border-outline-variant focus:border-brand-green outline-none py-2 font-body-md transition-colors" placeholder="Search BATI VERT archives..." type="text"/>
+<span class="material-symbols-outlined absolute right-0 bottom-2 text-brand-green">search</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Archive List: Asymmetrical Masonry Grid -->
+<section class="max-w-[1440px] mx-auto px-margin-desktop py-section-gap-desktop">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-x-gutter gap-y-section-gap-mobile items-start" id="project-grid">
+<!-- Project Tile 01: Large, spans 8 columns -->
+<div class="md:col-span-8 group cursor-pointer animate-entrance">
+<div class="aspect-[16/9] overflow-hidden bg-surface-dim mb-gutter relative">
+<div class="corner-frame corner-frame-tl group-hover:scale-110 transition-transform duration-500"></div>
+<div class="corner-frame corner-frame-br group-hover:scale-110 transition-transform duration-500"></div>
+<img alt="The Obsidian Pavilion" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/ADBb0ug7wS9hxMiofB3CjV0T2Tkf9PkoiNj3A_SEysj_aU-3O4q1Hx1U-219LmOfTtzTdTqHWHgOuS7kTew5qvYtKZME1Bl3_Y7a8uU6-EixF8lAA8QUn9P1UTbT43LM7pug5meGBy7jz3_kuaDoilr5ZXR_1sJhQBSHSoYcJsbbkscEkYKa3Tukgadw9BzplaB6NuW9DQ7CBCvwwcXtERqNR7eXJVc-0o4I2eMN9ZQlCSVQeyAfqlIvyQpXxA"/>
+</div>
+<div class="flex justify-between items-baseline pt-4 border-t border-brand-green/20">
+<div>
+<h3 class="font-headline-md text-headline-md text-primary">The Obsidian Pavilion</h3>
+<p class="font-label-caps text-label-caps text-on-surface-variant mt-1 uppercase tracking-widest">Residential — Westmount, Montreal</p>
+</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant">2023</span>
+</div>
+</div>
+<!-- Project Tile 02: Narrow, spans 4 columns -->
+<div class="md:col-span-4 group cursor-pointer animate-entrance">
+<div class="aspect-[3/4] overflow-hidden bg-surface-dim mb-gutter relative">
+<div class="corner-frame corner-frame-tl group-hover:scale-110 transition-transform duration-500"></div>
+<div class="corner-frame corner-frame-br group-hover:scale-110 transition-transform duration-500"></div>
+<img alt="Summit Tech Plaza" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/ADBb0uj3_305zQX8YBxpB0ukrMUsIkOciU2-8eg3WITbAQSUqKSSKrlnFMUW8xaZv6RQ36HG-adDb5p63p2re2pUBIqRkdUIcWr8xk8RSbrSTxfp5LooMkvQ3fWcUxMIbqJnyyz42yIyRbNC1WHEwkEN4oC8WiieFBOSP87M3_7ZqHQfvbeod5AgQiKwpvh5qeq9-CmRznw0B4WvDEjnPbHHa0jq5cGD5GBmXh6mW5CeJhW4Gsfmh1sVgxTcag"/>
+</div>
+<div class="flex flex-col pt-4 border-t border-brand-green/20">
+<h3 class="font-headline-md text-headline-md text-primary">Summit Tech Plaza</h3>
+<div class="flex justify-between items-baseline mt-1">
+<p class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-widest">Commercial — Laval, QC</p>
+<span class="font-label-caps text-label-caps text-on-surface-variant">2021</span>
+</div>
+</div>
+</div>
+<!-- Project Tile 03: Square-ish, spans 5 columns -->
+<div class="md:col-span-5 group cursor-pointer animate-entrance">
+<div class="aspect-square overflow-hidden bg-surface-dim mb-gutter relative">
+<div class="corner-frame corner-frame-tl group-hover:scale-110 transition-transform duration-500"></div>
+<div class="corner-frame corner-frame-br group-hover:scale-110 transition-transform duration-500"></div>
+<img alt="Brossard Gateway" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuw_m_xa0Ql_3kY3xKaGXDQ3iNGG6aL8gsWuYMs-P3RV92DFPLw7rgRLjoqIa02x4BtYH-QL7zvmLSZQhUW25NpKyAuzjFGAPGCINhwPJcNSri28cu4ymrrsi9mGK82bjufNqlFHleDJW8DhtvUm4ZQiSJZ0hogvsjkFh6lvC_9icC0OKBpNOpzRTqWDk9zoyyh8rD9udnsEWb0cSpzbGudj4VAsKHtfJ_lTeDyYXMzty3PNMUKTgmLyEvmhjHyGg73AwnX42Chf4"/>
+</div>
+<div class="flex justify-between items-baseline pt-4 border-t border-brand-green/20">
+<div>
+<h3 class="font-headline-md text-headline-md text-primary">Brossard Gateway</h3>
+<p class="font-label-caps text-label-caps text-on-surface-variant mt-1 uppercase tracking-widest">Infrastructure — Montérégie, QC</p>
+</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant">2018</span>
+</div>
+</div>
+<!-- Project Tile 04: Large, spans 7 columns -->
+<div class="md:col-span-7 group cursor-pointer animate-entrance">
+<div class="aspect-[4/3] overflow-hidden bg-surface-dim mb-gutter relative">
+<div class="corner-frame corner-frame-tl group-hover:scale-110 transition-transform duration-500"></div>
+<div class="corner-frame corner-frame-br group-hover:scale-110 transition-transform duration-500"></div>
+<img alt="Riverside Manor" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJvctRIL6SSJItBYTp9q4fr9U0B2P7y_XLgChSzJxVPdnjfgzy9qH7RJYuv95fBlA_yuIpgzI-j3A2jGQiFVwCHFjJi_8maH83nO2tb4baINk6qkOm9eaAcmvEmw-j0mOUkDM-vP2x96uPSHuYWI5okxlJMeN30IinIFjR22_D5jpgrmNTFY0YfjcimgAikuD4UYKoHwCyosozcHbBrTCirrdqVTE4fyzy5x13wBPKpRyULhYXYmbNNo9K9AkyRLEz93JI1QPB5Mo"/>
+</div>
+<div class="flex justify-between items-baseline pt-4 border-t border-brand-green/20">
+<div>
+<h3 class="font-headline-md text-headline-md text-primary">Riverside Manor</h3>
+<p class="font-label-caps text-label-caps text-on-surface-variant mt-1 uppercase tracking-widest">Residential — Mont-Saint-Hilaire, QC</p>
+</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant">2015</span>
+</div>
+</div>
+</div>
+<!-- Infinite Scroll Sentinel -->
+<div class="h-20 flex items-center justify-center mt-section-gap-mobile" id="scroll-sentinel">
+<span class="font-label-caps text-label-caps text-brand-green uppercase tracking-[0.2em] opacity-80 loading-dots">Retrieving Archive</span>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="bg-surface-container py-section-gap-desktop">
+<div class="max-w-[1440px] mx-auto px-margin-desktop text-center">
+<span class="font-label-caps text-label-caps text-brand-green mb-base block">FUTURE LEGACY</span>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-gutter">Ready to build your masterpiece?</h2>
+<div class="flex flex-col md:flex-row justify-center gap-gutter">
+<button class="font-label-caps text-label-caps bg-brand-green text-on-primary px-12 py-4 hover:opacity-90 transition-opacity">
+                    REQUEST QUOTE
+                </button>
+<button class="font-label-caps text-label-caps border border-brand-green text-brand-green px-12 py-4 hover:bg-brand-green hover:text-on-primary transition-all">
+                    OUR PROCESS
+                </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full mt-section-gap-desktop border-t border-outline-variant bg-surface">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter px-margin-desktop py-section-gap-mobile max-w-[1440px] mx-auto">
+<div class="md:col-span-4">
+<span class="font-headline-md text-headline-md text-primary block mb-gutter uppercase">BATI VERT</span>
+<p class="font-body-md text-body-md text-on-surface-variant mb-gutter">
+                BATI VERT CONSTRUCTION INC. Architectural precision and construction excellence since 1986. Defining the skyline of Montreal, Laval, and Montérégie.
+            </p>
+<div class="font-body-md text-body-md text-on-surface-variant">
+<p>1250 Blvd. René-Lévesque O</p>
+<p>Montréal, QC H3B 4W8</p>
+<p class="mt-2">info@bativert.com | 514.555.0123</p>
+</div>
+</div>
+<div class="md:col-span-2"></div>
+<div class="md:col-span-2">
+<h4 class="font-label-caps text-label-caps text-brand-green mb-gutter">PAGES</h4>
+<div class="flex flex-col space-y-2">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-brand-green transition-colors" href="#">About</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-brand-green transition-colors" href="#">Expertise</a>
+<a class="font-body-md text-body-md text-brand-green font-bold" href="#">Projects</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-brand-green transition-colors" href="#">Contact</a>
+</div>
+</div>
+<div class="md:col-span-2">
+<h4 class="font-label-caps text-label-caps text-brand-green mb-gutter">LEGAL</h4>
+<div class="flex flex-col space-y-2">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-brand-green transition-colors" href="#">Privacy Policy</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-brand-green transition-colors" href="#">Terms of Service</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-brand-green transition-colors" href="#">RBQ License</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-brand-green transition-colors" href="#">Sustainability</a>
+</div>
+</div>
+<div class="md:col-span-2">
+<h4 class="font-label-caps text-label-caps text-brand-green mb-gutter">SOCIAL</h4>
+<div class="flex flex-col space-y-2">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-brand-green transition-colors" href="#">Instagram</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-brand-green transition-colors" href="#">LinkedIn</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-brand-green transition-colors" href="#">Facebook</a>
+</div>
+</div>
+<div class="md:col-span-12 pt-gutter border-t border-outline-variant mt-gutter flex justify-between items-center">
+<span class="font-body-md text-body-md text-on-surface-variant">© 2024 BATI VERT CONSTRUCTION INC. ALL RIGHTS RESERVED.</span>
+<span class="font-label-caps text-label-caps text-brand-green">QUÉBEC, CANADA</span>
+</div>
+</div>
+</footer>
+<script>
+    // Infinite Scroll Logic
+    const projectGrid = document.getElementById('project-grid');
+    const sentinel = document.getElementById('scroll-sentinel');
+    
+    const mockProjects = [
+        { title: "Plaza Laval", cat: "Commercial", loc: "Laval, QC", year: "2012", img: "https://lh3.googleusercontent.com/aida-public/AB6AXuBJvctRIL6SSJItBYTp9q4fr9U0B2P7y_XLgChSzJxVPdnjfgzy9qH7RJYuv95fBlA_yuIpgzI-j3A2jGQiFVwCHFjJi_8maH83nO2tb4baINk6qkOm9eaAcmvEmw-j0mOUkDM-vP2x96uPSHuYWI5okxlJMeN30IinIFjR22_D5jpgrmNTFY0YfjcimgAikuD4UYKoHwCyosozcHbBrTCirrdqVTE4fyzy5x13wBPKpRyULhYXYmbNNo9K9AkyRLEz93JI1QPB5Mo", span: "md:col-span-6", aspect: "aspect-[16/9]" },
+        { title: "The Slate House", cat: "Residential", loc: "Outremont, MTL", year: "2019", img: "https://lh3.googleusercontent.com/aida/ADBb0ug7wS9hxMiofB3CjV0T2Tkf9PkoiNj3A_SEysj_aU-3O4q1Hx1U-219LmOfTtzTdTqHWHgOuS7kTew5qvYtKZME1Bl3_Y7a8uU6-EixF8lAA8QUn9P1UTbT43LM7pug5meGBy7jz3_kuaDoilr5ZXR_1sJhQBSHSoYcJsbbkscEkYKa3Tukgadw9BzplaB6NuW9DQ7CBCvwwcXtERqNR7eXJVc-0o4I2eMN9ZQlCSVQeyAfqlIvyQpXxA", span: "md:col-span-6", aspect: "aspect-square" },
+        { title: "Rive-Sud Logistics", cat: "Commercial", loc: "Longueuil, QC", year: "2020", img: "https://lh3.googleusercontent.com/aida-public/AB6AXuDuw_m_xa0Ql_3kY3xKaGXDQ3iNGG6aL8gsWuYMs-P3RV92DFPLw7rgRLjoqIa02x4BtYH-QL7zvmLSZQhUW25NpKyAuzjFGAPGCINhwPJcNSri28cu4ymrrsi9mGK82bjufNqlFHleDJW8DhtvUm4ZQiSJZ0hogvsjkFh6lvC_9icC0OKBpNOpzRTqWDk9zoyyh8rD9udnsEWb0cSpzbGudj4VAsKHtfJ_lTeDyYXMzty3PNMUKTgmLyEvmhjHyGg73AwnX42Chf4", span: "md:col-span-4", aspect: "aspect-[3/4]" },
+        { title: "Metropolis Loft", cat: "Residential", loc: "Plateau, MTL", year: "2022", img: "https://lh3.googleusercontent.com/aida/ADBb0uj3_305zQX8YBxpB0ukrMUsIkOciU2-8eg3WITbAQSUqKSSKrlnFMUW8xaZv6RQ36HG-adDb5p63p2re2pUBIqRkdUIcWr8xk8RSbrSTxfp5LooMkvQ3fWcUxMIbqJnyyz42yIyRbNC1WHEwkEN4oC8WiieFBOSP87M3_7ZqHQfvbeod5AgQiKwpvh5qeq9-CmRznw0B4WvDEjnPbHHa0jq5cGD5GBmXh6mW5CeJhW4Gsfmh1sVgxTcag", span: "md:col-span-8", aspect: "aspect-[21/9]" }
+    ];
+
+    let loading = false;
+    let itemsAdded = 0;
+    const maxItems = 12;
+
+    const loadMoreItems = () => {
+        if (loading || itemsAdded >= maxItems) return;
+        loading = true;
+        
+        setTimeout(() => {
+            mockProjects.forEach(proj => {
+                const item = document.createElement('div');
+                item.className = `${proj.span} group cursor-pointer animate-entrance opacity-0`;
+                item.innerHTML = `
+                    <div class="${proj.aspect} overflow-hidden bg-surface-dim mb-gutter relative">
+                        <div class="corner-frame corner-frame-tl group-hover:scale-110 transition-transform duration-500" style="border-top-color: #1A2821; border-left-color: #1A2821;"></div>
+                        <div class="corner-frame corner-frame-br group-hover:scale-110 transition-transform duration-500" style="border-bottom-color: #1A2821; border-right-color: #1A2821;"></div>
+                        <img alt="${proj.title}" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="${proj.img}"/>
+                    </div>
+                    <div class="flex justify-between items-baseline pt-4 border-t border-brand-green/20">
+                        <div>
+                            <h3 class="font-headline-md text-headline-md text-primary">${proj.title}</h3>
+                            <p class="font-label-caps text-label-caps text-on-surface-variant mt-1 uppercase tracking-widest">${proj.cat} — ${proj.loc}</p>
+                        </div>
+                        <span class="font-label-caps text-label-caps text-on-surface-variant">${proj.year}</span>
+                    </div>
+                `;
+                projectGrid.appendChild(item);
+            });
+            
+            itemsAdded += mockProjects.length;
+            loading = false;
+            
+            if (itemsAdded >= maxItems) {
+                sentinel.innerHTML = '<span class="font-label-caps text-label-caps text-brand-green uppercase tracking-[0.2em] opacity-50">— End of Archive —</span>';
+                observer.unobserve(sentinel);
+            }
+        }, 1200);
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        if (entries[0].isIntersecting) {
+            loadMoreItems();
+        }
+    }, { threshold: 0.1 });
+
+    observer.observe(sentinel);
+</script>
+</body></html>

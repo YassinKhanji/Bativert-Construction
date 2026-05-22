@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact Us | BATI VERT CONSTRUCTION INC.</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;700&amp;family=Work+Sans:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "surface-tint": "#1A2821",
+                        "tertiary-fixed-dim": "#ffb1c8",
+                        "tertiary-fixed": "#ffd9e2",
+                        "inverse-primary": "#9dd499",
+                        "secondary-fixed": "#d2e9cc",
+                        "on-tertiary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-low": "#f2f4ed",
+                        "on-secondary-container": "#556a53",
+                        "inverse-on-surface": "#f0f2ea",
+                        "error": "#ba1a1a",
+                        "tertiary": "#3e0920",
+                        "on-secondary": "#ffffff",
+                        "surface-variant": "#e1e3dc",
+                        "on-tertiary-fixed": "#3a061d",
+                        "on-error-container": "#93000a",
+                        "surface-bright": "#f8faf3",
+                        "inverse-surface": "#2e312c",
+                        "error-container": "#ffdad6",
+                        "on-primary": "#ffffff",
+                        "outline-variant": "#c1c9bc",
+                        "on-primary-fixed": "#002105",
+                        "on-background": "#191c18",
+                        "on-tertiary-container": "#d4859d",
+                        "outline": "#72796f",
+                        "on-secondary-fixed": "#0d200e",
+                        "surface-container": "#edefe7",
+                        "on-primary-container": "#73a871",
+                        "surface-container-highest": "#e1e3dc",
+                        "background": "#f8faf3",
+                        "primary": "#1A2821", // Updated to darker, desaturated architectural green
+                        "primary-fixed-dim": "#9dd499",
+                        "on-primary-fixed-variant": "#1f5124",
+                        "primary-container": "#1A2821",
+                        "secondary-container": "#d2e9cc",
+                        "surface-dim": "#d9dbd4",
+                        "secondary": "#4f644d",
+                        "on-secondary-fixed-variant": "#384c37",
+                        "secondary-fixed-dim": "#b6cdb1",
+                        "primary-fixed": "#b8f1b4",
+                        "on-surface-variant": "#41493f",
+                        "tertiary-container": "#591f35",
+                        "on-tertiary-fixed-variant": "#713248",
+                        "surface-container-high": "#e7e9e2",
+                        "surface": "#f8faf3",
+                        "on-surface": "#191c18"
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    spacing: {
+                        "section-gap-desktop": "160px",
+                        "margin-mobile": "20px",
+                        "margin-desktop": "64px",
+                        "section-gap-mobile": "80px",
+                        "base": "8px",
+                        "gutter": "24px"
+                    },
+                    fontFamily: {
+                        "headline-lg-mobile": ["Libre Caslon Text"],
+                        "label-caps": ["Work Sans"],
+                        "headline-md": ["Libre Caslon Text"],
+                        "display-lg": ["Libre Caslon Text"],
+                        "body-md": ["Work Sans"],
+                        "headline-lg": ["Libre Caslon Text"],
+                        "body-lg": ["Work Sans"]
+                    },
+                    fontSize: {
+                        "headline-lg-mobile": ["32px", { "lineHeight": "40px", "fontWeight": "400" }],
+                        "label-caps": ["12px", { "lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "600" }],
+                        "headline-md": ["32px", { "lineHeight": "40px", "fontWeight": "400" }],
+                        "display-lg": ["72px", { "lineHeight": "80px", "letterSpacing": "-0.02em", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "headline-lg": ["48px", { "lineHeight": "56px", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24;
+        }
+        .form-underline:focus {
+            outline: none;
+            border-bottom-color: #1A2821 !important;
+        }
+        .text-accent-green { color: #1A2821; }
+        .border-accent-green { border-color: #1A2821; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopNavBar -->
+<header class="w-full top-0 sticky z-50 bg-surface border-b border-outline-variant">
+<nav class="flex justify-between items-center px-margin-desktop py-base max-w-[1440px] mx-auto">
+<div class="text-headline-md font-headline-md tracking-tighter text-primary uppercase">BATI VERT</div>
+<div class="hidden md:flex items-center gap-gutter">
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">About Us</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Services</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Projects</a>
+<a class="font-label-caps text-label-caps text-primary border-b border-primary pb-1" href="#">Contact</a>
+</div>
+<button class="font-label-caps text-label-caps border border-primary px-6 py-3 cursor-pointer transition-all duration-300 hover:bg-primary hover:text-on-primary active:opacity-70">
+            Inquire
+        </button>
+</nav>
+</header>
+<main class="max-w-[1440px] mx-auto px-margin-desktop">
+<!-- Hero Section -->
+<section class="mt-section-gap-mobile md:mt-section-gap-desktop grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<div class="md:col-span-8">
+<h1 class="font-display-lg text-headline-lg-mobile md:text-display-lg mb-base">Let's build your vision together.</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">Every exceptional build starts with a partnership. We invite you to share your vision with us.</p>
+</div>
+</section>
+<!-- Main Content: Form & Info Grid -->
+<section class="mt-section-gap-mobile md:mt-section-gap-desktop grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Contact Form Section -->
+<div class="md:col-span-7">
+<div class="w-24 h-px bg-primary mb-8"></div>
+<h2 class="font-label-caps text-label-caps mb-12 text-primary">GET IN TOUCH</h2>
+<form class="space-y-12">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<div class="flex flex-col gap-2">
+<label class="font-label-caps text-[10px] text-on-surface font-semibold">NAME</label>
+<input class="form-underline bg-transparent border-t-0 border-x-0 border-b border-primary py-2 font-body-md text-body-md transition-colors" placeholder="Full Name" type="text"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label-caps text-[10px] text-on-surface font-semibold">EMAIL</label>
+<input class="form-underline bg-transparent border-t-0 border-x-0 border-b border-primary py-2 font-body-md text-body-md transition-colors" placeholder="email@example.com" type="email"/>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label-caps text-[10px] text-on-surface font-semibold">PROJECT TYPE</label>
+<select class="form-underline bg-transparent border-t-0 border-x-0 border-b border-primary py-2 font-body-md text-body-md appearance-none">
+<option>Custom Residential</option>
+<option>Commercial Development</option>
+<option>Modern Renovation</option>
+<option>Sustainable Build</option>
+</select>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label-caps text-[10px] text-on-surface font-semibold">MESSAGE</label>
+<textarea class="form-underline bg-transparent border-t-0 border-x-0 border-b border-primary py-2 font-body-md text-body-md transition-colors resize-none" placeholder="Describe your project vision..." rows="4"></textarea>
+</div>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="group flex items-center justify-center gap-4 font-label-caps text-label-caps bg-primary text-on-primary border border-primary px-10 py-5 transition-all duration-500 hover:opacity-90" type="submit">
+                GET A QUOTE
+                <span class="material-symbols-outlined text-[18px] group-hover:translate-x-2 transition-transform duration-300">request_quote</span>
+</button>
+</div>
+</form>
+</div>
+<!-- Information Section -->
+<div class="md:col-span-4 md:col-start-9 mt-16 md:mt-0 space-y-24">
+<!-- Inquiries -->
+<div class="space-y-6">
+<h2 class="font-label-caps text-label-caps border-b border-outline-variant pb-2">INQUIRIES</h2>
+<div class="space-y-4">
+<div>
+<p class="font-label-caps text-[10px] text-on-surface font-semibold mb-1">GENERAL</p>
+<a class="font-body-md text-body-md text-on-surface hover:text-primary transition-colors underline underline-offset-4 decoration-outline-variant" href="mailto:info@bativert.com">info@bativert.com</a>
+</div>
+<div>
+<p class="font-label-caps text-[10px] text-on-surface font-semibold mb-1">PHONE</p>
+<p class="font-body-md text-body-md text-on-surface">+1 438 992 2468</p>
+</div>
+</div>
+</div>
+<!-- Head Office -->
+<div class="space-y-6">
+<h2 class="font-label-caps text-label-caps border-b border-outline-variant pb-2">HEAD OFFICE</h2>
+<div class="space-y-4">
+<p class="font-body-md text-body-md leading-relaxed text-on-surface">
+            241 Rue Maurice Richard<br/>
+            Vaudreuil, QC<br/>
+            J7V0A6
+        </p>
+<div class="relative w-full aspect-square md:aspect-video bg-surface-container-high overflow-hidden group border-b-4 border-r-4 border-primary">
+<img class="w-full h-full object-cover transition-all duration-700" data-alt="A minimalist architectural site plan displayed on a textured parchment paper background. The map uses thin, clean black lines to indicate urban structures and streets, following a precise grid." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6iBSRqW_vfljkgg2T5Ezhj4rrAz-RrpfFq8kLA6D18LRDKcxlTWN32zk_-OAVmM6JfLPGlq1MK7qZzCPu0lEz5UEIFbHwczMctUXN1wsDKtI06Sg_7c3SHl4U8yV7Zz8yCc8B_hQVcdBK9RbE3k1VQuTb1T2ctnfDwYCFIxfw8FJUVcSpgzUXqMXWuN28a0kxNJQLfv7GvhhwzMgGqcfvIWOeds8WNsyHyAt-QLjnIrcEUxFu6xei09vUpNA4e0BBULw0U0xtDmk"/>
+<div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-black/10 backdrop-blur-[2px] pointer-events-none">
+<span class="font-label-caps text-label-caps text-white bg-black/80 px-4 py-2">VIEW ON MAP</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Regions & Social -->
+<div class="space-y-6">
+<h2 class="font-label-caps text-label-caps border-b border-outline-variant pb-2">REGIONS SERVED</h2>
+<div class="flex flex-wrap gap-x-6 gap-y-2">
+<p class="font-label-caps text-label-caps text-on-surface font-semibold">MONTREAL</p>
+<p class="font-label-caps text-label-caps text-on-surface font-semibold">LAVAL</p>
+<p class="font-label-caps text-label-caps text-on-surface font-semibold">MONTÉRÉGIE</p>
+</div>
+<div class="pt-6 space-y-4">
+<h2 class="font-label-caps text-label-caps border-b border-outline-variant pb-2">SOCIAL</h2>
+<div class="flex gap-6">
+<a class="font-label-caps text-label-caps text-on-surface font-semibold hover:text-primary transition-colors" href="#">INSTAGRAM</a>
+<a class="font-label-caps text-label-caps text-on-surface font-semibold hover:text-primary transition-colors" href="#">LINKEDIN</a>
+<a class="font-label-caps text-label-caps text-on-surface font-semibold hover:text-primary transition-colors" href="#">PINTEREST</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Large Decorative Visual -->
+<section class="mt-section-gap-desktop mb-24 overflow-hidden">
+<div class="relative w-full h-[614px]">
+<img class="w-full h-full object-cover" data-alt="An expansive low-angle shot of a modern skyscraper's glass facade against a clear sky." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDa1IG2i-tO56iUY5xNhTF6Mij-0UBpRLZvgD2GJzj5p6ju-npBF-e8InUsuFc1gC2y1nohXtwlYB9Rz3sDlM7MI-db52W-9-tqZrgGd20LOHGb_4qyljl_aqyDrn6PDuePTHfQZ219aENCICPlcewXTMewPMgjckORAZ0fxhsoAiGmYnbdvJVZwKT3_UAE04xD2a2y6uZAGj7VmCleElIfpdC2s9tL7kDy2MqmIhifLCIbzuypH4UU5BHNlwfR-_pIoATDd74z3kU"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent"></div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full mt-section-gap-desktop bg-surface border-t border-outline-variant">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter px-margin-desktop py-section-gap-mobile max-w-[1440px] mx-auto">
+<div class="md:col-span-4 flex flex-col justify-between">
+<div>
+<div class="font-headline-md text-headline-md text-primary mb-4 uppercase">BATI VERT</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xs">Elevating construction through architectural prestige and unparalleled craftsmanship across Quebec.</p>
+</div>
+<div class="mt-12 md:mt-0 font-body-md text-body-md text-on-surface-variant uppercase">
+                © 2024 BATI VERT CONSTRUCTION INC.
+            </div>
+</div>
+<div class="md:col-span-2 md:col-start-7 space-y-4">
+<h3 class="font-label-caps text-label-caps text-primary">NAVIGATION</h3>
+<nav class="flex flex-col gap-2">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">About Us</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Services</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Projects</a>
+<a class="font-body-md text-body-md text-primary font-bold" href="#">Contact</a>
+</nav>
+</div>
+<div class="md:col-span-2 space-y-4">
+<h3 class="font-label-caps text-label-caps text-primary">LEGAL</h3>
+<nav class="flex flex-col gap-2">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Terms of Service</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Licensing</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Careers</a>
+</nav>
+</div>
+<div class="md:col-span-2 space-y-4">
+<h3 class="font-label-caps text-label-caps text-primary">OFFICES</h3>
+<div class="font-body-md text-body-md text-on-surface-variant space-y-2">
+<p class="">Vaudreuil-Dorion</p>
+<p class="">Montreal</p>
+<p class="">Laval</p>
+</div>
+</div>
+</div>
+</footer>
+<script>
+    // Simple form interaction
+    document.querySelector('form').addEventListener('submit', (e) => {
+        e.preventDefault();
+        const btn = e.target.querySelector('button');
+        const originalContent = btn.innerHTML;
+        btn.innerHTML = 'INQUIRY SENT';
+        btn.classList.add('opacity-80');
+        setTimeout(() => {
+            btn.innerHTML = originalContent;
+            btn.classList.remove('opacity-80');
+            e.target.reset();
+        }, 3000);
+    });
+</script>
+</body></html>

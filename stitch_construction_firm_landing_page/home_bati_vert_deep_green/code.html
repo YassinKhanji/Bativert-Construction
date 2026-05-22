@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>BATI VERT | Building Your Sustainable Future</title>
+<!-- Tailwind CSS v3 -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;700&amp;family=Work+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+                "surface-tint": "#1A2821",
+                "tertiary-fixed-dim": "#ffb1c8",
+                "tertiary-fixed": "#ffd9e2",
+                "inverse-primary": "#9dd499",
+                "secondary-fixed": "#d2e9cc",
+                "on-tertiary": "#ffffff",
+                "on-error": "#ffffff",
+                "surface-container-lowest": "#ffffff",
+                "surface-container-low": "#f2f4ed",
+                "on-secondary-container": "#556a53",
+                "inverse-on-surface": "#f0f2ea",
+                "error": "#ba1a1a",
+                "tertiary": "#3e0920",
+                "on-secondary": "#ffffff",
+                "surface-variant": "#e1e3dc",
+                "on-tertiary-fixed": "#3a061d",
+                "on-error-container": "#93000a",
+                "surface-bright": "#f8faf3",
+                "inverse-surface": "#2e312c",
+                "error-container": "#ffdad6",
+                "on-primary": "#ffffff",
+                "outline-variant": "#c1c9bc",
+                "on-primary-fixed": "#002105",
+                "on-background": "#191c18",
+                "on-tertiary-container": "#d4859d",
+                "outline": "#72796f",
+                "on-secondary-fixed": "#0d200e",
+                "surface-container": "#edefe7",
+                "on-primary-container": "#1A2821",
+                "surface-container-highest": "#e1e3dc",
+                "background": "#f8faf3",
+                "primary": "#1A2821",
+                "primary-fixed-dim": "#9dd499",
+                "on-primary-fixed-variant": "#2b3d34",
+                "primary-container": "#1A2821",
+                "secondary-container": "#d2e9cc",
+                "surface-dim": "#d9dbd4",
+                "secondary": "#4f644d",
+                "on-secondary-fixed-variant": "#384c37",
+                "secondary-fixed-dim": "#b6cdb1",
+                "primary-fixed": "#b8f1b4",
+                "on-surface-variant": "#41493f",
+                "tertiary-container": "#591f35",
+                "on-tertiary-fixed-variant": "#713248",
+                "surface-container-high": "#e7e9e2",
+                "surface": "#f8faf3",
+                "on-surface": "#191c18",
+                brand: {
+                  bg: "#f8faf3",
+                  dark: "#191c18",
+                  muted: "#41493f",
+                  accent: "#1A2821"
+                }
+        },
+        "borderRadius": {
+                "DEFAULT": "0.125rem",
+                "lg": "0.25rem",
+                "xl": "0.5rem",
+                "full": "0.75rem"
+        },
+        "fontFamily": {
+                "headline": ["Libre Caslon Text", "serif"],
+                "display": ["Libre Caslon Text", "serif"],
+                "body": ["Work Sans", "sans-serif"],
+                "label": ["Work Sans", "sans-serif"]
+        }
+      },
+    },
+  }
+</script>
+<style data-purpose="custom-layout">
+    body {
+      background-color: #f8faf3;
+      color: #191c18;
+      font-family: 'Work Sans', sans-serif;
+    }
+    .serif-heading {
+      font-family: 'Libre Caslon Text', serif;
+    }
+    .border-subtle {
+      border-color: rgba(25, 28, 24, 0.1);
+    }
+    .service-grid-item {
+      border: 0.5px solid rgba(25, 28, 24, 0.1);
+      transition: background-color 0.3s ease;
+    }
+    .service-grid-item:hover {
+      background-color: rgba(25, 28, 24, 0.02);
+    }
+    /* Static Page - No Entrance Animations */
+    * {
+      opacity: 1 !important;
+      transform: none !important;
+      transition-delay: 0s !important;
+    }
+    /* Preserving only hover transitions */
+    .hover\:opacity-60:hover { opacity: 0.6 !important; }
+    .hover\:bg-brand-dark:hover { background-color: #191c18 !important; color: #f8faf3 !important; }
+    .hover\:bg-primary:hover { background-color: #1A2821 !important; color: #ffffff !important; }
+    .transition-all { transition-property: all !important; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; transition-duration: 150ms !important; }
+    .transition-opacity { transition-property: opacity !important; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; transition-duration: 150ms !important; }
+
+
+
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+
+    .half-frame-accent::after {
+      content: '';
+      position: absolute;
+      top: -10px;
+      right: -10px;
+      width: 50%;
+      height: 50%;
+      border-top: 1px solid #1A2821;
+      border-right: 1px solid #1A2821;
+      pointer-events: none;
+    }
+</style>
+</head>
+<body class="antialiased bg-surface text-on-surface">
+<!-- BEGIN: Navigation -->
+<nav class="sticky top-0 z-50 bg-surface/80 backdrop-blur-md border-b border-subtle">
+<div class="max-w-7xl mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
+<div class="text-2xl font-bold tracking-tight serif-heading uppercase text-on-surface">BATI VERT</div>
+<div class="hidden md:flex items-center space-x-10 text-[10px] uppercase tracking-[0.2em] font-semibold">
+<a class="hover:text-primary transition-colors" href="#about">About Us</a>
+<a class="hover:text-primary transition-colors" href="#services">Services</a>
+<a class="hover:text-primary transition-colors" href="#projects">Projects</a>
+<a class="hover:text-primary transition-colors" href="#contact">Contact</a>
+<a class="px-6 py-2 border border-brand-dark hover:bg-brand-dark hover:text-surface transition-all" href="#">Inquire</a>
+</div>
+</div>
+</nav>
+<!-- END: Navigation -->
+<main>
+<!-- BEGIN: Hero Section -->
+<section class="pt-20 pb-16 px-6 lg:px-12 max-w-7xl mx-auto">
+<div class="mb-12">
+<p class="text-[10px] uppercase tracking-[0.3em] mb-6 text-primary font-bold">Expertise in Turnkey Services, Bespoke Design, and Master Renovations</p>
+<div class="w-12 h-px bg-primary mb-6 opacity-60"></div>
+<div class="flex flex-col lg:flex-row justify-between items-end gap-8">
+<h1 class="text-5xl lg:text-8xl serif-heading leading-tight max-w-3xl text-on-surface">
+            Building Your <br/> Sustainable Future
+          </h1>
+<div class="flex gap-4">
+<a class="mb-4 px-8 py-3 bg-primary text-white uppercase text-[10px] tracking-[0.2em] font-bold hover:bg-on-primary-fixed-variant transition-all" href="#contact">
+              Get a Quote
+            </a>
+<a class="mb-4 px-8 py-3 border border-primary text-primary uppercase text-[10px] tracking-[0.2em] font-bold hover:bg-primary hover:text-white transition-all" href="#projects">
+              View Projects
+            </a>
+</div>
+</div>
+</div>
+</section>
+<!-- END: Hero Section -->
+<!-- BEGIN: Image & Form Section -->
+<section class="relative px-6 lg:px-12 max-w-7xl mx-auto mb-32">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-0 items-start">
+<div class="lg:col-span-8 relative half-frame-accent">
+<img alt="High-end architectural construction" class="w-full h-[600px] object-cover brightness-75" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_ByfEpXhicEhdJz6XJzAGaDUiAnwAjw9p_V2Vn9k8ezj63kuYA2j4ewCvm6hnjJAbAjNHGWmZuje-89V7bRwNVM37z79IG9L-Fjb9811jTmcDZ7mZYGsnhiXKIFVUEDLffzDSvWmOEVjyeLT3Sto2q9IblKXxceoLnTKt_9sPpQ9ZBNCWttVdxyFUtrl-RoKKJpVJewtinxsrx7rSW6WqfcV3lAwTBBTgqXyO5LAzhXleC3qoWBrv_sGK3caIYYMY35bMIxDOsSU"/>
+</div>
+<div class="lg:col-span-4 lg:-ml-20 lg:mt-20 z-10" id="contact">
+<div class="bg-surface-container-low p-10 border border-subtle shadow-2xl">
+<h3 class="serif-heading text-2xl mb-8 text-on-surface">Get a Quote</h3>
+<form class="space-y-4">
+<div class="grid grid-cols-2 gap-4">
+<div class="space-y-1">
+<label class="text-[10px] uppercase tracking-wider text-on-surface-variant font-bold">First Name *</label>
+<input class="w-full border-0 border-b border-primary bg-transparent px-0 py-2 focus:ring-0 text-sm placeholder:text-on-surface-variant/40" type="text"/>
+</div>
+<div class="space-y-1">
+<label class="text-[10px] uppercase tracking-wider text-on-surface-variant font-bold">Last Name *</label>
+<input class="w-full border-0 border-b border-primary bg-transparent px-0 py-2 focus:ring-0 text-sm placeholder:text-on-surface-variant/40" type="text"/>
+</div>
+</div>
+<div class="space-y-1">
+<label class="text-[10px] uppercase tracking-wider text-on-surface-variant font-bold">Email *</label>
+<input class="w-full border-0 border-b border-primary bg-transparent px-0 py-2 focus:ring-0 text-sm placeholder:text-on-surface-variant/40" type="email"/>
+</div>
+<div class="space-y-1">
+<label class="text-[10px] uppercase tracking-wider text-on-surface-variant font-bold">Phone</label>
+<input class="w-full border-0 border-b border-primary bg-transparent px-0 py-2 focus:ring-0 text-sm placeholder:text-on-surface-variant/40" type="tel"/>
+</div>
+<div class="space-y-1">
+<label class="text-[10px] uppercase tracking-wider text-on-surface-variant font-bold">Message</label>
+<textarea class="w-full border-0 border-b border-primary bg-transparent px-0 py-2 focus:ring-0 text-sm resize-none placeholder:text-on-surface-variant/40" rows="3"></textarea>
+</div>
+<button class="w-full bg-primary text-white py-4 mt-6 uppercase text-[10px] tracking-[0.3em] font-bold hover:bg-on-primary-fixed-variant transition-colors">Submit Request</button>
+</form>
+<div class="mt-8 pt-8 border-t border-subtle flex items-center justify-between">
+<div class="flex space-x-1 text-xs"><span class="text-primary">★</span><span class="text-primary">★</span><span class="text-primary">★</span><span class="text-primary">★</span><span class="text-primary">★</span><span class="ml-2 font-bold text-on-surface">5/5</span></div>
+<div class="text-[10px] uppercase tracking-widest text-on-surface-variant font-bold">Verified Expertise</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: Image & Form Section -->
+<!-- BEGIN: Services Grid -->
+<section class="py-32 px-6 lg:px-12 max-w-7xl mx-auto border-t border-subtle" id="services">
+<div class="mb-20">
+<p class="text-[10px] uppercase tracking-[0.3em] font-bold mb-4 text-primary">Core Capabilities</p>
+<h2 class="serif-heading text-4xl lg:text-6xl max-w-2xl text-on-surface">Mastery in Every Dimension.</h2>
+</div>
+<div class="space-y-32">
+<!-- Category 1: Infrastructure & Civil -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-5 order-2 lg:order-1">
+<div class="inline-block border-l-2 border-primary pl-6">
+<h3 class="text-[10px] uppercase tracking-widest mb-6 font-bold text-primary">Infrastructure &amp; Design</h3>
+<ul class="space-y-4">
+<li>
+<h4 class="serif-heading text-2xl text-on-surface">Turnkey Construction</h4>
+<p class="text-sm text-on-surface-variant mt-2 max-w-sm">From conception to completion, we manage every phase of your high-end project.</p>
+</li>
+<li>
+<h4 class="serif-heading text-2xl text-on-surface">Architectural Design</h4>
+<p class="text-sm text-on-surface-variant mt-2 max-w-sm">Precision engineering and aesthetic vision combined for unique structural challenges.</p>
+</li>
+<li>
+<h4 class="serif-heading text-2xl text-on-surface">Sustainable Engineering</h4>
+<p class="text-sm text-on-surface-variant mt-2 max-w-sm">Integrating modern green technologies with timeless architectural prestige.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="lg:col-span-7 order-1 lg:order-2">
+<img alt="Architectural Detail" class="w-full h-[500px] object-cover brightness-90 shadow-xl" src="https://lh3.googleusercontent.com/aida/ADBb0uhcAPns0nh3IVlhyy7I5f8WaBKUW5ANcmHXspY26j8UUg0-0tXzJ8OW4jQuKyQzbSUFdwnDIH75oqEOkXP5HeWgn4Cai2IjUGAtv97ZwbXyBiIt02QwvXntRt2Tb503WjomY6WfYmjblrxdpK9jFwUf0Qhr-qnOC1Oy2GjN_uChfGy34Ghm52g0HkvgdUTWaN0wSx4MC4t82PJiIY1D_jHk6xUivw3URSZf1Oi9qqISkNEAy0S5Mqlkdm8"/>
+</div>
+</div>
+<!-- Category 2: Structure & Commercial -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-7">
+<div class="grid grid-cols-2 gap-4">
+<div class="aspect-[3/4] bg-surface-container overflow-hidden">
+<img alt="Modern Structure" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPtm9h5deDJXkQyLF7sW6J3hjJZ3wxhd0Qn3NS_duPnDWXWsuKkiDEFzKA8CJTpEZPyr_J4ifkgMMAzo70kcDex5Y2w9gcdPUG718MnC-TH6fck1NzBoYdPGqVRZQ2oy9_-5CSzpAa7Qy1RZ8OhZUmurf0rdFx1MMB6zMQQJQdXw8Y0_4fW6fOGIDUoGYD48jIsJWP2hd2OP1YXEN_vUCjbMIbw57kgb1unhL8H8DkxmgiMnd1kDxgMHrz2OGUjzv546Q_vJ6go3I"/>
+</div>
+<div class="aspect-[3/4] bg-surface-container mt-12 overflow-hidden">
+<img alt="Modern Facade" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEP07qbmihKw9ldD0E8-JHI55dwsO_O_gEoLrh43LB7Uhn0mAnpVuD5TiptazkZKB4Do_h7pVPhSHoZ3RXLzJHfjqlBJsJEZHZkDUG-zHvEp-7CRtNsiz0zZ0t7p2j6SmunhBAbnLBF20gzgKH9q7UGOvWV4NRwNhD2WZVAqZgKDHUZ6dywPOj0FnTnOEV1NTeSgoCvGPekNr3GFr36myKICffA3FQAOQXNC98AuGMtufM0jmd6rshn7UdmWPZ_BxYYxJyhyuyNno"/>
+</div>
+</div>
+</div>
+<div class="lg:col-span-5">
+<div class="inline-block border-l-2 border-primary pl-6">
+<h3 class="text-[10px] uppercase tracking-widest mb-6 font-bold text-primary">Luxury Renovations</h3>
+<ul class="space-y-4">
+<li>
+<h4 class="serif-heading text-2xl text-on-surface">High-End Renovation</h4>
+<p class="text-sm text-on-surface-variant mt-2 max-w-sm">Revitalizing existing structures with meticulous attention to detail and premium materiality.</p>
+</li>
+<li>
+<h4 class="serif-heading text-2xl text-on-surface">Commercial Spaces</h4>
+<p class="text-sm text-on-surface-variant mt-2 max-w-sm">Designing high-performance retail and office environments for impact and longevity.</p>
+</li>
+<li>
+<h4 class="serif-heading text-2xl text-on-surface">Bespoke Residential</h4>
+<p class="text-sm text-on-surface-variant mt-2 max-w-sm">Crafting custom living environments tailored to the unique lifestyle of our clients.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- Category 3: Specialized Services -->
+<div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
+<div class="p-10 border border-subtle bg-surface-container-lowest">
+<h3 class="text-[10px] uppercase tracking-widest mb-6 font-bold text-primary">Pre-Build</h3>
+<p class="serif-heading text-xl mb-4 text-on-surface">Project Planning</p>
+<p class="text-sm text-on-surface-variant leading-relaxed">Feasibility studies and strategic engineering to ensure a seamless build process.</p>
+</div>
+<div class="p-10 border border-subtle bg-surface-container-lowest">
+<h3 class="text-[10px] uppercase tracking-widest mb-6 font-bold text-primary">Excellence</h3>
+<p class="serif-heading text-xl mb-4 text-on-surface">Turnkey Delivery</p>
+<p class="text-sm text-on-surface-variant leading-relaxed">Full accountability and expert coordination from groundbreaking to the final reveal.</p>
+</div>
+<div class="p-10 border border-subtle bg-surface-container-lowest">
+<h3 class="text-[10px] uppercase tracking-widest mb-6 font-bold text-primary">Innovation</h3>
+<p class="serif-heading text-xl mb-4 text-on-surface">Green Building</p>
+<p class="text-sm text-on-surface-variant leading-relaxed">Pioneering sustainable practices that define the future of high-end architecture.</p>
+</div>
+<div class="bg-primary p-10 flex items-center justify-center">
+<button class="text-white text-[10px] uppercase tracking-[0.3em] font-bold border-b border-white pb-1 hover:border-surface hover:text-surface transition-all">Discuss Your Build</button>
+</div>
+</div>
+</div>
+</section>
+<!-- END: Services Grid -->
+<!-- BEGIN: About Us -->
+<section class="bg-surface-container-low py-32 border-y border-subtle" id="about">
+<div class="max-w-7xl mx-auto px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+<div>
+<p class="text-[10px] uppercase tracking-[0.3em] font-bold mb-6 text-primary">About Bati Vert</p>
+<h2 class="serif-heading text-4xl leading-tight mb-8 text-on-surface">Redefining high-end construction through sustainable vision and turnkey mastery.</h2>
+<p class="text-on-surface-variant text-lg mb-10 leading-relaxed">BATI VERT CONSTRUCTION INC. specializes in delivering prestigious architectural projects that balance luxury with environmental responsibility. Our approach is defined by a commitment to transparency, elite craftsmanship, and a hands-on methodology that ensures every renovation and new build becomes a landmark of quality.</p>
+<button class="px-10 py-4 border border-primary text-primary uppercase text-[10px] tracking-[0.3em] font-bold hover:bg-primary hover:text-white transition-all">Our Philosophy</button>
+</div>
+<div class="flex justify-center">
+<div class="w-full max-w-md aspect-square relative opacity-40">
+<img alt="Architectural diagram of a modern building" class="w-full h-full object-contain opacity-80 transition-opacity hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqc1YeNarpciIkVN8QzfKzMLd1TlpeXPVCNXgBmgH6QFdPkEKJGlzJGu93zJihA9MQ4WxUeMndS_6WuF2aJPfFf-pcbeQDQlna4PgwowpuEfdLBg4EZy-nL_uxqTgeywsKTFplbAytwwTYGdxkOLLsGVLdcWBxSjW4dM2DkxyRrVJK8xx4JfKefuA8tssHYZA-p93xpw2K07Oyyd8qqJ6bI6FHAfyU568NsX45r2AeqNRwuCyf1Vhyb2unzneAC6l9g_MWjcaDAsQ"/>
+</div>
+</div>
+</div>
+</section>
+<!-- END: About Us -->
+<!-- BEGIN: Statistics -->
+<section class="py-32 px-6 lg:px-12 max-w-7xl mx-auto">
+<div class="mb-16">
+<p class="text-[10px] uppercase tracking-[0.3em] font-bold mb-4 text-primary">By the Numbers</p>
+<h2 class="serif-heading text-4xl text-on-surface">Sustainable Foundations, Solid Results</h2>
+</div>
+<div class="grid grid-cols-2 lg:grid-cols-4 border-t border-subtle">
+<div class="p-10 border-r border-subtle">
+<div class="text-5xl serif-heading mb-4 text-on-surface">15+</div>
+<div class="text-[10px] uppercase tracking-widest text-on-surface-variant font-bold">Years of Excellence</div>
+</div>
+<div class="p-10 border-r border-subtle">
+<div class="text-5xl serif-heading mb-4 text-on-surface">100%</div>
+<div class="text-[10px] uppercase tracking-widest text-on-surface-variant font-bold">Turnkey Delivery</div>
+</div>
+<div class="p-10 border-r border-subtle">
+<div class="text-5xl serif-heading mb-4 text-on-surface">400+</div>
+<div class="text-[10px] uppercase tracking-widest text-on-surface-variant font-bold">Renovations Completed</div>
+</div>
+<div class="p-10">
+<div class="text-5xl serif-heading mb-4 text-on-surface">25</div>
+<div class="text-[10px] uppercase tracking-widest text-on-surface-variant font-bold">Design Partners</div>
+</div>
+</div>
+</section>
+<!-- END: Statistics -->
+<!-- BEGIN: Projects Showcase -->
+<section class="py-24 px-6 lg:px-12 max-w-7xl mx-auto" id="projects">
+<div class="flex flex-col lg:flex-row justify-between items-end mb-16 gap-8">
+<div>
+<p class="text-[10px] uppercase tracking-[0.3em] font-bold mb-4 text-primary">Portfolio</p>
+<h2 class="serif-heading text-4xl text-on-surface">Excellence in Every Detail</h2>
+</div>
+<p class="text-sm text-on-surface-variant max-w-md">Browse our selected works that redefine modern living through sustainable architecture and premium renovations.</p>
+</div>
+<div class="flex overflow-x-auto pb-8 gap-8 snap-x no-scrollbar">
+<div class="min-w-[300px] md:flex-1 snap-start aspect-[3/4]">
+<img alt="Modern sustainable building" class="w-full h-full object-cover transition-all" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEP07qbmihKw9ldD0E8-JHI55dwsO_O_gEoLrh43LB7Uhn0mAnpVuD5TiptazkZKB4Do_h7pVPhSHoZ3RXLzJHfjqlBJsJEZHZkDUG-zHvEp-7CRtNsiz0zZ0t7p2j6SmunhBAbnLBF20gzgKH9q7UGOvWV4NRwNhD2WZVAqZgKDHUZ6dywPOj0FnTnOEV1NTeSgoCvGPekNr3GFr36myKICffA3FQAOQXNC98AuGMtufM0jmd6rshn7UdmWPZ_BxYYxJyhyuyNno"/>
+</div>
+<div class="min-w-[300px] md:flex-1 snap-start aspect-[3/4]">
+<img alt="Luxury renovation detail" class="w-full h-full object-cover transition-all" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPtm9h5deDJXkQyLF7sW6J3hjJZ3wxhd0Qn3NS_duPnDWXWsuKkiDEFzKA8CJTpEZPyr_J4ifkgMMAzo70kcDex5Y2w9gcdPUG718MnC-TH6fck1NzBoYdPGqVRZQ2oy9_-5CSzpAa7Qy1RZ8OhZUmurf0rdFx1MMB6zMQQJQdXw8Y0_4fW6fOGIDUoGYD48jIsJWP2hd2OP1YXEN_vUCjbMIbw57kgb1unhL8H8DkxmgiMnd1kDxgMHrz2OGUjzv546Q_vJ6go3I"/>
+</div>
+<div class="min-w-[300px] md:flex-1 snap-start aspect-[3/4]">
+<img alt="High-end architectural interior" class="w-full h-full object-cover transition-all" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_XqRe8kf6gBA_a8JbSQIhQkg96uXVleeLYLyePnwBFbzHeCgPPtv4tMXwZr9E02Z6wmLJHB9gN5U0hiAIu1OlGqxIwRZYj2qTV-hC_KQUJCIIFL8BLr8Mtg_mu4jk25qQTgJkSP1JhjeLd2hsk0ywrw8iHXxsQqLcPekcW1IRE6k2L4Ml0dmoyhxjQD3uggp5CGU5TxElCVigl5wE4JH7IX-pREOGH5qJwiyJgi58E80fAaA11KQZQJ3TK_kvUT--r7dcMoeS0Y0"/>
+</div>
+</div>
+</section>
+<!-- END: Projects Showcase -->
+<!-- BEGIN: Clients -->
+<section class="py-24 px-6 lg:px-12 max-w-7xl mx-auto">
+<div class="mb-16">
+<p class="text-[10px] uppercase tracking-[0.3em] font-bold mb-4 text-primary">Our Partners</p>
+<h2 class="serif-heading text-4xl text-on-surface">Building Strong Relationships</h2>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 border-t border-subtle">
+<div class="border-b border-r border-subtle flex items-center justify-center p-12 opacity-40 hover:opacity-100 transition-opacity">
+<span class="font-bold tracking-tighter text-xl text-on-surface">PRESTIGE</span>
+</div>
+<div class="border-b border-r border-subtle flex items-center justify-center p-12 opacity-40 hover:opacity-100 transition-opacity">
+<span class="font-bold tracking-tighter text-xl text-on-surface">ENVIRON.</span>
+</div>
+<div class="border-b border-r border-subtle flex items-center justify-center p-12 opacity-40 hover:opacity-100 transition-opacity">
+<span class="font-bold tracking-tighter text-xl text-on-surface">LITHOS</span>
+</div>
+<div class="border-b border-subtle flex items-center justify-center p-12 opacity-40 hover:opacity-100 transition-opacity">
+<span class="font-bold tracking-tighter text-xl text-on-surface">AXIS</span>
+</div>
+</div>
+</section>
+<!-- END: Clients -->
+</main>
+<!-- BEGIN: Footer CTA -->
+<section class="py-32 px-6 lg:px-12 bg-primary text-white" id="ready-to-build">
+<div class="max-w-7xl mx-auto text-center">
+<h2 class="serif-heading text-4xl lg:text-6xl mb-12">Ready to build your sustainable masterpiece?</h2>
+<a class="inline-block px-12 py-4 border border-white text-white uppercase text-[10px] tracking-[0.4em] font-bold hover:bg-white hover:text-primary transition-all" href="#contact">
+        Get a Quote
+      </a>
+</div>
+</section>
+<!-- END: Footer CTA -->
+<!-- BEGIN: Main Footer -->
+<footer class="bg-surface pt-32 pb-12 border-t border-subtle">
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-16 mb-24">
+<div class="lg:col-span-6">
+<div class="text-6xl font-bold tracking-tight serif-heading mb-12 uppercase text-on-surface">BATI VERT</div>
+<div class="grid grid-cols-2 gap-12">
+<div>
+<p class="text-[10px] uppercase tracking-widest text-on-surface-variant mb-4 font-bold">Socials</p>
+<ul class="space-y-2 text-[10px] uppercase tracking-[0.2em] font-semibold">
+<li><a class="hover:text-primary transition-colors" href="#">Instagram</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">LinkedIn</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Facebook</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="lg:col-span-3">
+<p class="text-[10px] uppercase tracking-widest text-on-surface-variant mb-4 font-bold">Head Office</p>
+<p class="text-sm leading-relaxed text-on-surface-variant">
+            241 Rue Maurice Richard<br/>
+            Vaudreuil, QC<br/>
+            J7V0A6, Canada
+          </p>
+</div>
+<div class="lg:col-span-3">
+<p class="text-[10px] uppercase tracking-widest text-on-surface-variant mb-4 font-bold">Inquiries</p>
+<p class="text-sm leading-relaxed text-on-surface-variant mb-4">
+            For project inquiries please contact:<br/>
+<a class="text-primary underline font-medium" href="mailto:hello@bativert.com">hello@bativert.com</a>
+</p>
+<p class="text-sm text-on-surface-variant">+1 438 992 2468</p>
+</div>
+</div>
+<div class="pt-8 border-t border-subtle flex flex-col md:flex-row justify-between items-center text-[10px] uppercase tracking-widest text-on-surface-variant font-bold">
+<p>© 2024 BATI VERT CONSTRUCTION INC. All rights reserved.</p>
+<div class="flex space-x-8 mt-4 md:mt-0">
+<a class="hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-primary transition-colors" href="#">Terms of Service</a>
+<a class="hover:text-primary transition-colors" href="#">Cookie Policy</a>
+</div>
+</div>
+</div>
+</footer>
+<!-- END: Footer -->
+</body></html>

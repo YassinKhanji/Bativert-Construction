@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Services Overview | BATI VERT</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;700&amp;family=Work+Sans:wght@400;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24;
+        }
+        .text-label-caps { font-size: 12px; line-height: 16px; letter-spacing: 0.1em; font-weight: 600; }
+        .font-label-caps { font-family: 'Work Sans', sans-serif; }
+        
+        /* Updated Architectural Green Accent (#1A2821) */
+        .border-accent-green { border-color: #1A2821; }
+        .text-accent-green { color: #1A2821; }
+        .bg-accent-green { background-color: #1A2821; }
+        
+        /* Half-frame utility */
+        .half-frame {
+            position: relative;
+        }
+        .half-frame::before {
+            content: '';
+            position: absolute;
+            top: -12px;
+            left: -12px;
+            width: 40%;
+            height: 40%;
+            border-top: 1px solid #1A2821;
+            border-left: 1px solid #1A2821;
+            pointer-events: none;
+            z-index: 10;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-tertiary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "on-surface": "#191c18",
+                        "on-primary-fixed-variant": "#1f5124",
+                        "tertiary-fixed-dim": "#ffb1c8",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-container": "#d4859d",
+                        "inverse-on-surface": "#f0f1ea",
+                        "surface-container-highest": "#e1e3dc",
+                        "inverse-primary": "#9dd49a",
+                        "outline-variant": "#c1c9bc",
+                        secondary: "#4f644d",
+                        "on-secondary-fixed-variant": "#384c36",
+                        "on-primary": "#ffffff",
+                        "on-tertiary-fixed-variant": "#713248",
+                        surface: "#f8faf3",
+                        "surface-container-low": "#f2f4ed",
+                        error: "#ba1a1a",
+                        "tertiary-container": "#591f35",
+                        "surface-tint": "#1A2821",
+                        "secondary-fixed-dim": "#b6cdb1",
+                        "surface-container-high": "#e7e9e2",
+                        "primary-container": "#1A2821",
+                        outline: "#72796f",
+                        "on-primary-fixed": "#002105",
+                        "tertiary-fixed": "#ffd9e2",
+                        "on-secondary-container": "#536851",
+                        "inverse-surface": "#2e312d",
+                        "secondary-fixed": "#d2e9cc",
+                        "surface-container": "#edefe8",
+                        primary: "#1A2821",
+                        "on-secondary-fixed": "#0d200e",
+                        "surface-variant": "#e1e3dc",
+                        "primary-fixed": "#b9f1b4",
+                        "surface-dim": "#d9dbd4",
+                        "on-secondary": "#ffffff",
+                        "secondary-container": "#cfe6c9",
+                        tertiary: "#3e0920",
+                        "on-tertiary-fixed": "#3a061d",
+                        "on-error-container": "#93000a",
+                        "on-error": "#ffffff",
+                        "on-background": "#191c18",
+                        "on-surface-variant": "#41493f",
+                        "surface-bright": "#f8faf3",
+                        "primary-fixed-dim": "#9dd49a",
+                        "on-primary-container": "#74a872",
+                        background: "#f8faf3",
+                        "accent-green": "#1A2821"
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.125rem",
+                        lg: "0.25rem",
+                        xl: "0.5rem",
+                        full: "0.75rem"
+                    },
+                    spacing: {
+                        "margin-mobile": "20px",
+                        "section-gap-mobile": "80px",
+                        "margin-desktop": "64px",
+                        base: "8px",
+                        "section-gap-desktop": "160px",
+                        gutter: "24px"
+                    },
+                    fontFamily: {
+                        "label-caps": ["Work Sans"],
+                        "body-md": ["Work Sans"],
+                        "body-lg": ["Work Sans"],
+                        "headline-lg-mobile": ["Libre Caslon Text"],
+                        "display-lg": ["Libre Caslon Text"],
+                        "headline-lg": ["Libre Caslon Text"],
+                        "headline-md": ["Libre Caslon Text"],
+                        headline: ["Libre Caslon Text"],
+                        display: ["Libre Caslon Text"],
+                        body: ["Work Sans"],
+                        label: ["Work Sans"]
+                    },
+                    fontSize: {
+                        "label-caps": ["12px", {lineHeight: "16px", letterSpacing: "0.1em", fontWeight: "600"}],
+                        "body-md": ["16px", {lineHeight: "24px", fontWeight: "400"}],
+                        "body-lg": ["18px", {lineHeight: "28px", fontWeight: "400"}],
+                        "headline-lg-mobile": ["32px", {lineHeight: "40px", fontWeight: "400"}],
+                        "display-lg": ["72px", {lineHeight: "80px", letterSpacing: "-0.02em", fontWeight: "400"}],
+                        "headline-lg": ["48px", {lineHeight: "56px", fontWeight: "400"}],
+                        "headline-md": ["32px", {lineHeight: "40px", fontWeight: "400"}]
+                    }
+                }
+            }
+        };
+    </script>
+</head>
+<body class="bg-surface text-on-surface font-body-md selection:bg-accent-green selection:text-white">
+<!-- Top Navigation -->
+<header class="w-full top-0 sticky z-50 bg-surface border-b border-outline-variant">
+<nav class="flex justify-between items-center px-margin-desktop py-base max-w-[1440px] mx-auto">
+<a class="text-headline-md font-headline-md tracking-tighter text-accent-green" href="/">BATI VERT</a>
+<div class="hidden md:flex items-center gap-gutter">
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-accent-green transition-colors duration-300" href="#">About Us</a>
+<a class="font-label-caps text-label-caps text-accent-green border-b border-accent-green pb-1 transition-colors duration-300" href="#">Services</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-accent-green transition-colors duration-300" href="#">Projects</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-accent-green transition-colors duration-300" href="#">Contact</a>
+<button class="ml-gutter font-label-caps text-label-caps border border-accent-green text-accent-green px-6 py-2 cursor-pointer transition-opacity active:opacity-70 hover:bg-accent-green hover:text-white">Inquire</button>
+</div>
+<!-- Mobile Menu Toggle -->
+<button class="md:hidden material-symbols-outlined text-accent-green">menu</button>
+</nav>
+</header>
+<main class="max-w-[1440px] mx-auto overflow-hidden">
+<!-- Hero Section -->
+<section class="px-margin-desktop pt-section-gap-mobile md:pt-section-gap-desktop pb-section-gap-mobile border-b border-accent-green/20">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<div class="md:col-span-8">
+<p class="font-label-caps text-label-caps text-accent-green mb-base">CORE CAPABILITIES</p>
+<h1 class="font-display-lg text-display-lg mb-8 leading-tight text-on-surface">Crafting Spaces <br/>With Precision.</h1>
+</div>
+<div class="md:col-span-4 flex flex-col justify-end relative">
+<div class="hidden md:block absolute left-[-24px] top-0 bottom-0 w-px bg-accent-green/10"></div>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-sm">
+                    From foundational integrity to luxury renovations, BATI VERT delivers turnkey solutions that transform residential landscapes with unmatched expertise.
+                </p>
+</div>
+</div>
+</section>
+<!-- Service Section 1: Turnkey & Structural -->
+<section class="px-margin-desktop py-section-gap-desktop">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-start">
+<div class="md:col-span-7 order-2 md:order-1">
+<div class="relative half-frame">
+<div class="relative overflow-hidden aspect-[4/3]">
+<img alt="A high-end home addition project under construction, showing a seamless blend between an existing brick structure and a modern wooden extension. Professional scaffolding and clean job site management are visible." class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQawX0F4z8Nqqawp540_NMRIxunu1vDKkkh1FThU_Z-aFZcSoAdLCreqoJU64YMMLJnLZm0hJ0wDYWfCFJcHWIO7o2WX8raRGs-7bP1IkiTDTHB0YbV4NpeBOWVTP9ChUyGizTF9c3A-pRsvL6pZFrf2DsI9ZRYY4qPRd65TqYCKP4SiZo783BkfrAcC9xdtEEKD0Cp3XICinQRSWJIhWtqzAharCpDpknAqNkOri1X8GN-9pdL_hU0bUEVxgAcUO_bUc4nW6CTK0"/>
+</div>
+</div>
+</div>
+<div class="md:col-span-4 md:col-start-9 order-1 md:order-2 flex flex-col h-full">
+<span class="material-symbols-outlined text-[48px] text-accent-green mb-8" data-icon="home_work">home_work</span>
+<h2 class="font-headline-lg text-headline-lg mb-6 text-on-surface">Turnkey Solutions &amp; Extensions</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-12">
+                    Comprehensive management for ambitious residential expansions. We handle the entire lifecycle of your project, ensuring structural integrity and aesthetic continuity.
+                </p>
+<div class="mt-auto">
+<p class="font-label-caps text-label-caps text-accent-green border-b border-accent-green/20 pb-2 mb-6">CORE OFFERINGS</p>
+<ul class="space-y-4">
+<li class="flex items-center gap-4">
+<span class="w-1.5 h-1.5 bg-accent-green rounded-full"></span>
+<span class="font-body-md text-on-surface">Bespoke Home Addition</span>
+</li>
+<li class="flex items-center gap-4">
+<span class="w-1.5 h-1.5 bg-accent-green rounded-full"></span>
+<span class="font-body-md text-on-surface">Strategic House Extension</span>
+</li>
+<li class="flex items-center gap-4">
+<span class="w-1.5 h-1.5 bg-accent-green rounded-full"></span>
+<span class="font-body-md text-on-surface">Complete General Renovation</span>
+</li>
+<li class="flex items-center gap-4">
+<span class="w-1.5 h-1.5 bg-accent-green rounded-full"></span>
+<span class="font-body-md text-on-surface">New Residential Construction</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- Divider -->
+<div class="mx-margin-desktop border-t border-accent-green/10"></div>
+<!-- Service Section 2: Specialized Trades -->
+<section class="px-margin-desktop py-section-gap-desktop">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-start">
+<div class="md:col-span-4 flex flex-col h-full mb-12 md:mb-0 relative">
+<div class="hidden md:block absolute right-[-24px] top-0 bottom-0 w-px bg-accent-green/10"></div>
+<span class="material-symbols-outlined text-[48px] text-accent-green mb-8" data-icon="handyman">handyman</span>
+<h2 class="font-headline-lg text-headline-lg mb-6 text-on-surface">Specialized Trades</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-12">
+                    Precision execution in the core disciplines of construction. Our in-house specialists ensure that every layer of your home—from the soil to the sky—is built to last.
+                </p>
+<div class="mt-auto">
+<p class="font-label-caps text-label-caps text-accent-green border-b border-accent-green/20 pb-2 mb-6">TRADES</p>
+<ul class="space-y-4">
+<li class="flex items-center gap-4">
+<span class="w-1.5 h-1.5 bg-accent-green rounded-full"></span>
+<span class="font-body-md text-on-surface">Critical Foundation Work</span>
+</li>
+<li class="flex items-center gap-4">
+<span class="w-1.5 h-1.5 bg-accent-green rounded-full"></span>
+<span class="font-body-md text-on-surface">Premium Roofing Systems</span>
+</li>
+<li class="flex items-center gap-4">
+<span class="w-1.5 h-1.5 bg-accent-green rounded-full"></span>
+<span class="font-body-md text-on-surface">Custom Concrete &amp; Masonry</span>
+</li>
+<li class="flex items-center gap-4">
+<span class="w-1.5 h-1.5 bg-accent-green rounded-full"></span>
+<span class="font-body-md text-on-surface">Architectural Carpentry</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="md:col-span-7 md:col-start-6">
+<div class="relative half-frame">
+<div class="relative overflow-hidden aspect-[16/10]">
+<img alt="Close-up of high-quality roofing materials being installed on a modern residence, showcasing professional craftsmanship and attention to detail during the construction process." class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD15mOu1m3G7L4D80AGaBEPebc16ILS-VfJlvotORQ72ktCdBtLmxZtfuoFso6oWyj6Ggd199W5Ws2Qpp4koM8BimhWPUdzlKKValJVQu_BxxEkfLpKat0QwMDMkmv4OZzRYosPS_qqTsSzPxbbitpevnJQ0lTggVr1S0B1VCBZfmqG_fFPm5zVcwhk0QO7joq-Le8FIUD1DewHgHhy0dFFtLW468wpXPAM2A9sieOZ5l9Za5lV0l-AwhFfCFoi6JF6G20zk5EVwoU"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Divider -->
+<div class="mx-margin-desktop border-t border-accent-green/10"></div>
+<!-- Service Section 3: Engineering & Design -->
+<section class="px-margin-desktop py-section-gap-desktop">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-start">
+<div class="md:col-span-8">
+<div class="relative half-frame">
+<div class="relative overflow-hidden aspect-[21/9]">
+<img alt="An architectural blueprint overlaid with a site survey, showing precise technical measurements and structural planning for a residential project." class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_7dwOpaPG7tDNr1SIzXKFZ5I6riR4_zJxUoTBrTDIgqm7ZJnhJ5YoJHKv43SkftW8yMr2gj5_YFUjQuktT8qktcesCjip048jJCd3fATiGoJnPnD6g3vZeN-xQgYP-dmhy_M_ROHpJWVV2UguIxvcl4mM6x55ncadUnq2gwUB50OcCk446PGSgAp3veXA0l49YaJRJMACyw5d9jtlr3TWQdwyK1HhucI1srwD9leBEj2zMNEhtOyqDoFuA9tLAj4C73JIScNB3m0"/>
+</div>
+</div>
+</div>
+<div class="md:col-span-4 mt-12 md:mt-0 relative">
+<div class="pl-0 md:pl-gutter flex flex-col">
+<div class="hidden md:block absolute left-0 top-0 bottom-0 w-px bg-accent-green/10"></div>
+<span class="material-symbols-outlined text-[48px] text-accent-green mb-8" data-icon="architecture">architecture</span>
+<h2 class="font-headline-lg text-headline-lg mb-6 text-on-surface">Engineering &amp; Design</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-12">
+                        The technical backbone of BATI VERT. We bridge the gap between creative architectural vision and rigorous structural engineering standards.
+                    </p>
+<div class="bg-surface-container-low p-8 border-l border-accent-green">
+<p class="font-label-caps text-label-caps text-accent-green mb-4">CAPABILITIES</p>
+<div class="grid grid-cols-1 gap-6">
+<div>
+<h4 class="font-label-caps text-[11px] text-accent-green mb-1">PLANNING</h4>
+<p class="font-body-md text-on-surface">Architectural Drafting &amp; Permit Mgmt</p>
+</div>
+<div class="border-t border-accent-green/10 pt-4">
+<h4 class="font-label-caps text-[11px] text-accent-green mb-1">STRUCTURAL</h4>
+<p class="font-body-md text-on-surface">Residential Load Analysis</p>
+</div>
+<div class="border-t border-accent-green/10 pt-4">
+<h4 class="font-label-caps text-[11px] text-accent-green mb-1">CONSULT</h4>
+<p class="font-body-md text-on-surface">Site Feasibility &amp; Design Consultation</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Call to Action -->
+<section class="bg-accent-green text-white px-margin-desktop py-section-gap-desktop text-center">
+<div class="max-w-2xl mx-auto">
+<p class="font-label-caps text-label-caps text-surface/80 mb-6">READY TO COMMENCE?</p>
+<h2 class="font-headline-lg text-headline-lg mb-10">Start your transformation with BATI VERT today.</h2>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<button class="font-label-caps text-label-caps bg-white text-accent-green px-10 py-4 hover:opacity-90 transition-all duration-300">Get a Quote</button>
+<button class="font-label-caps text-label-caps border border-white px-10 py-4 hover:bg-white hover:text-accent-green transition-all duration-300">Request Consultation</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full bg-surface border-t border-outline-variant">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter px-margin-desktop py-section-gap-mobile max-w-[1440px] mx-auto">
+<div class="md:col-span-4">
+<h3 class="font-headline-md text-headline-md text-accent-green mb-6">BATI VERT</h3>
+<p class="font-body-md text-on-surface-variant max-w-xs">
+                Excellence in residential renovation and construction, serving Vaudreuil and surrounding areas with integrity.
+            </p>
+<div class="mt-8 space-y-2">
+<p class="font-body-md text-on-surface-variant">241 Rue Maurice Richard, Vaudreuil</p>
+<p class="font-body-md text-accent-green font-semibold">+1 438 992 2468</p>
+</div>
+</div>
+<div class="md:col-span-2">
+<h4 class="font-label-caps text-label-caps mb-6 text-accent-green">NAVIGATION</h4>
+<ul class="space-y-3">
+<li><a class="font-body-md text-on-surface-variant hover:text-accent-green transition-colors" href="#">Home</a></li>
+<li><a class="font-body-md text-on-surface-variant hover:text-accent-green transition-colors" href="#">Services</a></li>
+<li><a class="font-body-md text-on-surface-variant hover:text-accent-green transition-colors" href="#">Projects</a></li>
+<li><a class="font-body-md text-on-surface-variant hover:text-accent-green transition-colors" href="#">Contact</a></li>
+</ul>
+</div>
+<div class="md:col-span-2">
+<h4 class="font-label-caps text-label-caps mb-6 text-accent-green">LEGAL</h4>
+<ul class="space-y-3">
+<li><a class="font-body-md text-on-surface-variant hover:text-accent-green transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="font-body-md text-on-surface-variant hover:text-accent-green transition-colors" href="#">Terms of Service</a></li>
+<li><a class="font-body-md text-on-surface-variant hover:text-accent-green transition-colors" href="#">RBQ License</a></li>
+<li><a class="font-body-md text-on-surface-variant hover:text-accent-green transition-colors" href="#">Careers</a></li>
+</ul>
+</div>
+<div class="md:col-span-4">
+<h4 class="font-label-caps text-label-caps mb-6 text-accent-green">CONNECT</h4>
+<div class="flex gap-4">
+<a class="material-symbols-outlined text-on-surface-variant hover:text-accent-green" href="#">language</a>
+<a class="material-symbols-outlined text-on-surface-variant hover:text-accent-green" href="mailto:info@bativert.com">mail</a>
+<a class="material-symbols-outlined text-on-surface-variant hover:text-accent-green" href="#">location_on</a>
+</div>
+<p class="mt-8 font-label-caps text-[10px] text-on-surface-variant uppercase tracking-[0.2em]">
+                © 2024 BATI VERT CONSTRUCTION &amp; RÉNOVATION
+            </p>
+</div>
+</div>
+</footer>
+</body></html>

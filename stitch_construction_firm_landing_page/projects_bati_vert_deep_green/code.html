@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Projects Portfolio | BATI VERT</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&amp;family=Work+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-tertiary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "on-surface": "#191c18",
+                        "on-primary-fixed-variant": "#1f5124",
+                        "tertiary-fixed-dim": "#ffb1c8",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-container": "#d4859d",
+                        "inverse-on-surface": "#f0f2ea",
+                        "surface-container-highest": "#e1e3dc",
+                        "inverse-primary": "#9dd499",
+                        "outline-variant": "#c1c9bc",
+                        secondary: "#4f644d",
+                        "on-secondary-fixed-variant": "#384c37",
+                        "on-primary": "#ffffff",
+                        "on-tertiary-fixed-variant": "#713248",
+                        surface: "#f8faf3",
+                        "surface-container-low": "#f2f4ed",
+                        error: "#ba1a1a",
+                        "tertiary-container": "#591f35",
+                        "surface-tint": "#1A2821",
+                        "secondary-fixed-dim": "#b6cdb1",
+                        "surface-container-high": "#e7e9e2",
+                        "primary-container": "#1A2821",
+                        outline: "#72796f",
+                        "on-primary-fixed": "#002105",
+                        "tertiary-fixed": "#ffd9e2",
+                        "on-secondary-container": "#556a53",
+                        "inverse-surface": "#2e312c",
+                        "secondary-fixed": "#d2e9cc",
+                        "surface-container": "#edefe7",
+                        primary: "#1A2821",
+                        "on-secondary-fixed": "#0d200e",
+                        "surface-variant": "#e1e3dc",
+                        "primary-fixed": "#b8f1b4",
+                        "surface-dim": "#d9dbd4",
+                        "on-secondary": "#ffffff",
+                        "secondary-container": "#d2e9cc",
+                        tertiary: "#3e0920",
+                        "on-tertiary-fixed": "#3a061d",
+                        "on-error-container": "#93000a",
+                        "on-error": "#ffffff",
+                        "on-background": "#191c18",
+                        "on-surface-variant": "#41493f",
+                        "surface-bright": "#f8faf3",
+                        "primary-fixed-dim": "#9dd499",
+                        "on-primary-container": "#1A2821",
+                        background: "#f8faf3",
+                        "architectural-green": "#1A2821"
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.125rem",
+                        lg: "0.25rem",
+                        xl: "0.5rem",
+                        full: "0.75rem"
+                    },
+                    spacing: {
+                        "margin-mobile": "20px",
+                        "section-gap-mobile": "80px",
+                        "margin-desktop": "64px",
+                        base: "8px",
+                        "section-gap-desktop": "160px",
+                        gutter: "24px"
+                    },
+                    fontFamily: {
+                        "label-caps": ["Work Sans"],
+                        "body-md": ["Work Sans"],
+                        "body-lg": ["Work Sans"],
+                        "headline-lg-mobile": ["Libre Caslon Text"],
+                        "display-lg": ["Libre Caslon Text"],
+                        "headline-lg": ["Libre Caslon Text"],
+                        "headline-md": ["Libre Caslon Text"],
+                        headline: ["Libre Caslon Text"],
+                        display: ["Libre Caslon Text"],
+                        body: ["Work Sans"],
+                        label: ["Work Sans"]
+                    },
+                    fontSize: {
+                        "label-caps": ["12px", {lineHeight: "16px", letterSpacing: "0.1em", fontWeight: "600"}],
+                        "body-md": ["16px", {lineHeight: "24px", fontWeight: "400"}],
+                        "body-lg": ["18px", {lineHeight: "28px", fontWeight: "400"}],
+                        "headline-lg-mobile": ["32px", {lineHeight: "40px", fontWeight: "400"}],
+                        "display-lg": ["72px", {lineHeight: "80px", letterSpacing: "-0.02em", fontWeight: "400"}],
+                        "headline-lg": ["48px", {lineHeight: "56px", fontWeight: "400"}],
+                        "headline-md": ["32px", {lineHeight: "40px", fontWeight: "400"}]
+                    }
+                }
+            }
+        };
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .half-frame {
+            border-bottom: 1px solid #1A2821;
+            border-right: 1px solid #1A2821;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-background font-body-md antialiased">
+<!-- TopNavBar -->
+<nav class="w-full top-0 sticky bg-surface border-b border-outline-variant z-50">
+<div class="flex justify-between items-center px-margin-desktop py-base max-w-[1440px] mx-auto">
+<div class="text-headline-md font-headline-md tracking-tighter text-primary">BATI VERT</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-architectural-green transition-colors duration-300" href="#">About Us</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-architectural-green transition-colors duration-300" href="#">Services</a>
+<a class="font-label-caps text-label-caps text-architectural-green border-b border-architectural-green pb-1 transition-colors duration-300" href="#">Projects</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-architectural-green transition-colors duration-300" href="#">Contact</a>
+</div>
+<button class="font-label-caps text-label-caps px-6 py-3 border border-primary text-primary hover:bg-primary hover:text-on-primary transition-all duration-300 uppercase">
+                Inquire
+            </button>
+</div>
+</nav>
+<main class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop">
+<!-- Hero / Intro Section -->
+<header class="pt-24 pb-16 md:pt-32 md:pb-24 max-w-4xl">
+<div class="inline-block mb-4">
+<span class="font-label-caps text-label-caps text-architectural-green block">PORTFOLIO</span>
+<div class="h-[1px] w-full bg-architectural-green mt-1"></div>
+</div>
+<h1 class="font-headline-lg text-headline-lg md:text-display-lg md:font-display-lg leading-tight mb-8 text-on-surface">
+                Structures Built for <br class="hidden md:block"/><span class="italic">Generational</span> Excellence.
+            </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+                A curation of high-quality construction and prestige renovations across Quebec. From the vibrant streets of Montreal to the expanding landscapes of Laval and Montérégie, BATI VERT defines modern structural integrity.
+            </p>
+<button class="mt-8 font-label-caps text-label-caps px-8 py-4 bg-architectural-green text-on-primary hover:bg-opacity-90 transition-all duration-300 uppercase tracking-widest">
+                Get a Quote
+            </button>
+</header>
+<!-- Project Filter -->
+<div class="flex flex-wrap items-center gap-x-8 gap-y-4 mb-16 border-b border-outline-variant pb-6">
+<button class="font-label-caps text-label-caps text-architectural-green border-b-2 border-architectural-green pb-1">All</button>
+<button class="font-label-caps text-label-caps text-on-surface-variant hover:text-architectural-green transition-colors">Commercial</button>
+<button class="font-label-caps text-label-caps text-on-surface-variant hover:text-architectural-green transition-colors">Residential</button>
+<button class="font-label-caps text-label-caps text-on-surface-variant hover:text-architectural-green transition-colors">Renovation</button>
+</div>
+<!-- Portfolio Grid -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Project 1: Large Feature -->
+<div class="md:col-span-8 group cursor-pointer overflow-hidden relative pb-6 pr-6">
+<div class="half-frame absolute inset-0 pointer-events-none opacity-40 group-hover:opacity-100 transition-opacity duration-300"></div>
+<div class="aspect-[16/9] overflow-hidden mb-6">
+<img class="w-full h-full object-cover transition-all duration-700" data-alt="A low-angle shot of a towering brutalist concrete skyscraper with clean geometric lines and deep shadows. The architecture is sharp and monolithic, set against a crisp, clear blue sky. The lighting is harsh and dramatic, highlighting the raw texture of the limestone and concrete materials. The overall aesthetic is minimalist, modern, and conveys a sense of architectural power and permanence." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6dNFa3fV3UShhYjRUW1vdqp9pQIFUuW4EjLpHuQuM8igt9HJVHB9de3zUaOpgN8el3yBaxZgfSKje9HqwF-4rA1_vXAkWmYp5x3BSHezm-jDpfP2kOU6PPPRJxEYAv5xVyQM6ATCBaGHEvyGEv1_u_U98OsiXo9C4v50C12ZIEKetm6SRaZB36-BlAb7cjVVT0QpoyGQFK7RuVPI3YYIkv5Tw4DlvF3t1Ji8qRIZGOdUfrmCjO53QTrC6mvTRscleSVFaCMPILng"/>
+</div>
+<div class="flex justify-between items-end">
+<div>
+<span class="font-label-caps text-[10px] text-architectural-green tracking-[0.2em] mb-2 block uppercase font-bold">COMMERCIAL</span>
+<h3 class="font-headline-md text-headline-md text-on-background">The Concrete Apex</h3>
+</div>
+<span class="font-label-caps text-label-caps text-on-background/60">2023</span>
+</div>
+</div>
+<!-- Project 2 -->
+<div class="md:col-span-4 group cursor-pointer overflow-hidden relative pb-6 pr-6">
+<div class="half-frame absolute inset-0 pointer-events-none opacity-40 group-hover:opacity-100 transition-opacity duration-300"></div>
+<div class="aspect-[4/5] overflow-hidden mb-6">
+<img class="w-full h-full object-cover transition-all duration-700" data-alt="An ultra-modern minimalist luxury villa with floor-to-ceiling glass walls that seamlessly blend the interior with a surrounding oak forest. The house features floating concrete planes and warm wood accents. The lighting is soft and golden, characteristic of a late autumn afternoon. The mood is serene, private, and represents the pinnacle of high-end architectural craftsmanship." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqNjlaCcCpvscAs2PrUnBZeoyHybVUJ5gJvVJHfjYDMiXKjXIt3A8-GbD8uYEbmqM8136E1HYb2hq9F5LgF32mt8yVKc0u49QazlXT6z1Zb_3xlnjeINQlX2tdYKltBnyYSKqS3sClFgFgPxAiAT8yzcHrIYe6o4GwtBCWFGl2kcl_fuWCDc48arL0Uyo_H4zot2D3zaN_A1qPITJkP2qpxr8xjejALd1pE7pKQTOVi5MTWm3zkVPsgailtvG5kC99Bq8kNkZcMXA"/>
+</div>
+<div class="flex justify-between items-end">
+<div>
+<span class="font-label-caps text-[10px] text-architectural-green tracking-[0.2em] mb-2 block uppercase font-bold">RESIDENTIAL</span>
+<h3 class="font-headline-md text-headline-md text-on-background">Lumina Residential</h3>
+</div>
+<span class="font-label-caps text-label-caps text-on-background/60">2022</span>
+</div>
+</div>
+<!-- Project 3 -->
+<div class="md:col-span-4 group cursor-pointer overflow-hidden relative mt-0 md:mt-12 pb-6 pr-6">
+<div class="half-frame absolute inset-0 pointer-events-none opacity-40 group-hover:opacity-100 transition-opacity duration-300"></div>
+<div class="aspect-[3/4] overflow-hidden mb-6">
+<img class="w-full h-full object-cover transition-all duration-700" data-alt="A sophisticated commercial headquarters building featuring a facade of dark iron and reflective glass. The structure is situated near a calm harbor, with the water reflecting the building's geometric pattern. The atmosphere is professional and quiet, with high-key lighting that emphasizes the structural integrity of the steel frame. The design is timeless and minimalist." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAL-JtI4aLgom655ZXSgu3kADPhPxnX8nL1cpwvnP8bFn1q9WN3JnqKlfVurRJ47pQM2fuT8YBJqFqOcnsXE9GdoK-mA-yK_fMx0Wo9w3LGwKF4Fx73QM5d2RvJvjPyn5Lk5MvvUXlvVZuM7Xf7ne-z45a4Xy2VyK1EShspq1ml0NODyCSHz1Et3xFcHB23LQuuYmB73kKsQDW2yyVZekya-49yKvUk8x2WgJYew6vLSnFPOy5mCNOq1m2pQCcI2PBNnOGTUsZJS18"/>
+</div>
+<div class="flex justify-between items-end">
+<div>
+<span class="font-label-caps text-[10px] text-architectural-green tracking-[0.2em] mb-2 block uppercase font-bold">RENOVATION</span>
+<h3 class="font-headline-md text-headline-md text-on-background">Harbor Revitalization</h3>
+</div>
+<span class="font-label-caps text-label-caps text-on-background/60">2024</span>
+</div>
+</div>
+<!-- Project 4: Large Asymmetric -->
+<div class="md:col-span-8 group cursor-pointer overflow-hidden relative mt-0 md:mt-12 pb-6 pr-6">
+<div class="half-frame absolute inset-0 pointer-events-none opacity-40 group-hover:opacity-100 transition-opacity duration-300"></div>
+<div class="aspect-[16/10] overflow-hidden mb-6">
+<img class="w-full h-full object-cover transition-all duration-700" data-alt="Inside a massive architectural project featuring a cantilevered concrete staircase that appears to float in a sun-drenched atrium. The light streams in through hidden skylights, creating a play of light and shadow on the limestone walls. The style is clean, editorial, and focused on the materiality of the construction. There is a sense of immense scale and precision." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkwtXgcbdlP00pGjyWNCHoIaJpr1_lz2zFSGtBTCHntNtC5FDAfGC05VbZ2K_9S2YgbH85n5mZzga37I0qTvh2N4CbTioldTBeL_RZngG7BKQu-MncCzvTWgCdbj3B36pGc0fjAb0oMIVx0ZQg1oUmcWLwk0MbrnxMcqU0pawRpC2cvVJZIKF0VDYaIwYn8gJVgon4iASeCBKG8PCKwstTaqBdfs364guJI6VFkCM6PErM2UQhh0xL40bIpNfsp4yGqPkru2mVwaE"/>
+</div>
+<div class="flex justify-between items-end">
+<div>
+<span class="font-label-caps text-[10px] text-architectural-green tracking-[0.2em] mb-2 block uppercase font-bold">RESIDENTIAL</span>
+<h3 class="font-headline-md text-headline-md text-on-background">The Atrium House</h3>
+</div>
+<span class="font-label-caps text-label-caps text-on-background/60">2021</span>
+</div>
+</div>
+</div>
+<!-- Load More Section -->
+<div class="flex justify-center mt-32 mb-16">
+<div class="flex items-center gap-4 py-8 border-t border-b border-outline-variant w-full justify-between">
+<div class="flex flex-col md:flex-row items-center gap-8 w-full justify-between">
+<div class="flex items-center gap-4 group cursor-pointer">
+<span class="font-headline-md text-headline-md italic ml-4 text-on-background">Explore Past Archives</span>
+<span class="material-symbols-outlined text-4xl mr-4 transition-transform group-hover:translate-x-2 text-architectural-green">arrow_forward</span>
+</div>
+<button class="font-label-caps text-label-caps px-10 py-4 bg-architectural-green text-on-primary hover:bg-opacity-90 transition-all duration-300 uppercase tracking-widest mr-4">
+                        Get a Quote
+                    </button>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full mt-section-gap-desktop border-t border-outline-variant bg-surface-container-low">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter px-margin-desktop py-section-gap-mobile max-w-[1440px] mx-auto">
+<div class="md:col-span-6 flex flex-col justify-between">
+<div>
+<h2 class="font-headline-md text-headline-md text-architectural-green mb-8">BATI VERT</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-sm mb-4">
+                        Crafting structures that serve as the foundation for the future. Quality construction and renovation of legacy.
+                    </p>
+<div class="font-body-md text-body-md text-on-surface-variant space-y-1 mb-12">
+<p>Serving Montreal, Laval &amp; Montérégie</p>
+<p>T: +1 (514) 555-0198</p>
+<p>E: hello@bativert.ca</p>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant opacity-50">© 2024 BATI VERT CONSTRUCTION &amp; RÉNOVATION</p>
+</div>
+<div class="md:col-span-2">
+<h4 class="font-label-caps text-label-caps text-architectural-green mb-8">SERVICES</h4>
+<ul class="space-y-4">
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-architectural-green transition-colors" href="#">Residential</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-architectural-green transition-colors" href="#">Commercial</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-architectural-green transition-colors" href="#">Renovation</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-architectural-green transition-colors" href="#">Interior Design</a></li>
+</ul>
+</div>
+<div class="md:col-span-2">
+<h4 class="font-label-caps text-label-caps text-architectural-green mb-8">RESOURCES</h4>
+<ul class="space-y-4">
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-architectural-green transition-colors" href="#">Sustainability</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-architectural-green transition-colors" href="#">Careers</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-architectural-green transition-colors" href="#">Journal</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-architectural-green transition-colors" href="#">Contact</a></li>
+</ul>
+</div>
+<div class="md:col-span-2">
+<h4 class="font-label-caps text-label-caps text-architectural-green mb-8">LEGAL</h4>
+<ul class="space-y-4">
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-architectural-green transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-architectural-green transition-colors" href="#">Terms of Service</a></li>
+</ul>
+</div>
+</div>
+</footer>
+</body></html>

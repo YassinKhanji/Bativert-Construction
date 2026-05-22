@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About Us | BATI VERT</title>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;700&amp;family=Work+Sans:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-tertiary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "on-surface": "#191c18",
+                        "on-primary-fixed-variant": "#1f5124",
+                        "tertiary-fixed-dim": "#ffb1c8",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-container": "#d4859d",
+                        "inverse-on-surface": "#f0f1ea",
+                        "surface-container-highest": "#e1e3dc",
+                        "inverse-primary": "#9dd49a",
+                        "outline-variant": "#c1c9bc",
+                        secondary: "#4f644d",
+                        "on-secondary-fixed-variant": "#384c36",
+                        "on-primary": "#ffffff",
+                        "on-tertiary-fixed-variant": "#713248",
+                        surface: "#f8faf3",
+                        "surface-container-low": "#f3f4ed",
+                        error: "#ba1a1a",
+                        "tertiary-container": "#591f35",
+                        "surface-tint": "#1A2821",
+                        "secondary-fixed-dim": "#b6cdb1",
+                        "surface-container-high": "#e7e9e2",
+                        "primary-container": "#1A2821",
+                        outline: "#72796f",
+                        "on-primary-fixed": "#002105",
+                        "tertiary-fixed": "#ffd9e2",
+                        "on-secondary-container": "#536851",
+                        "inverse-surface": "#2e312d",
+                        "secondary-fixed": "#d2e9cc",
+                        "surface-container": "#edefe8",
+                        primary: "#1A2821",
+                        "on-secondary-fixed": "#0d200e",
+                        "surface-variant": "#e1e3dc",
+                        "primary-fixed": "#b9f1b4",
+                        "surface-dim": "#d9dbd4",
+                        "on-secondary": "#ffffff",
+                        "secondary-container": "#cfe6c9",
+                        tertiary: "#3e0920",
+                        "on-tertiary-fixed": "#3a061d",
+                        "on-error-container": "#93000a",
+                        "on-error": "#ffffff",
+                        "on-background": "#191c18",
+                        "on-surface-variant": "#41493f",
+                        "surface-bright": "#f8faf3",
+                        "primary-fixed-dim": "#9dd49a",
+                        "on-primary-container": "#74a872",
+                        background: "#f8faf3"
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.125rem",
+                        lg: "0.25rem",
+                        xl: "0.5rem",
+                        full: "0.75rem"
+                    },
+                    spacing: {
+                        "margin-mobile": "20px",
+                        "section-gap-mobile": "80px",
+                        "margin-desktop": "64px",
+                        base: "8px",
+                        "section-gap-desktop": "160px",
+                        gutter: "24px"
+                    },
+                    fontFamily: {
+                        "label-caps": ["Work Sans"],
+                        "body-md": ["Work Sans"],
+                        "body-lg": ["Work Sans"],
+                        "headline-lg-mobile": ["Libre Caslon Text"],
+                        "display-lg": ["Libre Caslon Text"],
+                        "headline-lg": ["Libre Caslon Text"],
+                        "headline-md": ["Libre Caslon Text"],
+                        headline: ["Libre Caslon Text"],
+                        display: ["Libre Caslon Text"],
+                        body: ["Work Sans"],
+                        label: ["Work Sans"]
+                    },
+                    fontSize: {
+                        "label-caps": ["12px", {lineHeight: "16px", letterSpacing: "0.1em", fontWeight: "600"}],
+                        "body-md": ["16px", {lineHeight: "24px", fontWeight: "400"}],
+                        "body-lg": ["18px", {lineHeight: "28px", fontWeight: "400"}],
+                        "headline-lg-mobile": ["32px", {lineHeight: "40px", fontWeight: "400"}],
+                        "display-lg": ["72px", {lineHeight: "80px", letterSpacing: "-0.02em", fontWeight: "400"}],
+                        "headline-lg": ["48px", {lineHeight: "56px", fontWeight: "400"}],
+                        "headline-md": ["32px", {lineHeight: "40px", fontWeight: "400"}]
+                    }
+                }
+            }
+        };
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24;
+        }
+        .text-outline {
+            -webkit-text-stroke: 1px #747878;
+            color: transparent;
+        }
+    </style>
+<style>
+        :root { --deep-green-accent: #1A2821; }
+        .green-accent-line { background-color: var(--deep-green-accent) !important; }
+        .half-frame-accent { position: relative; }
+        .half-frame-accent::before {
+            content: '';
+            position: absolute;
+            top: -8px;
+            left: -8px;
+            width: 40px;
+            height: 40px;
+            border-top: 1px solid var(--deep-green-accent);
+            border-left: 1px solid var(--deep-green-accent);
+            pointer-events: none;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopNavBar -->
+<nav class="bg-surface dark:bg-surface w-full top-0 sticky z-50 border-b border-outline-variant dark:border-outline">
+<div class="flex justify-between items-center px-margin-desktop py-base max-w-[1440px] mx-auto">
+<div class="text-headline-md font-headline-md tracking-tighter text-primary">
+            BATI VERT
+        </div>
+<div class="hidden md:flex items-center gap-10">
+<a class="font-label-caps text-label-caps text-primary border-b border-primary pb-1 cursor-pointer transition-opacity active:opacity-70" href="#">About Us</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-300 cursor-pointer transition-opacity active:opacity-70" href="#">Services</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-300 cursor-pointer transition-opacity active:opacity-70" href="#">Projects</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-300 cursor-pointer transition-opacity active:opacity-70" href="#">Contact</a>
+<button class="font-label-caps text-label-caps border border-primary px-6 py-2 hover:bg-primary hover:text-on-primary transition-all duration-300 active:opacity-70 uppercase">Get A quote</button>
+</div>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative w-full h-[921px] overflow-hidden">
+<img alt="Modern Architectural Structure" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuA2Ou8imhMv3RSzpRQK155KqmYquftBfhbLlnBWceWhurgepRJb1FgWR-O-h9iPqJMBFC-adIMVl59z_wigS1PzNuLglUcKJhfqG2lMBoTh601iw_e-pSFgHVirygP_EdFOE123RKRHcbcSjhZdsVTpV59fPOogquBJldajYoEtONjMGbf1LdAWahZANLyi1Kfd5D7RcXcFPP9f5chxqvo7DiLksrxy8mgnZbxRDfZ_WP2vnXCq44K6UK1IqewsuZBn_lQgTO9wU"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+<div class="absolute bottom-margin-desktop left-margin-desktop right-margin-desktop max-w-[1440px] mx-auto text-white">
+<div class="max-w-2xl">
+<span class="font-label-caps text-label-caps uppercase tracking-widest mb-4 block opacity-90">RBQ: 5778-4803-01</span>
+<h1 class="font-display-lg text-[64px] md:text-display-lg leading-tight mb-8">Green Building. <br/>Technical Precision.</h1>
+</div>
+</div>
+</section>
+<!-- Our Philosophy -->
+<section class="px-margin-desktop py-section-gap-desktop max-w-[1440px] mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+<div class="md:col-span-5 mb-10 md:mb-0">
+<span class="font-label-caps text-label-caps text-primary uppercase mb-6 block tracking-[0.2em]">Our Philosophy</span>
+<h2 class="font-headline-lg text-headline-lg mb-8 text-on-surface">Sustainable Excellence in Construction.</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-10">BATI VERT is committed to redefining the built environment through sustainable practices and rigorous engineering. Every project is a balance of environmental responsibility and structural longevity.</p>
+<div class="space-y-8">
+<div class="flex gap-6">
+<span class="material-symbols-outlined text-primary pt-1">eco</span>
+<div>
+<h4 class="font-label-caps text-label-caps uppercase mb-2 text-on-surface">Sustainable Engineering</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Integrating eco-efficient materials and high-performance systems into modern structures.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<span class="material-symbols-outlined text-primary pt-1">verified</span>
+<div>
+<h4 class="font-label-caps text-label-caps uppercase mb-2 text-on-surface">Certified Expertise</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Holding RBQ license 5778-4803-01, we ensure full compliance with the highest safety and quality standards.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="md:col-span-6 md:col-start-7 relative">
+<div class="aspect-[4/5] bg-surface-container-low overflow-hidden">
+<img alt="Modern Design Blueprint" class="w-full h-full object-cover transition-all duration-1000" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZMmKB-h7km3lncANwi5snlhRTLpAidp4UYOciaotKcTMtxzpJrcBa7L4hPLCAU17qlcGEJS4kP7GqGCD9O-Vn51xY2p7JypXk3FNoo8mq1zwWJs2SMH376lRXXFgDZIL01A_kWgyZZq35GiCdC2ns5RCxI1m8RfW9Hxu1iCLyWraysliFkgOv3Y1JQXK9PoweHDmcM_PRivFZ3pPp-80In8P9GTFUiHVIs1dm0nuy91gBk-X8FdEoUf1RnvQ6Hve92Yt0llCGb44"/>
+</div>
+<div class="absolute -bottom-10 -left-10 w-48 h-48 bg-primary p-8 hidden lg:flex flex-col justify-end">
+<span class="font-display-lg text-4xl text-on-primary">15+</span>
+<span class="font-label-caps text-[10px] uppercase text-on-primary/80 tracking-widest">Years of Green Innovation</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Legacy Section (Timeline) -->
+<section class="bg-surface-container-low py-section-gap-desktop">
+<div class="px-margin-desktop max-w-[1440px] mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-20 border-b pb-8 border-t-0" style="border-color: #1A2821;">
+<div>
+<span class="font-label-caps text-label-caps text-primary uppercase mb-4 block tracking-[0.2em]">The Journey</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Building the Future.</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-sm mt-6 md:mt-0">Tracing the evolution of BATI VERT from a local consultancy to a leader in sustainable development.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter relative">
+<div class="hidden md:block absolute top-[110px] left-0 right-0 h-[1px]" style="background-color: #1A2821;"></div>
+<div class="flex flex-col gap-6 group">
+<div class="w-full h-[220px] bg-surface overflow-hidden">
+<img alt="Company Foundation" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBr9Ph1VP_ISvYA7xlHgJA19K8OFP2zfn2lomhysALJC0Pv8NGETkAAgK2zkW7M5wbYDu-4exzssxByU40jBcTg7QqsOytrycogWNnNMFAl_KH3RrdSCjRJMW9hRipfdnhSrjjRR7TSA1BJeEJpdNw8cRYSd2g6XRtOOoDkcTIPO4xxQcbByqzvxX_eeRYGrfa82DV7qeutxidrMRF_H3R5HfF7BQGGU6f5sA0y2SQcQ57KoqA9hNXgjF7OZ4mDMTIKTVlt583OI6o"/>
+</div>
+<div class="z-10 pt-4">
+<span class="font-display-lg text-4xl block mb-2 text-on-surface">Launch</span>
+<h4 class="font-label-caps text-label-caps uppercase text-primary mb-2 tracking-widest">The Foundation</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Established with a vision to bring ecological integrity to industrial and residential construction.</p>
+</div>
+</div>
+<div class="flex flex-col gap-6 group mt-12 md:mt-0">
+<div class="w-full h-[220px] bg-surface overflow-hidden">
+<img alt="Strategic Expansion" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgRa33q-AxgMpDmwukhfy0JVwsL7GIfZ03FD--YvfOeCFkLkY3NAzCAtpQXEB0TTggk6NcZLEG4keO8gDEiw0GL-KlpEAwMZyEbZHwEGIKJOYN6Pzo7hQ85qUQAu8XfiGvg-XVGMFCCDro2XSQTuUB61la7vOpOMdCXbJ0kfbi70uawhDT5-P1xbBwLE8Qi53-ZET6FiXgIHQ7bhvT8N8CP6EWMAT5LM0tMbr1W1xCEcoSIKmxg3kM19Hu_HPPqQ8Lpl9hc-fR1cg"/>
+</div>
+<div class="z-10 pt-4">
+<span class="font-display-lg text-4xl block mb-2 text-on-surface">Growth</span>
+<h4 class="font-label-caps text-label-caps uppercase text-primary mb-2 tracking-widest">Technical Mastery</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Securing RBQ accreditation and expanding our fleet of specialized green building machinery.</p>
+</div>
+</div>
+<div class="flex flex-col gap-6 group mt-12 md:mt-0">
+<div class="w-full h-[220px] bg-surface overflow-hidden">
+<img alt="Major Milestone" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnJfxWuaA4gdJHG_YA0g_M8lWiT5cK2NkPHWEC9a9FB6_YReFoKvACy6j8dJVnxcFOEgWxP9AxyWuZFv-3E7_NmLWH4A7xSXyYFWkFQ8QhkmYd6khqt_s11LKEF4DAhUCfH0nRzX2pd4c9v3DBLk2_YI9tZe6E_Rmr0zy9eeg-bPt9oe2g30t4KJ3n0VZeihH2UMuCju34OOs1MAW52KO6C3UoiE8BdhEjxGZP-39MyfE2Dr2ZRgeQU6zuhDEfMiEQjo1UspyZpYo"/>
+</div>
+<div class="z-10 pt-4">
+<span class="font-display-lg text-4xl block mb-2 text-on-surface">Projects</span>
+<h4 class="font-label-caps text-label-caps uppercase text-primary mb-2 tracking-widest">Urban Impact</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Completing landmark carbon-neutral projects that set new benchmarks for metropolitan design.</p>
+</div>
+</div>
+<div class="flex flex-col gap-6 group mt-12 md:mt-0">
+<div class="w-full h-[220px] bg-surface overflow-hidden">
+<img alt="Modern Vision" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-4AvWkjYq-INLHpYropRwHJOBTlYwXtm9T871BaHI5H6c1X3KybhRAlZ8Hn0cn4zOBmH9XqkXlMY6jxOeolO7VJlpWtF7B31se7Zpe_Ul8ZLUg_xKhAC1XBkcXmwbVe8QXvD2a_WT2KyihYmZeq-LrNNm-sLyZxneJMld--U_PnE4JLhksdQLsExnYixhqqTM74Ocu4DbZwOvyfyvyBVwoIfhfw0SFX9dTD-6QHJru4jj3mwqXAvEEz9SOwbcuihyXh_2j23_Fss"/>
+</div>
+<div class="z-10 pt-4">
+<span class="font-display-lg text-4xl block mb-2 text-on-surface">Today</span>
+<h4 class="font-label-caps text-label-caps uppercase text-primary mb-2 tracking-widest">The Future</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Pioneering sustainable carbon-neutral structures that define the next century of design.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Leadership Section -->
+<section class="px-margin-desktop py-section-gap-desktop max-w-[1440px] mx-auto">
+<div class="text-center mb-24">
+<span class="font-label-caps text-label-caps text-primary uppercase mb-4 block tracking-[0.2em]">The Stewards</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Leadership of Vision.</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Profile 1 -->
+<div class="group">
+<div class="aspect-[3/4] overflow-hidden bg-surface-container-high mb-6 half-frame-accent">
+<img alt="Executive Profile" class="w-full h-full object-cover transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFJapjAROdC1CFbNgTVRsF2FZh6LJEntjMF4WIYQh-v5WpMQiOK6_omTcFNBMqeM9XND3FL_uo7yoDloKABsTt5IbY0xR9ECH4DVaMVfrEnvfzcafW2eLyK2LB-fFQ13glyxwCv8pXCgKVSzYtb3vye31aj9A9WswCQzyoplYPvMn9AYAN1vvQyyf1jNxYNmZaXxZBUS7LDksSjMfIdeyWKP79IIeMojzrOP-_HJgZXOqbDgq7h9h1h2NagkzyZfL92UBw9N1R6As"/>
+</div>
+<h3 class="font-headline-md text-headline-md mb-2 text-on-surface">Marc-André Bati</h3>
+<p class="font-label-caps text-[11px] uppercase text-primary mb-4 tracking-[0.2em]">Founder &amp; Managing Director</p>
+<div class="h-[1px] w-12 mb-4 group-hover:w-full transition-all duration-500" style="background-color: #1A2821;"></div>
+<p class="font-body-md text-body-md text-on-surface-variant">A veteran in green construction, Marc-André ensures that BATI VERT remains at the forefront of ecological building technology.</p>
+</div>
+<!-- Profile 2 -->
+<div class="group">
+<div class="aspect-[3/4] overflow-hidden bg-surface-container-high mb-6 half-frame-accent">
+<img alt="Executive Profile" class="w-full h-full object-cover transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKKMzCAjvlq9wSWlxwTcteV743Fq9DL2d-7JXjUIs-KktG3lh1QKZdvoqps5MR1RWElFF0UCxjXc_KOubIHCMvrgGxRM-4E0DOK5Fr62IGOFFr8FTooRB8TrEGCgrfEhXy2fyA8K72GYRGrmYDXlWPHfdcWfGugYIwSgkPsc-wNR6TuHdDdc-GsfPcWziuiMeCRUTzDSfscsAdbpJr8M1b0PjUxyB-7TzhwT_BhHEmY_sAnTYXr1c4S90hwBGIfgvBczAjgnJLLYE"/>
+</div>
+<h3 class="font-headline-md text-headline-md mb-2 text-on-surface">Elena Rossi</h3>
+<p class="font-label-caps text-[11px] uppercase text-primary mb-4 tracking-[0.2em]">Head of Sustainable Design</p>
+<div class="h-[1px] w-12 mb-4 group-hover:w-full transition-all duration-500" style="background-color: #1A2821;"></div>
+<p class="font-body-md text-body-md text-on-surface-variant">An award-winning modernist who brings a fluid, artistic perspective to the firm's rigid structural foundations.</p>
+</div>
+<!-- Profile 3 -->
+<div class="group">
+<div class="aspect-[3/4] overflow-hidden bg-surface-container-high mb-6 half-frame-accent">
+<img alt="Executive Profile" class="w-full h-full object-cover transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7PH3SfXL-NsfZCwemFik9V_3_PO9gtWQfxN-tR6AVqQPDlrhD3KCoyTpGKOwJ1xr6gEyrcYk54_O8xWBwvVJdS__CeE3DkvN2550g5E942AEAAVUFvhJ9FUQYptWBzQ7QOnzptwa8v3I5yYSvTEXSRQ8t7v05YZozXOSIN9WOvWxfzCC2FeZ0GF_eMLtTWbzLa7ucNNHvk87HG4M1OfQC--YspGeo3V40OX4cMmUJ3IParWJQi6ZkkiajOdpyKuvy7zHAmSoFqYE"/>
+</div>
+<h3 class="font-headline-md text-headline-md mb-2 text-on-surface">Julian Chen</h3>
+<p class="font-label-caps text-[11px] uppercase text-primary mb-4 tracking-[0.2em]">Director of Construction</p>
+<div class="h-[1px] w-12 mb-4 group-hover:w-full transition-all duration-500" style="background-color: #1A2821;"></div>
+<p class="font-body-md text-body-md text-on-surface-variant">Overseeing the translation of blueprints into reality, ensuring that zero-tolerance standards are met at every site.</p>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="bg-primary text-on-primary py-section-gap-desktop text-center overflow-hidden relative">
+<div class="absolute inset-0 opacity-5 pointer-events-none">
+<div class="absolute top-0 right-0 transform translate-x-1/2 -translate-y-1/2 border-[100px] border-on-primary/20 w-[600px] h-[600px] rounded-full"></div>
+</div>
+<div class="px-margin-desktop max-w-3xl mx-auto relative z-10">
+<h2 class="font-headline-lg text-headline-lg mb-8">Ready to build sustainably?</h2>
+<p class="font-body-lg text-body-lg mb-12 opacity-80">Our experts are ready to consult on your next eco-conscious development. Let's build a greener future together.</p>
+<div class="flex flex-col sm:flex-row justify-center gap-4 md:gap-8">
+<button class="font-label-caps text-label-caps bg-on-primary text-primary px-12 py-5 hover:bg-transparent hover:text-on-primary border border-on-primary transition-all duration-500 uppercase tracking-widest">Get a Quote</button>
+<button class="font-label-caps text-label-caps border border-on-primary px-12 py-5 hover:bg-on-primary hover:text-primary transition-all duration-500 uppercase tracking-widest">Inquire About Services</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface w-full mt-section-gap-desktop border-t border-outline-variant">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter px-margin-desktop py-section-gap-mobile max-w-[1440px] mx-auto">
+<div class="md:col-span-4">
+<div class="font-headline-md text-headline-md text-primary mb-8">BATI VERT</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xs">Sustainable architecture and precision construction services. RBQ: 5778-4803-01.</p>
+</div>
+<div class="md:col-span-2 md:col-start-6">
+<h5 class="font-label-caps text-label-caps uppercase mb-6 text-primary tracking-widest">Company</h5>
+<ul class="space-y-4">
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">About Us</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Services</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Sustainability</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Careers</a></li>
+</ul>
+</div>
+<div class="md:col-span-2">
+<h5 class="font-label-caps text-label-caps uppercase mb-6 text-primary tracking-widest">Legal</h5>
+<ul class="space-y-4">
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Terms of Service</a></li>
+</ul>
+</div>
+<div class="md:col-span-3">
+<h5 class="font-label-caps text-label-caps uppercase mb-6 text-primary tracking-widest">Connect</h5>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">info@bativert.com<br/>+1 (555) 012-3456</p>
+<div class="flex gap-4">
+<a class="w-10 h-10 border border-outline-variant flex items-center justify-center hover:bg-primary hover:text-on-primary transition-all duration-300" href="#">
+<span class="material-symbols-outlined text-[18px]">public</span>
+</a>
+<a class="w-10 h-10 border border-outline-variant flex items-center justify-center hover:bg-primary hover:text-on-primary transition-all duration-300" href="#">
+<span class="material-symbols-outlined text-[18px]">architecture</span>
+</a>
+</div>
+</div>
+<div class="md:col-span-12 mt-16 pt-8 border-t border-outline-variant text-center">
+<p class="font-body-md text-body-md text-on-surface-variant opacity-60">© 2024 BATI VERT CONSTRUCTION &amp; DESIGN</p>
+</div>
+</div>
+</footer>
+</body></html>
