@@ -104,8 +104,8 @@ export default function About() {
         <HorizontalGallery />
         {/* Comparison Section */}
         <section className="px-6 lg:px-12 py-32 max-w-7xl mx-auto border-b border-subtle">
-          <div className="text-center mb-16">
-            <SectionHeader subtitle={t.home.comparison.subtitle} title={t.home.comparison.title} className="justify-center" />
+          <div className="mb-16">
+            <SectionHeader subtitle={t.home.comparison.subtitle} title={t.home.comparison.title} />
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
