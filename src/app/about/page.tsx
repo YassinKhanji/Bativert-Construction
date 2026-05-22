@@ -248,7 +248,7 @@ export default function Home() {
                 <img
                   alt="Interior Library"
                   className="w-full h-full object-cover"
-                  src="/about/about-4.jpg"
+                  src="/home-hero.jpg"
                 />
               </div>
             </div>
