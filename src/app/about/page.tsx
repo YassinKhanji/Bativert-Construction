@@ -302,21 +302,21 @@ export default function Home() {
               <img
                 alt="Modern sustainable building"
                 className="w-full h-full object-cover transition-all"
-                src="/about/about-3.jpg"
+                src="/about/project-1.jpg"
               />
             </div>
             <div className="min-w-[300px] md:flex-1 snap-start aspect-[3/4]">
               <img
                 alt="Luxury renovation detail"
                 className="w-full h-full object-cover transition-all"
-                src="/about/about-2.jpg"
+                src="/about/project-2.jpg"
               />
             </div>
             <div className="min-w-[300px] md:flex-1 snap-start aspect-[3/4]">
               <img
                 alt="High-end architectural interior"
                 className="w-full h-full object-cover transition-all"
-                src="/about/about-1.jpg"
+                src="/about/project-3.jpg"
               />
             </div>
           </div>
