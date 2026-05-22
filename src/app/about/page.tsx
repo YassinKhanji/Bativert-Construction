@@ -244,10 +244,10 @@ export default function Home() {
               </p>
             </div>
             <div className="flex justify-center">
-              <div className="w-full max-w-md aspect-square relative opacity-40">
+              <div className="w-full max-w-2xl relative shadow-xl overflow-hidden aspect-[4/3]">
                 <img
-                  alt="Architectural diagram of a modern building"
-                  className="w-full h-full object-contain opacity-80 transition-opacity hover:opacity-100"
+                  alt="Interior Library"
+                  className="w-full h-full object-cover"
                   src="/about/about-4.jpg"
                 />
               </div>
