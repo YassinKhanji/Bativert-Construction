@@ -74,6 +74,7 @@ export default function Navigation() {
                   {/* Fourth Column */}
                   <div className="flex flex-col space-y-6">
                     <Link href="/services/landscaping" className="text-[11px] font-bold hover:text-(--color-primary) transition-colors">LANDSCAPING</Link>
+                    <Link href="/services" className="text-[11px] font-bold hover:text-(--color-primary) transition-colors">ALL SERVICES</Link>
                   </div>
                 </div>
               </div>

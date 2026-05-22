@@ -26,29 +26,31 @@ export async function generateStaticParams() {
   }));
 }
 
-export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
-  const tKey = SLUG_MAP[params.slug];
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const { slug } = await params;
+  const tKey = SLUG_MAP[slug];
   if (!tKey) return { title: "Not Found" };
   
   // Using English for static metadata title
   const t = translations.en.servicePages[tKey];
   
   return {
-    title: `BATI VERT | ${params.slug.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase())}`,
+    title: `BATI VERT | ${slug.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase())}`,
     description: t.solution,
     alternates: {
-      canonical: `/services/${params.slug}`
+      canonical: `/services/${slug}`
     }
   };
 }
 
-export default function ServicePage({ params }: { params: { slug: string } }) {
-  const tKey = SLUG_MAP[params.slug];
+export default async function ServicePage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const tKey = SLUG_MAP[slug];
   if (!tKey) {
     notFound();
   }
 
-  return <ServicePageClient slug={params.slug} tKey={tKey} />;
+  return <ServicePageClient slug={slug} tKey={tKey} />;
 }
 
 // We use a client component to access the LanguageContext dynamically for translations
