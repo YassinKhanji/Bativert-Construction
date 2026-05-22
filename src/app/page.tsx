@@ -130,12 +130,12 @@ export default function About() {
         {/* Leadership Section */}
         <section className="px-6 lg:px-12 py-32 max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
-            <div className="md:col-span-5 relative group cursor-pointer">
-              <div className="aspect-[3/4] overflow-hidden bg-(--color-surface-container-high) relative half-frame-accent">
-                <img alt="General Contractor & Owner" className="w-full h-full object-cover transition-all duration-700" src="/ghaias-khanji-new.png" />
+            <div className="md:col-span-3 relative group cursor-pointer flex justify-center">
+              <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-(--color-surface-container) shadow-xl relative">
+                <img alt="General Contractor & Owner" className="w-full h-full object-cover transition-all duration-700 hover:scale-110" src="/ghaias-khanji-new.png" />
               </div>
             </div>
-            <div className="md:col-span-7 md:pl-12">
+            <div className="md:col-span-9 md:pl-8">
               <span className="text-[10px] text-(--color-primary) uppercase mb-4 block tracking-[0.2em] font-bold">{t.home.leadershipSub}</span>
               <h3 className="serif-heading text-4xl lg:text-5xl mb-4 text-(--color-on-surface)">{t.home.leadershipTitle}</h3>
               <p className="text-[11px] uppercase text-(--color-primary) mb-8 tracking-[0.2em] font-bold">{t.home.leadershipRole}</p>
