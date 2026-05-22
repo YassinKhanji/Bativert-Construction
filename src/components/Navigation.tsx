@@ -34,7 +34,7 @@ export default function Navigation() {
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
         <Link href="/">
-          <div className="text-2xl font-bold tracking-tight serif-heading uppercase text-(--color-on-surface)">
+          <div className="text-2xl font-bold tracking-tight serif-heading uppercase text-(--color-primary)">
             BATI VERT
           </div>
         </Link>

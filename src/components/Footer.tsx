@@ -11,7 +11,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 mb-24">
           <div className="lg:col-span-6">
-            <div className="text-6xl font-bold tracking-tight serif-heading mb-12 uppercase text-(--color-on-surface)">
+            <div className="text-6xl font-bold tracking-tight serif-heading mb-12 uppercase text-(--color-primary)">
               BATI VERT
             </div>
           </div>
