@@ -28,7 +28,7 @@ export default function About() {
               </span>
               <h1 className="serif-heading text-[64px] md:text-7xl leading-tight mb-8">
                 {t.home.heroTitle1.split(' ').map((word, index, array) => (
-                  <span key={index} className={index === array.length - 1 ? "text-(--color-primary)" : ""}>
+                  <span key={index} className={index === array.length - 1 ? "text-(--color-primary) bg-white/90 px-2 rounded-sm ml-1 inline-block" : ""}>
                     {word}{index < array.length - 1 ? ' ' : ''}
                   </span>
                 ))} <br />
