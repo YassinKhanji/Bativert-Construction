@@ -94,9 +94,9 @@ export default function Services() {
                   <Link 
                     href={`/services/${slugs[index]}`} 
                     key={index} 
-                    className="bg-(--color-surface-container-low) hover:bg-(--color-surface-container) p-8 flex items-center border border-subtle hover:border-(--color-primary) group transition-all duration-300 shadow-sm"
+                    className="bg-(--color-surface-container-low) hover:bg-(--color-primary) p-8 flex items-center border border-subtle hover:border-(--color-primary) group transition-all duration-300 shadow-sm"
                   >
-                    <h3 className="font-bold text-sm tracking-widest uppercase group-hover:text-(--color-primary) transition-colors">{service}</h3>
+                    <h3 className="font-bold text-sm tracking-widest uppercase group-hover:text-(--color-surface) transition-colors">{service}</h3>
                   </Link>
                 );
               })}

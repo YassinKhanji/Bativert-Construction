@@ -55,23 +55,23 @@ export default function Navigation() {
                 <div className="grid grid-cols-4 gap-8">
                   {/* First Column */}
                   <div className="flex flex-col space-y-6">
-                    <Link href="/services/conception" className="text-[11px] font-bold hover:text-(--color-primary) transition-colors">CONCEPTION</Link>
-                    <Link href="/services/interior-design" className="text-[11px] font-bold hover:text-(--color-primary) transition-colors">INTERIOR DESIGN</Link>
+                    <Link href="/services/conception" className="text-[11px] font-bold transition-colors w-fit relative hover:text-(--color-primary) after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[1px] after:bg-(--color-primary) after:transition-all after:duration-300 hover:after:w-full">CONCEPTION</Link>
+                    <Link href="/services/interior-design" className="text-[11px] font-bold transition-colors w-fit relative hover:text-(--color-primary) after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[1px] after:bg-(--color-primary) after:transition-all after:duration-300 hover:after:w-full">INTERIOR DESIGN</Link>
                   </div>
                   {/* Second Column */}
                   <div className="flex flex-col space-y-6">
-                    <Link href="/services/engineering" className="text-[11px] font-bold hover:text-(--color-primary) transition-colors">ENGINEERING</Link>
-                    <Link href="/services/new-construction" className="text-[11px] font-bold hover:text-(--color-primary) transition-colors">NEW CONSTRUCTION</Link>
+                    <Link href="/services/engineering" className="text-[11px] font-bold transition-colors w-fit relative hover:text-(--color-primary) after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[1px] after:bg-(--color-primary) after:transition-all after:duration-300 hover:after:w-full">ENGINEERING</Link>
+                    <Link href="/services/new-construction" className="text-[11px] font-bold transition-colors w-fit relative hover:text-(--color-primary) after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[1px] after:bg-(--color-primary) after:transition-all after:duration-300 hover:after:w-full">NEW CONSTRUCTION</Link>
                   </div>
                   {/* Third Column */}
                   <div className="flex flex-col space-y-6">
-                    <Link href="/services/home-expansion" className="text-[11px] font-bold hover:text-(--color-primary) transition-colors">HOME EXPANSION</Link>
-                    <Link href="/services/renovation" className="text-[11px] font-bold hover:text-(--color-primary) transition-colors">RENOVATION</Link>
+                    <Link href="/services/home-expansion" className="text-[11px] font-bold transition-colors w-fit relative hover:text-(--color-primary) after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[1px] after:bg-(--color-primary) after:transition-all after:duration-300 hover:after:w-full">HOME EXPANSION</Link>
+                    <Link href="/services/renovation" className="text-[11px] font-bold transition-colors w-fit relative hover:text-(--color-primary) after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[1px] after:bg-(--color-primary) after:transition-all after:duration-300 hover:after:w-full">RENOVATION</Link>
                   </div>
                   {/* Fourth Column */}
                   <div className="flex flex-col space-y-6">
-                    <Link href="/services/landscaping" className="text-[11px] font-bold hover:text-(--color-primary) transition-colors">LANDSCAPING</Link>
-                    <Link href="/services" className="text-[11px] font-bold hover:text-(--color-primary) transition-colors">ALL SERVICES</Link>
+                    <Link href="/services/landscaping" className="text-[11px] font-bold transition-colors w-fit relative hover:text-(--color-primary) after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[1px] after:bg-(--color-primary) after:transition-all after:duration-300 hover:after:w-full">LANDSCAPING</Link>
+                    <Link href="/services" className="text-[11px] font-bold transition-colors w-fit relative hover:text-(--color-primary) after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[1px] after:bg-(--color-primary) after:transition-all after:duration-300 hover:after:w-full">ALL SERVICES</Link>
                   </div>
                 </div>
               </div>
