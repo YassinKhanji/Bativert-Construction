@@ -19,7 +19,7 @@ export default function About() {
           <img
             alt="Modern Architectural Structure"
             className="w-full h-full object-cover object-center"
-            src="/home-hero.jpg"
+            src="/home-hero-new.jpg"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
           <div className="absolute bottom-16 left-6 lg:left-12 max-w-7xl mx-auto text-white">
