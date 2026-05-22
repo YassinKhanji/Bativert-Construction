@@ -82,7 +82,7 @@ export default function About() {
                 <img
                   alt="Modern Design Blueprint"
                   className="w-full h-full object-cover transition-all duration-1000"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZMmKB-h7km3lncANwi5snlhRTLpAidp4UYOciaotKcTMtxzpJrcBa7L4hPLCAU17qlcGEJS4kP7GqGCD9O-Vn51xY2p7JypXk3FNoo8mq1zwWJs2SMH376lRXXFgDZIL01A_kWgyZZq35GiCdC2ns5RCxI1m8RfW9Hxu1iCLyWraysliFkgOv3Y1JQXK9PoweHDmcM_PRivFZ3pPp-80In8P9GTFUiHVIs1dm0nuy91gBk-X8FdEoUf1RnvQ6Hve92Yt0llCGb44"
+                  src="/home-innovation-cropped.jpg"
                 />
               </div>
               <div className="absolute -bottom-10 -left-10 w-48 h-48 bg-(--color-primary) p-8 hidden lg:flex flex-col justify-end">
