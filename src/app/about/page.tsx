@@ -43,8 +43,7 @@ export default function Home() {
             <div className="lg:col-span-8 relative half-frame-accent">
               <img
                 alt="High-end architectural construction"
-                className="w-full h-[600px] object-cover brightness-75"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_ByfEpXhicEhdJz6XJzAGaDUiAnwAjw9p_V2Vn9k8ezj63kuYA2j4ewCvm6hnjJAbAjNHGWmZuje-89V7bRwNVM37z79IG9L-Fjb9811jTmcDZ7mZYGsnhiXKIFVUEDLffzDSvWmOEVjyeLT3Sto2q9IblKXxceoLnTKt_9sPpQ9ZBNCWttVdxyFUtrl-RoKKJpVJewtinxsrx7rSW6WqfcV3lAwTBBTgqXyO5LAzhXleC3qoWBrv_sGK3caIYYMY35bMIxDOsSU"
+                src="/about/about-1.jpg"
               />
             </div>
             <div className="lg:col-span-4 lg:-ml-20 lg:mt-20 z-10" id="contact">
@@ -132,7 +131,7 @@ export default function Home() {
                 <img
                   alt="Architectural Detail"
                   className="w-full h-[500px] object-cover brightness-90 shadow-xl"
-                  src="https://lh3.googleusercontent.com/aida/ADBb0uhcAPns0nh3IVlhyy7I5f8WaBKUW5ANcmHXspY26j8UUg0-0tXzJ8OW4jQuKyQzbSUFdwnDIH75oqEOkXP5HeWgn4Cai2IjUGAtv97ZwbXyBiIt02QwvXntRt2Tb503WjomY6WfYmjblrxdpK9jFwUf0Qhr-qnOC1Oy2GjN_uChfGy34Ghm52g0HkvgdUTWaN0wSx4MC4t82PJiIY1D_jHk6xUivw3URSZf1Oi9qqISkNEAy0S5Mqlkdm8"
+                  src="/about/about-5.jpg"
                 />
               </div>
             </div>
@@ -145,14 +144,14 @@ export default function Home() {
                     <img
                       alt="Modern Structure"
                       className="w-full h-full object-cover"
-                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPtm9h5deDJXkQyLF7sW6J3hjJZ3wxhd0Qn3NS_duPnDWXWsuKkiDEFzKA8CJTpEZPyr_J4ifkgMMAzo70kcDex5Y2w9gcdPUG718MnC-TH6fck1NzBoYdPGqVRZQ2oy9_-5CSzpAa7Qy1RZ8OhZUmurf0rdFx1MMB6zMQQJQdXw8Y0_4fW6fOGIDUoGYD48jIsJWP2hd2OP1YXEN_vUCjbMIbw57kgb1unhL8H8DkxmgiMnd1kDxgMHrz2OGUjzv546Q_vJ6go3I"
+                      src="/about/about-2.jpg"
                     />
                   </div>
                   <div className="aspect-[3/4] bg-(--color-surface-container) mt-12 overflow-hidden">
                     <img
                       alt="Modern Facade"
                       className="w-full h-full object-cover"
-                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEP07qbmihKw9ldD0E8-JHI55dwsO_O_gEoLrh43LB7Uhn0mAnpVuD5TiptazkZKB4Do_h7pVPhSHoZ3RXLzJHfjqlBJsJEZHZkDUG-zHvEp-7CRtNsiz0zZ0t7p2j6SmunhBAbnLBF20gzgKH9q7UGOvWV4NRwNhD2WZVAqZgKDHUZ6dywPOj0FnTnOEV1NTeSgoCvGPekNr3GFr36myKICffA3FQAOQXNC98AuGMtufM0jmd6rshn7UdmWPZ_BxYYxJyhyuyNno"
+                      src="/about/about-3.jpg"
                     />
                   </div>
                 </div>
@@ -249,7 +248,7 @@ export default function Home() {
                 <img
                   alt="Architectural diagram of a modern building"
                   className="w-full h-full object-contain opacity-80 transition-opacity hover:opacity-100"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqc1YeNarpciIkVN8QzfKzMLd1TlpeXPVCNXgBmgH6QFdPkEKJGlzJGu93zJihA9MQ4WxUeMndS_6WuF2aJPfFf-pcbeQDQlna4PgwowpuEfdLBg4EZy-nL_uxqTgeywsKTFplbAytwwTYGdxkOLLsGVLdcWBxSjW4dM2DkxyRrVJK8xx4JfKefuA8tssHYZA-p93xpw2K07Oyyd8qqJ6bI6FHAfyU568NsX45r2AeqNRwuCyf1Vhyb2unzneAC6l9g_MWjcaDAsQ"
+                  src="/about/about-4.jpg"
                 />
               </div>
             </div>
@@ -303,21 +302,21 @@ export default function Home() {
               <img
                 alt="Modern sustainable building"
                 className="w-full h-full object-cover transition-all"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEP07qbmihKw9ldD0E8-JHI55dwsO_O_gEoLrh43LB7Uhn0mAnpVuD5TiptazkZKB4Do_h7pVPhSHoZ3RXLzJHfjqlBJsJEZHZkDUG-zHvEp-7CRtNsiz0zZ0t7p2j6SmunhBAbnLBF20gzgKH9q7UGOvWV4NRwNhD2WZVAqZgKDHUZ6dywPOj0FnTnOEV1NTeSgoCvGPekNr3GFr36myKICffA3FQAOQXNC98AuGMtufM0jmd6rshn7UdmWPZ_BxYYxJyhyuyNno"
+                src="/about/about-3.jpg"
               />
             </div>
             <div className="min-w-[300px] md:flex-1 snap-start aspect-[3/4]">
               <img
                 alt="Luxury renovation detail"
                 className="w-full h-full object-cover transition-all"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPtm9h5deDJXkQyLF7sW6J3hjJZ3wxhd0Qn3NS_duPnDWXWsuKkiDEFzKA8CJTpEZPyr_J4ifkgMMAzo70kcDex5Y2w9gcdPUG718MnC-TH6fck1NzBoYdPGqVRZQ2oy9_-5CSzpAa7Qy1RZ8OhZUmurf0rdFx1MMB6zMQQJQdXw8Y0_4fW6fOGIDUoGYD48jIsJWP2hd2OP1YXEN_vUCjbMIbw57kgb1unhL8H8DkxmgiMnd1kDxgMHrz2OGUjzv546Q_vJ6go3I"
+                src="/about/about-2.jpg"
               />
             </div>
             <div className="min-w-[300px] md:flex-1 snap-start aspect-[3/4]">
               <img
                 alt="High-end architectural interior"
                 className="w-full h-full object-cover transition-all"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_XqRe8kf6gBA_a8JbSQIhQkg96uXVleeLYLyePnwBFbzHeCgPPtv4tMXwZr9E02Z6wmLJHB9gN5U0hiAIu1OlGqxIwRZYj2qTV-hC_KQUJCIIFL8BLr8Mtg_mu4jk25qQTgJkSP1JhjeLd2hsk0ywrw8iHXxsQqLcPCPekcW1IRE6k2L4Ml0dmoyhxjQD3uggp5CGU5TxElCVigl5wE4JH7IX-pREOGH5qJwiyJgi58E80fAaA11KQZQJ3TK_kvUT--r7dcMoeS0Y0"
+                src="/about/about-1.jpg"
               />
             </div>
           </div>
