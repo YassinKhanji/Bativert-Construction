@@ -15,7 +15,7 @@ export default function Home() {
       <Navigation />
       <main>
         {/* BEGIN: Hero Section */}
-        <section className="pt-20 pb-16 px-6 lg:px-12 max-w-7xl mx-auto">
+        <section className="pt-32 pb-16 px-6 lg:px-12 max-w-7xl mx-auto">
           <div className="mb-12">
             <p className="text-[10px] uppercase tracking-[0.3em] mb-6 text-(--color-primary) font-bold">
               {t.about.heroSub}
