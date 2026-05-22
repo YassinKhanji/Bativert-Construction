@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef } from "react";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { useLanguage } from "@/contexts/LanguageContext";
@@ -28,9 +28,16 @@ export default function HorizontalGallery() {
     target: targetRef,
   });
 
+  // Apply a spring physics smoothing to the scroll progress
+  const smoothProgress = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001
+  });
+
   // Transform the vertical scroll progress into a horizontal translation
-  // We translate from 0% to a negative percentage to move the inner track left
-  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-85%"]);
+  // "calc(-100% + 100vw)" ensures the exact right edge of the container touches the right edge of the screen
+  const x = useTransform(smoothProgress, [0, 1], ["0%", "calc(-100% + 100vw)"]);
 
   return (
     <section ref={targetRef} className="relative h-[400vh] bg-(--color-surface-container)">
