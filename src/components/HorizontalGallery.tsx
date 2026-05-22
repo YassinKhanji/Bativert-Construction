@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef } from "react";
+import { useRef, useState, useEffect } from "react";
 import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
@@ -22,27 +22,37 @@ const images = [
 export default function HorizontalGallery() {
   const { language } = useLanguage();
   const targetRef = useRef<HTMLDivElement>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
+  const [scrollRange, setScrollRange] = useState(0);
+
+  useEffect(() => {
+    const updateScrollRange = () => {
+      if (containerRef.current) {
+        setScrollRange(containerRef.current.scrollWidth - window.innerWidth);
+      }
+    };
+    
+    updateScrollRange();
+    window.addEventListener("resize", updateScrollRange);
+    return () => window.removeEventListener("resize", updateScrollRange);
+  }, []);
   
-  // This hook tracks the scroll progress relative to the targetRef container
   const { scrollYProgress } = useScroll({
     target: targetRef,
   });
 
-  // Apply a spring physics smoothing to the scroll progress
   const smoothProgress = useSpring(scrollYProgress, {
     stiffness: 100,
     damping: 30,
     restDelta: 0.001
   });
 
-  // Transform the vertical scroll progress into a horizontal translation
-  // "calc(-100% + 100vw)" ensures the exact right edge of the container touches the right edge of the screen
-  const x = useTransform(smoothProgress, [0, 1], ["0%", "calc(-100% + 100vw)"]);
+  const x = useTransform(smoothProgress, [0, 1], [0, -scrollRange]);
 
   return (
     <section ref={targetRef} className="relative h-[400vh] bg-(--color-surface-container)">
       <div className="sticky top-0 h-screen flex items-center overflow-hidden">
-        <motion.div style={{ x }} className="flex gap-8 px-6 lg:px-12 items-center">
+        <motion.div ref={containerRef} style={{ x }} className="flex gap-8 px-6 lg:px-12 items-center w-max">
           
           {/* Intro Slide */}
           <div className="min-w-[80vw] md:min-w-[40vw] flex flex-col justify-center shrink-0">
