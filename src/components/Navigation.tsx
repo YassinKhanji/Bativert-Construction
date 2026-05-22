@@ -55,19 +55,16 @@ export default function Navigation() {
                 <div className="grid grid-cols-4 gap-8">
                   {/* First Column */}
                   <div className="flex flex-col space-y-6">
-                    <Link href="/services/architectural-design" className="text-[11px] font-bold hover:text-(--color-primary) transition-colors">ARCHITECTURAL DESIGN</Link>
-                    <Link href="/services/high-end-renovations" className="text-[11px] font-bold hover:text-(--color-primary) transition-colors">HIGH-END RENOVATIONS</Link>
-                    <Link href="/services/turnkey-construction" className="text-[11px] font-bold hover:text-(--color-primary) transition-colors">TURNKEY CONSTRUCTION</Link>
+                    <Link href="/services/conception" className="text-[11px] font-bold hover:text-(--color-primary) transition-colors">CONCEPTION</Link>
+                    <Link href="/services/interior-design" className="text-[11px] font-bold hover:text-(--color-primary) transition-colors">INTERIOR DESIGN</Link>
                   </div>
                   {/* Second Column */}
                   <div className="flex flex-col space-y-6">
-                    <Link href="/services/conception" className="text-[11px] font-bold hover:text-(--color-primary) transition-colors">CONCEPTION</Link>
-                    <Link href="/services/interior-design" className="text-[11px] font-bold hover:text-(--color-primary) transition-colors">INTERIOR DESIGN</Link>
                     <Link href="/services/engineering" className="text-[11px] font-bold hover:text-(--color-primary) transition-colors">ENGINEERING</Link>
+                    <Link href="/services/new-construction" className="text-[11px] font-bold hover:text-(--color-primary) transition-colors">NEW CONSTRUCTION</Link>
                   </div>
                   {/* Third Column */}
                   <div className="flex flex-col space-y-6">
-                    <Link href="/services/new-construction" className="text-[11px] font-bold hover:text-(--color-primary) transition-colors">NEW CONSTRUCTION</Link>
                     <Link href="/services/home-expansion" className="text-[11px] font-bold hover:text-(--color-primary) transition-colors">HOME EXPANSION</Link>
                     <Link href="/services/renovation" className="text-[11px] font-bold hover:text-(--color-primary) transition-colors">RENOVATION</Link>
                   </div>

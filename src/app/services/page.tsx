@@ -4,6 +4,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import SectionHeader from "@/components/SectionHeader";
 import Button from "@/components/Button";
+import Link from "next/link";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 export default function Services() {
@@ -79,11 +80,26 @@ export default function Services() {
           <div className="mb-32">
             <SectionHeader subtitle={t.turnkeySubtitle} title={t.turnkeyTitle} className="mb-16" />
             <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
-              {t.turnkeyServices.map((service, index) => (
-                <div key={index} className="bg-transparent p-8 flex items-center">
-                  <h3 className="font-bold text-sm tracking-widest uppercase">{service}</h3>
-                </div>
-              ))}
+              {t.turnkeyServices.map((service, index) => {
+                const slugs = [
+                  "conception",
+                  "interior-design",
+                  "engineering",
+                  "new-construction",
+                  "home-expansion",
+                  "renovation",
+                  "landscaping"
+                ];
+                return (
+                  <Link 
+                    href={`/services/${slugs[index]}`} 
+                    key={index} 
+                    className="bg-(--color-surface-container-low) hover:bg-(--color-surface-container) p-8 flex items-center border border-subtle hover:border-(--color-primary) group transition-all duration-300 shadow-sm"
+                  >
+                    <h3 className="font-bold text-sm tracking-widest uppercase group-hover:text-(--color-primary) transition-colors">{service}</h3>
+                  </Link>
+                );
+              })}
             </div>
           </div>
 

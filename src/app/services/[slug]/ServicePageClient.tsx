@@ -8,7 +8,7 @@ import { translations } from "@/translations";
 
 export default function ServicePageClient({ slug, tKey }: { slug: string, tKey: keyof typeof translations.en.servicePages }) {
   const { t, language } = useLanguage();
-  const service = t.servicePages[tKey];
+  const service = t.servicePages[tKey] as any;
   const title = slug.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
 
   // Determine an image based on the slug
@@ -64,6 +64,78 @@ export default function ServicePageClient({ slug, tKey }: { slug: string, tKey: 
                 </p>
               </div>
             ))}
+          </div>
+        </section>
+
+        {/* Why Choose Us */}
+        <section className="py-24 px-6 lg:px-12 bg-(--color-surface)">
+          <div className="max-w-7xl mx-auto">
+            <div className="text-center mb-16 max-w-3xl mx-auto">
+              <h2 className="serif-heading text-3xl lg:text-5xl text-(--color-on-surface) mb-4">
+                {t.servicePages.generic.whyChooseUsTitle}
+              </h2>
+              <p className="text-lg text-(--color-on-surface-variant)">
+                {t.servicePages.generic.whyChooseUsDesc}
+              </p>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div className="p-8 bg-(--color-surface-container-low) border border-subtle hover:border-(--color-primary) transition-colors">
+                <h3 className="text-xl font-bold mb-4 text-(--color-primary)">{t.servicePages.generic.benefit1Title}</h3>
+                <p className="text-(--color-on-surface-variant)">{t.servicePages.generic.benefit1Desc}</p>
+              </div>
+              <div className="p-8 bg-(--color-surface-container-low) border border-subtle hover:border-(--color-primary) transition-colors">
+                <h3 className="text-xl font-bold mb-4 text-(--color-primary)">{t.servicePages.generic.benefit2Title}</h3>
+                <p className="text-(--color-on-surface-variant)">{t.servicePages.generic.benefit2Desc}</p>
+              </div>
+              <div className="p-8 bg-(--color-surface-container-low) border border-subtle hover:border-(--color-primary) transition-colors">
+                <h3 className="text-xl font-bold mb-4 text-(--color-primary)">{t.servicePages.generic.benefit3Title}</h3>
+                <p className="text-(--color-on-surface-variant)">{t.servicePages.generic.benefit3Desc}</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* FAQ Section */}
+        <section className="py-24 px-6 lg:px-12 bg-(--color-surface-container-low)">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="serif-heading text-3xl lg:text-5xl text-(--color-on-surface) mb-4">
+                {t.servicePages.generic.faqTitle}
+              </h2>
+            </div>
+            
+            <div className="space-y-6">
+              <details className="group border-b border-subtle pb-6 open:pb-6 transition-all">
+                <summary className="cursor-pointer font-bold text-xl flex justify-between items-center text-(--color-on-surface) list-none [&::-webkit-details-marker]:hidden">
+                  {t.servicePages.generic.faq1Q}
+                  <span className="text-3xl font-light transition-transform duration-300 group-open:-rotate-45 text-(--color-primary)">+</span>
+                </summary>
+                <div className="mt-6 text-(--color-on-surface-variant) leading-relaxed">
+                  {t.servicePages.generic.faq1A}
+                </div>
+              </details>
+              
+              <details className="group border-b border-subtle pb-6 open:pb-6 transition-all">
+                <summary className="cursor-pointer font-bold text-xl flex justify-between items-center text-(--color-on-surface) list-none [&::-webkit-details-marker]:hidden">
+                  {t.servicePages.generic.faq2Q}
+                  <span className="text-3xl font-light transition-transform duration-300 group-open:-rotate-45 text-(--color-primary)">+</span>
+                </summary>
+                <div className="mt-6 text-(--color-on-surface-variant) leading-relaxed">
+                  {t.servicePages.generic.faq2A}
+                </div>
+              </details>
+
+              <details className="group border-b border-subtle pb-6 open:pb-6 transition-all">
+                <summary className="cursor-pointer font-bold text-xl flex justify-between items-center text-(--color-on-surface) list-none [&::-webkit-details-marker]:hidden">
+                  {t.servicePages.generic.faq3Q}
+                  <span className="text-3xl font-light transition-transform duration-300 group-open:-rotate-45 text-(--color-primary)">+</span>
+                </summary>
+                <div className="mt-6 text-(--color-on-surface-variant) leading-relaxed">
+                  {t.servicePages.generic.faq3A}
+                </div>
+              </details>
+            </div>
           </div>
         </section>
 

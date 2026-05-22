@@ -36,7 +36,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   
   return {
     title: `BATI VERT | ${slug.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase())}`,
-    description: t.solution,
+    description: (t as any).solution || "Bativert Construction Services",
     alternates: {
       canonical: `/services/${slug}`
     }

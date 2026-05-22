@@ -255,6 +255,23 @@ export const translations = {
       ]
     },
     servicePages: {
+      generic: {
+        whyChooseUsTitle: "Why Choose Bativert Construction?",
+        whyChooseUsDesc: "We don't just build structures; we build trust. Unlike other general contractors, we prioritize transparency, speed, and uncompromising quality.",
+        benefit1Title: "Estimates Within 48 Hours",
+        benefit1Desc: "We respect your time. Get a detailed, accurate project estimate within 48 hours of our initial consultation.",
+        benefit2Title: "Uncompromising Premium Quality",
+        benefit2Desc: "We partner with the best specialized trades and source high-end materials to ensure your project exceeds expectations.",
+        benefit3Title: "Turnkey Project Management",
+        benefit3Desc: "From the first blueprint to the final coat of paint, we handle every detail so you don't have to stress.",
+        faqTitle: "Frequently Asked Questions",
+        faq1Q: "How do you ensure the project stays on budget?",
+        faq1A: "We provide highly detailed initial estimates and maintain transparent communication. If any unforeseen issues arise, you are informed immediately with cost-effective solutions before any work continues.",
+        faq2Q: "Do you handle all permits and municipal approvals?",
+        faq2A: "Yes. Our team is highly experienced in navigating local building codes and municipal regulations. We manage the entire permit process on your behalf.",
+        faq3Q: "How long will my project take?",
+        faq3A: "Timelines vary depending on the scope of the project. However, during our initial consultation, we provide a clear, realistic schedule and we pride ourselves on adhering strictly to our deadlines."
+      },
       architecturalDesign: {
         problem: "Need visionary design but worried about structural feasibility?",
         solution: "We combine technical precision with aesthetic vision to solve unique structural challenges.",
@@ -604,6 +621,23 @@ export const translations = {
       ]
     },
     servicePages: {
+      generic: {
+        whyChooseUsTitle: "Pourquoi Choisir Bativert Construction ?",
+        whyChooseUsDesc: "Nous ne construisons pas seulement des structures ; nous bâtissons la confiance. Contrairement aux autres entrepreneurs généraux, nous privilégions la transparence, la rapidité et une qualité sans compromis.",
+        benefit1Title: "Estimations en 48 Heures",
+        benefit1Desc: "Nous respectons votre temps. Obtenez une estimation de projet détaillée et précise dans les 48 heures suivant notre consultation initiale.",
+        benefit2Title: "Qualité Premium Sans Compromis",
+        benefit2Desc: "Nous collaborons avec les meilleurs métiers spécialisés et achetons des matériaux haut de gamme pour garantir que votre projet dépasse les attentes.",
+        benefit3Title: "Gestion de Projet Clé en Main",
+        benefit3Desc: "Du premier plan à la dernière couche de peinture, nous gérons chaque détail pour vous éviter tout stress.",
+        faqTitle: "Foire Aux Questions",
+        faq1Q: "Comment assurez-vous que le projet respecte le budget ?",
+        faq1A: "Nous fournissons des estimations initiales très détaillées et maintenons une communication transparente. Si des problèmes imprévus surviennent, vous êtes immédiatement informé avec des solutions rentables avant la poursuite des travaux.",
+        faq2Q: "Vous occupez-vous de tous les permis et approbations municipales ?",
+        faq2A: "Oui. Notre équipe possède une grande expérience dans la navigation des codes du bâtiment locaux et des réglementations municipales. Nous gérons l'ensemble du processus de permis en votre nom.",
+        faq3Q: "Combien de temps durera mon projet ?",
+        faq3A: "Les délais varient selon l'ampleur du projet. Cependant, lors de notre consultation initiale, nous fournissons un calendrier clair et réaliste, et nous sommes fiers de respecter strictement nos échéances."
+      },
       architecturalDesign: {
         problem: "Vous voulez un design visionnaire mais craignez pour la faisabilité structurelle?",
         solution: "Nous combinons précision technique et vision esthétique pour relever des défis structurels uniques.",
