@@ -132,7 +132,7 @@ export default function About() {
           <div className="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
             <div className="md:col-span-5 relative group cursor-pointer">
               <div className="aspect-[3/4] overflow-hidden bg-(--color-surface-container-high) relative half-frame-accent">
-                <img alt="General Contractor & Owner" className="w-full h-full object-cover transition-all duration-700" src="/ghaias-khanji.jpg" />
+                <img alt="General Contractor & Owner" className="w-full h-full object-cover transition-all duration-700" src="/ghaias-khanji-new.png" />
               </div>
             </div>
             <div className="md:col-span-7 md:pl-12">
