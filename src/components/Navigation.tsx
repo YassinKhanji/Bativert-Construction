@@ -30,7 +30,7 @@ export default function Navigation() {
 
   return (
     <nav
-      className={`fixed w-full top-0 z-50 bg-(--color-surface)/80 backdrop-blur-md border-b border-subtle transition-transform duration-500 ease-in-out ${
+      className={`fixed w-full top-0 z-50 bg-[#DCDCDC] border-b border-subtle transition-transform duration-500 ease-in-out ${
         isVisible ? "translate-y-0" : "-translate-y-full"
       }`}
     >
