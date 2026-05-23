@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState, useEffect } from "react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
@@ -34,10 +35,15 @@ export default function Navigation() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-12 h-20 flex items-center justify-between relative z-50">
-        <Link href="/" onClick={() => setIsMobileMenuOpen(false)}>
-          <div className="text-2xl font-bold tracking-tight serif-heading uppercase text-(--color-primary)">
-            BATI VERT
-          </div>
+        <Link href="/" onClick={() => setIsMobileMenuOpen(false)} className="flex items-center">
+          <Image 
+            src="/logo.png" 
+            alt="Bativert Construction Logo" 
+            width={180} 
+            height={60} 
+            className="h-12 w-auto object-contain"
+            priority
+          />
         </Link>
         <div className="hidden md:flex items-center space-x-10 text-[10px] uppercase tracking-[0.2em] font-semibold h-full">
           <Link href="/about" className="relative hover:text-(--color-primary) transition-colors after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[1px] after:bg-(--color-primary) after:transition-all after:duration-300 hover:after:w-full">
