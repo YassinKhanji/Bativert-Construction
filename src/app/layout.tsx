@@ -15,11 +15,50 @@ const workSans = Work_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "BATI VERT | General Contracting & Construction in Montreal",
-  description: "Expert general contracting, sustainable construction, and turnkey services in Montreal. BATI VERT specializes in bespoke design and master renovations.",
+  title: "BATI VERT | General Contracting & Construction Company in Montreal",
+  description: "Expert general contracting, sustainable construction, and turnkey services in Montreal. BATI VERT specializes in bespoke architectural design, interior design, home expansion, and master renovations.",
+  keywords: [
+    "general contractor",
+    "construction company",
+    "Montreal contractor",
+    "turnkey construction",
+    "home expansion",
+    "renovation services",
+    "architectural design",
+    "interior design",
+    "custom home builder",
+    "commercial renovations",
+    "Bativert"
+  ],
   metadataBase: new URL('https://bativertconstruction.org'),
   alternates: {
     canonical: '/',
+  },
+  openGraph: {
+    title: 'BATI VERT | General Contracting & Construction',
+    description: 'Expert general contracting, sustainable construction, and turnkey services in Montreal.',
+    url: 'https://bativertconstruction.org',
+    siteName: 'BATI VERT Construction',
+    images: [
+      {
+        url: '/home-hero-new.jpg', // Replace with an actual URL once live if absolute is needed
+        width: 1200,
+        height: 630,
+      },
+    ],
+    locale: 'en_CA',
+    type: 'website',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
   },
 };
 
