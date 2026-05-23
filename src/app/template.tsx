@@ -17,7 +17,7 @@ export default function Template({ children }: { children: React.ReactNode }) {
   if (!isMounted) {
     return (
       <div className="fixed inset-0 z-[100] bg-[#1F2E25] flex items-center justify-center">
-        <div className="relative w-48 h-20 opacity-0"></div>
+        <div className="relative w-64 md:w-96 h-28 md:h-40 opacity-0"></div>
       </div>
     );
   }
@@ -41,7 +41,7 @@ export default function Template({ children }: { children: React.ReactNode }) {
             duration: 0.4,
             ease: "easeOut"
           }}
-          className="relative w-48 h-20"
+          className="relative w-64 md:w-96 h-28 md:h-40"
         >
           <Image 
             src="/logo.png" 
