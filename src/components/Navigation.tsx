@@ -55,23 +55,23 @@ export default function Navigation() {
                 <div className="grid grid-cols-4 gap-8">
                   {/* First Column */}
                   <div className="flex flex-col space-y-6">
-                    <Link href="/services/conception" className="text-[11px] font-bold transition-colors w-fit relative hover:text-(--color-primary) after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[1px] after:bg-(--color-primary) after:transition-all after:duration-300 hover:after:w-full">CONCEPTION</Link>
-                    <Link href="/services/interior-design" className="text-[11px] font-bold transition-colors w-fit relative hover:text-(--color-primary) after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[1px] after:bg-(--color-primary) after:transition-all after:duration-300 hover:after:w-full">INTERIOR DESIGN</Link>
+                    <Link href="/services/conception" className="text-[11px] font-bold transition-colors w-fit relative hover:text-(--color-primary) after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[1px] after:bg-(--color-primary) after:transition-all after:duration-300 hover:after:w-full">{t.services.turnkeyServices[0].toUpperCase()}</Link>
+                    <Link href="/services/interior-design" className="text-[11px] font-bold transition-colors w-fit relative hover:text-(--color-primary) after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[1px] after:bg-(--color-primary) after:transition-all after:duration-300 hover:after:w-full">{t.services.turnkeyServices[1].toUpperCase()}</Link>
                   </div>
                   {/* Second Column */}
                   <div className="flex flex-col space-y-6">
-                    <Link href="/services/engineering" className="text-[11px] font-bold transition-colors w-fit relative hover:text-(--color-primary) after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[1px] after:bg-(--color-primary) after:transition-all after:duration-300 hover:after:w-full">ENGINEERING</Link>
-                    <Link href="/services/new-construction" className="text-[11px] font-bold transition-colors w-fit relative hover:text-(--color-primary) after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[1px] after:bg-(--color-primary) after:transition-all after:duration-300 hover:after:w-full">NEW CONSTRUCTION</Link>
+                    <Link href="/services/engineering" className="text-[11px] font-bold transition-colors w-fit relative hover:text-(--color-primary) after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[1px] after:bg-(--color-primary) after:transition-all after:duration-300 hover:after:w-full">{t.services.turnkeyServices[2].toUpperCase()}</Link>
+                    <Link href="/services/new-construction" className="text-[11px] font-bold transition-colors w-fit relative hover:text-(--color-primary) after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[1px] after:bg-(--color-primary) after:transition-all after:duration-300 hover:after:w-full">{t.services.turnkeyServices[3].toUpperCase()}</Link>
                   </div>
                   {/* Third Column */}
                   <div className="flex flex-col space-y-6">
-                    <Link href="/services/home-expansion" className="text-[11px] font-bold transition-colors w-fit relative hover:text-(--color-primary) after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[1px] after:bg-(--color-primary) after:transition-all after:duration-300 hover:after:w-full">HOME EXPANSION</Link>
-                    <Link href="/services/renovation" className="text-[11px] font-bold transition-colors w-fit relative hover:text-(--color-primary) after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[1px] after:bg-(--color-primary) after:transition-all after:duration-300 hover:after:w-full">RENOVATION</Link>
+                    <Link href="/services/home-expansion" className="text-[11px] font-bold transition-colors w-fit relative hover:text-(--color-primary) after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[1px] after:bg-(--color-primary) after:transition-all after:duration-300 hover:after:w-full">{t.services.turnkeyServices[4].toUpperCase()}</Link>
+                    <Link href="/services/renovation" className="text-[11px] font-bold transition-colors w-fit relative hover:text-(--color-primary) after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[1px] after:bg-(--color-primary) after:transition-all after:duration-300 hover:after:w-full">{t.services.turnkeyServices[5].toUpperCase()}</Link>
                   </div>
                   {/* Fourth Column */}
                   <div className="flex flex-col space-y-6">
-                    <Link href="/services/landscaping" className="text-[11px] font-bold transition-colors w-fit relative hover:text-(--color-primary) after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[1px] after:bg-(--color-primary) after:transition-all after:duration-300 hover:after:w-full">LANDSCAPING</Link>
-                    <Link href="/services" className="text-[11px] font-bold transition-colors w-fit relative hover:text-(--color-primary) after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[1px] after:bg-(--color-primary) after:transition-all after:duration-300 hover:after:w-full">ALL SERVICES</Link>
+                    <Link href="/services/landscaping" className="text-[11px] font-bold transition-colors w-fit relative hover:text-(--color-primary) after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[1px] after:bg-(--color-primary) after:transition-all after:duration-300 hover:after:w-full">{t.services.turnkeyServices[6].toUpperCase()}</Link>
+                    <Link href="/services" className="text-[11px] font-bold transition-colors w-fit relative hover:text-(--color-primary) after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[1px] after:bg-(--color-primary) after:transition-all after:duration-300 hover:after:w-full">{language === 'en' ? 'ALL SERVICES' : 'TOUS LES SERVICES'}</Link>
                   </div>
                 </div>
               </div>
@@ -141,14 +141,14 @@ export default function Navigation() {
               <span className="text-sm transition-transform duration-300 group-open:-rotate-180">▼</span>
             </summary>
             <div className="flex flex-col space-y-4 mt-4 pl-4 text-base border-l border-subtle">
-              <Link href="/services/conception" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-(--color-primary) transition-colors">CONCEPTION</Link>
-              <Link href="/services/interior-design" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-(--color-primary) transition-colors">INTERIOR DESIGN</Link>
-              <Link href="/services/engineering" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-(--color-primary) transition-colors">ENGINEERING</Link>
-              <Link href="/services/new-construction" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-(--color-primary) transition-colors">NEW CONSTRUCTION</Link>
-              <Link href="/services/home-expansion" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-(--color-primary) transition-colors">HOME EXPANSION</Link>
-              <Link href="/services/renovation" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-(--color-primary) transition-colors">RENOVATION</Link>
-              <Link href="/services/landscaping" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-(--color-primary) transition-colors">LANDSCAPING</Link>
-              <Link href="/services" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-(--color-primary) transition-colors font-bold pt-2 border-t border-subtle w-fit mt-2">ALL SERVICES</Link>
+              <Link href="/services/conception" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-(--color-primary) transition-colors">{t.services.turnkeyServices[0].toUpperCase()}</Link>
+              <Link href="/services/interior-design" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-(--color-primary) transition-colors">{t.services.turnkeyServices[1].toUpperCase()}</Link>
+              <Link href="/services/engineering" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-(--color-primary) transition-colors">{t.services.turnkeyServices[2].toUpperCase()}</Link>
+              <Link href="/services/new-construction" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-(--color-primary) transition-colors">{t.services.turnkeyServices[3].toUpperCase()}</Link>
+              <Link href="/services/home-expansion" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-(--color-primary) transition-colors">{t.services.turnkeyServices[4].toUpperCase()}</Link>
+              <Link href="/services/renovation" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-(--color-primary) transition-colors">{t.services.turnkeyServices[5].toUpperCase()}</Link>
+              <Link href="/services/landscaping" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-(--color-primary) transition-colors">{t.services.turnkeyServices[6].toUpperCase()}</Link>
+              <Link href="/services" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-(--color-primary) transition-colors font-bold pt-2 border-t border-subtle w-fit mt-2">{language === 'en' ? 'ALL SERVICES' : 'TOUS LES SERVICES'}</Link>
             </div>
           </details>
 
