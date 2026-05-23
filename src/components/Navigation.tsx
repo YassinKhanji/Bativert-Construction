@@ -123,8 +123,8 @@ export default function Navigation() {
       </div>
 
       {/* Mobile Menu Dropdown */}
-      <div className={`md:hidden absolute w-full bg-(--color-surface) border-b border-subtle transition-all duration-300 ease-in-out ${isMobileMenuOpen ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0 overflow-hidden'}`}>
-        <div className="px-6 py-8 flex flex-col space-y-6 text-xl">
+      <div className={`md:hidden absolute w-full bg-(--color-surface) border-b border-subtle transition-all duration-300 ease-in-out ${isMobileMenuOpen ? 'max-h-[100vh] opacity-100 overflow-y-auto pb-6 shadow-xl' : 'max-h-0 opacity-0 overflow-hidden'}`}>
+        <div className="px-6 py-8 flex flex-col space-y-6 text-xl min-h-min">
           <p className="text-[12px] uppercase tracking-widest text-(--color-on-surface-variant) font-bold mb-2">
             {t.footer?.pages || "PAGES"}
           </p>
@@ -134,9 +134,24 @@ export default function Navigation() {
           <Link href="/about" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-(--color-primary) transition-colors">
             {t.nav.about}
           </Link>
-          <Link href="/services" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-(--color-primary) transition-colors">
-            {t.nav.services}
-          </Link>
+          
+          <details className="group">
+            <summary className="cursor-pointer hover:text-(--color-primary) transition-colors list-none [&::-webkit-details-marker]:hidden flex justify-between items-center">
+              {t.nav.services}
+              <span className="text-sm transition-transform duration-300 group-open:-rotate-180">▼</span>
+            </summary>
+            <div className="flex flex-col space-y-4 mt-4 pl-4 text-base border-l border-subtle">
+              <Link href="/services/conception" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-(--color-primary) transition-colors">CONCEPTION</Link>
+              <Link href="/services/interior-design" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-(--color-primary) transition-colors">INTERIOR DESIGN</Link>
+              <Link href="/services/engineering" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-(--color-primary) transition-colors">ENGINEERING</Link>
+              <Link href="/services/new-construction" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-(--color-primary) transition-colors">NEW CONSTRUCTION</Link>
+              <Link href="/services/home-expansion" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-(--color-primary) transition-colors">HOME EXPANSION</Link>
+              <Link href="/services/renovation" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-(--color-primary) transition-colors">RENOVATION</Link>
+              <Link href="/services/landscaping" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-(--color-primary) transition-colors">LANDSCAPING</Link>
+              <Link href="/services" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-(--color-primary) transition-colors font-bold pt-2 border-t border-subtle w-fit mt-2">ALL SERVICES</Link>
+            </div>
+          </details>
+
           <Link href="/projects" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-(--color-primary) transition-colors">
             {t.nav.projects}
           </Link>
