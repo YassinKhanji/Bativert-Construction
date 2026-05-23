@@ -37,7 +37,7 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12 h-20 flex items-center justify-between relative z-50">
         <Link href="/" onClick={() => setIsMobileMenuOpen(false)} className="flex items-center">
           <Image 
-            src="/logo.png" 
+            src="/header-logo.png" 
             alt="Bativert Construction Logo" 
             width={180} 
             height={60} 
