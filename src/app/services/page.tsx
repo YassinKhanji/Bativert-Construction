@@ -88,7 +88,8 @@ export default function Services() {
                   "new-construction",
                   "home-expansion",
                   "renovation",
-                  "landscaping"
+                  "landscaping",
+                  "window-installation"
                 ];
                 return (
                   <Link 
@@ -113,12 +114,25 @@ export default function Services() {
                 <span className="text-3xl font-light transition-transform duration-300 group-open:-rotate-45">+</span>
               </summary>
               <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-(--color-on-surface-variant) animate-in fade-in slide-in-from-top-4 duration-500">
-                {t.renovationServices.map((service, index) => (
-                  <div key={index} className="flex items-center gap-3">
-                    <span className="w-1.5 h-1.5 bg-(--color-primary) rounded-full"></span>
-                    {service}
-                  </div>
-                ))}
+                {t.renovationServices.map((service, index) => {
+                  const isWindowInstallation = service.toLowerCase().includes("window installation") || service.toLowerCase().includes("installation et remplacement de fenêtres");
+                  return (
+                    <div key={index} className="flex items-center gap-3">
+                      <span className="w-1.5 h-1.5 bg-(--color-primary) rounded-full"></span>
+                      {isWindowInstallation ? (
+                        <Link 
+                          href="/services/window-installation" 
+                          className="text-(--color-primary) font-semibold hover:underline flex items-center gap-2 group/win"
+                        >
+                          <span>{service}</span>
+                          <span className="text-[10px] uppercase tracking-wider px-2 py-0.5 bg-(--color-primary) text-white font-bold transition-transform group-hover/win:translate-x-1">→</span>
+                        </Link>
+                      ) : (
+                        <span>{service}</span>
+                      )}
+                    </div>
+                  );
+                })}
               </div>
             </details>
 

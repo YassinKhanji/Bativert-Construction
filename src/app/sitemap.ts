@@ -44,7 +44,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
       "new-construction",
       "home-expansion",
       "renovation",
-      "landscaping"
+      "landscaping",
+      "window-installation"
     ].map((slug) => ({
       url: `${baseUrl}/services/${slug}`,
       lastModified: new Date(),

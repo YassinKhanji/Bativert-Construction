@@ -79,6 +79,58 @@ export const translations = {
             ours: "Dedicated project manager"
           }
         ]
+      },
+      projectProcess: {
+        subtitle: "The Process",
+        title: "How to Get Your Project Started",
+        desc: "A clear, dependable 3-step roadmap from your first consultation to turnkey project delivery.",
+        step1Number: "01",
+        step1Title: "Initial Contact & Consultation",
+        step1Desc: "Reach out through our inquiry form or direct call. We discuss your project vision, timeline, architectural requirements, and budget.",
+        step2Number: "02",
+        step2Title: "Detailed Estimate Within 48h",
+        step2Desc: "Our team assesses your space and provides a comprehensive, transparent quotation with zero guesswork within 48 hours.",
+        step3Number: "03",
+        step3Title: "Sign Contract & Start Project",
+        step3Desc: "We finalize architectural blueprints, obtain RBQ municipal permits, sign the agreement, and immediately mobilize our specialized trades.",
+        ctaBtn: "Start Your Project",
+        timelineBadge: "Guaranteed Turnaround"
+      },
+      servicesPreview: {
+        subtitle: "Our Services",
+        title: "Comprehensive Turnkey Solutions",
+        desc: "From precision window installations to master residential renovations and sustainable new builds across Greater Montreal.",
+        viewAllBtn: "Explore All Services",
+        items: [
+          {
+            title: "Window Installation & Replacement",
+            desc: "Energy Star® certified high-efficiency windows, weather-barrier caulking, and precision fitting built for harsh Quebec winters.",
+            slug: "window-installation",
+            badge: "Energy Star®",
+            image: "/services/window-installation-1.png"
+          },
+          {
+            title: "Turnkey Construction",
+            desc: "Complete project management from conceptual blueprints and permits to final luxury delivery under one roof.",
+            slug: "turnkey-construction",
+            badge: "Turnkey",
+            image: "/projects/commercial-1.jpg"
+          },
+          {
+            title: "High-End Renovation",
+            desc: "Revitalizing existing residential structures with meticulous detail, premium materials, and modern additions.",
+            slug: "high-end-renovations",
+            badge: "Luxury",
+            image: "/projects/residential-1.jpg"
+          },
+          {
+            title: "Home Expansion & Additions",
+            desc: "Seamlessly adding square footage, second-story expansions, and foundation modifications.",
+            slug: "home-expansion",
+            badge: "Structural",
+            image: "/services/service-1.jpg"
+          }
+        ]
       }
     },
     // About Page
@@ -210,7 +262,8 @@ export const translations = {
         "New Construction",
         "Home Expansion",
         "Renovation",
-        "Landscaping"
+        "Landscaping",
+        "Window Installation"
       ],
       specializedTradesList: [
         "Concrete", "Caulking", "Ceramics", "Framing", "Air Conditioning", "Fencing", "Formwork", "Decontamination", "Demolition", "Drainage", 
@@ -220,6 +273,7 @@ export const translations = {
         "Joint Finishing", "Roofing", "Ventilation", "Glasswork"
       ],
       renovationServices: [
+        "Window Installation & Replacement (Energy Star®)",
         "Creation of door/window openings (foundation)",
         "Home Addition",
         "House extension - With plan",
@@ -351,6 +405,47 @@ export const translations = {
         step2: { title: "Design & Hardscaping", desc: "Planning patios, walkways, and greenery." },
         step3: { title: "Planting & Reveal", desc: "Bringing the outdoor oasis to life." },
         cta: "Transform Your Exterior"
+      },
+      windowInstallation: {
+        metaTitle: "Window Installation & Replacement Montreal | BATI VERT",
+        metaDescription: "Certified window installation and replacement in Greater Montreal, Laval & South Shore. Energy Star® high-efficiency windows, weather-tight caulking & turnkey RBQ service.",
+        problem: "Losing heat, seeing condensation, or dealing with drafty, outdated windows in Montreal's harsh climate?",
+        solution: "Turnkey window installation and replacement across Greater Montreal, Laval, and Montérégie. High-performance Energy Star® triple and double-pane windows, weather-tight perimeter caulking, and RBQ-certified craftsmanship built for Quebec winters.",
+        step1: {
+          title: "Thermal Assessment & Precision Sizing",
+          desc: "Comprehensive on-site evaluation, laser measurements, energy-loss diagnostics, and custom architectural window selection complying with local municipal codes."
+        },
+        step2: {
+          title: "RBQ Certified Installation & Sealing",
+          desc: "Structural opening reinforcement, weather-barrier flashing, acoustic and thermal insulation, and specialized multi-layer perimeter caulking to stop air and water infiltration."
+        },
+        step3: {
+          title: "Architectural Trim & Rebate Verification",
+          desc: "Impeccable interior and exterior finishing moldings, airtightness testing, and complete documentation for Quebec energy subsidies (Hydro-Québec LogisVert & Rénoclimat)."
+        },
+        cta: "Request a Window Installation Quote",
+        tag: "Turnkey Windows & Doors",
+        features: [
+          {
+            title: "Quebec Winter Climate Resilience",
+            desc: "Engineered to withstand extreme temperature fluctuations from -30°C to +35°C without warping, seal failure, or heat loss."
+          },
+          {
+            title: "Precision Caulking & Weatherproofing",
+            desc: "Commercial-grade acoustic and waterproof sealants preventing water infiltration into masonry and foundation walls."
+          },
+          {
+            title: "Energy Star® Efficiency & Rebates",
+            desc: "High thermal performance (Low-E argon) reducing heating bills and qualifying for provincial energy efficiency grants."
+          },
+          {
+            title: "Structural Openings & Masonry Framing",
+            desc: "As licensed general contractors (RBQ: 5778-4803-01), we can enlarge window openings in brick, stone, and concrete foundations."
+          }
+        ],
+        geoRegions: "Greater Montreal, Laval, West Island, Longueuil, Brossard, and Montérégie",
+        galleryTitle: "Our Window Installation Craftsmanship",
+        galleryDesc: "From meticulous on-site preparation to precision caulking and structural airtight sealing."
       }
     },
     faq: {
@@ -443,6 +538,58 @@ export const translations = {
             title: "Communication",
             standard: "Mises à jour éparpillées",
             ours: "Gestionnaire de projet dédié"
+          }
+        ]
+      },
+      projectProcess: {
+        subtitle: "Le Processus",
+        title: "Comment Démarrer Votre Projet",
+        desc: "Un parcours clair, transparent et fiable en 3 étapes, du premier contact au lancement des travaux.",
+        step1Number: "01",
+        step1Title: "Premier Contact & Consultation",
+        step1Desc: "Contactez-nous via notre formulaire ou par téléphone. Nous échangeons sur votre vision, vos exigences, vos échéanciers et votre budget.",
+        step2Number: "02",
+        step2Title: "Estimation Détaillée en 48h",
+        step2Desc: "Nos experts analysent vos plans et votre espace pour vous fournir une soumission détaillée et transparente sous 48 heures.",
+        step3Number: "03",
+        step3Title: "Signature du Contrat & Démarrage",
+        step3Desc: "Nous finalisons les plans, obtenons les permis municipaux RBQ, signons l'entente et mobilisons immédiatement nos corps de métier.",
+        ctaBtn: "Démarrer Votre Projet",
+        timelineBadge: "Délai Garanti"
+      },
+      servicesPreview: {
+        subtitle: "Nos Services",
+        title: "Solutions Complètes Clés en Main",
+        desc: "De l'installation de fenêtres haute performance aux rénovations résidentielles d'envergure et constructions durables dans le Grand Montréal.",
+        viewAllBtn: "Explorer Tous les Services",
+        items: [
+          {
+            title: "Installation de Fenêtres",
+            desc: "Fenêtres homologuées Energy Star®, calfeutrage étanche et pose de haute précision adaptées aux hivers québécois.",
+            slug: "window-installation",
+            badge: "Energy Star®",
+            image: "/services/window-installation-1.png"
+          },
+          {
+            title: "Construction Clé en Main",
+            desc: "Prise en charge complète, des plans d'architecte et permis jusqu'à la livraison finale clé en main sous un même toit.",
+            slug: "turnkey-construction",
+            badge: "Clé en Main",
+            image: "/projects/commercial-1.jpg"
+          },
+          {
+            title: "Rénovation Haut de Gamme",
+            desc: "Revitalisation d'espaces de prestige avec une attention méticuleuse aux détails et aux matériaux nobles.",
+            slug: "high-end-renovations",
+            badge: "Luxe",
+            image: "/projects/residential-1.jpg"
+          },
+          {
+            title: "Agrandissement de Maison",
+            desc: "Ajout harmonieux de superficie habitable, surélévation d'étage et modifications structurales certifiées.",
+            slug: "home-expansion",
+            badge: "Structural",
+            image: "/services/service-1.jpg"
           }
         ]
       }
@@ -576,7 +723,8 @@ export const translations = {
         "Construction neuve",
         "Agrandissement de maison",
         "Rénovation",
-        "Paysagement"
+        "Paysagement",
+        "Installation de fenêtres"
       ],
       specializedTradesList: [
         "Béton", "Calfeutrage", "Céramique", "Charpente", "Climatisation", "Clôture", "Coffrage", "Décontamination", "Démolition", "Drain", 
@@ -586,6 +734,7 @@ export const translations = {
         "Tireur de joint", "Toiture", "Ventilation", "Vitres"
       ],
       renovationServices: [
+        "Installation et remplacement de fenêtres (Energy Star®)",
         "Création d'ouvertures portes/fenêtres (fondation)",
         "Ajout de maison",
         "Agrandissement de maison - Avec plan",
@@ -717,6 +866,47 @@ export const translations = {
         step2: { title: "Design et Aménagement", desc: "Planification des patios, des allées et de la verdure." },
         step3: { title: "Plantation et Révélation", desc: "Donner vie à votre oasis extérieure." },
         cta: "Transformer Votre Extérieur"
+      },
+      windowInstallation: {
+        metaTitle: "Installation et Remplacement de Fenêtres Montréal | BATI VERT",
+        metaDescription: "Service certifié d'installation et de remplacement de fenêtres dans le Grand Montréal, Laval et la Rive-Sud. Fenêtres écoénergétiques Energy Star®, calfeutrage étanche et conformité RBQ.",
+        problem: "Pertes de chaleur, condensation, courants d'air ou fenêtres vieillissantes face aux hivers rigoureux du Québec ?",
+        solution: "Installation et remplacement de portes et fenêtres clés en main dans le Grand Montréal, Laval et la Montérégie. Fenêtres haute performance homologuées Energy Star®, vitrage double ou triple, calfeutrage étanche et conformité RBQ conçus pour le climat québécois.",
+        step1: {
+          title: "Évaluation thermique et prise de mesures au laser",
+          desc: "Visite sur place, diagnostic des déperditions thermiques, prise de mesures précises et sélection de fenêtres architecturales conformes aux règlements municipaux."
+        },
+        step2: {
+          title: "Pose certifiée RBQ et calfeutrage professionnel",
+          desc: "Démontage soigné, renforcement de la charpente, pose de membranes d'étanchéité pare-air/eau et scellement périmétrique haute performance contre les infiltrations."
+        },
+        step3: {
+          title: "Finitions architecturales et subventions",
+          desc: "Pose de moulures intérieures et extérieures sur mesure, test d'étanchéité et accompagnement pour les subventions écoénergétiques (LogisVert d'Hydro-Québec et Rénoclimat)."
+        },
+        cta: "Demander une Soumission Fenêtres",
+        tag: "Portes et Fenêtres Clés en Main",
+        features: [
+          {
+            title: "Résistance au Climat Québécois",
+            desc: "Conçues pour endurer les cycles de gel-dégel et des écarts de température extrêmes de -30°C à +35°C sans déformation ni perte thermique."
+          },
+          {
+            title: "Calfeutrage et Étanchéité de Précision",
+            desc: "Scellement acoustique et hydrofuge de qualité industrielle éliminant les infiltrations d'air et d'eau dans la brique et le béton."
+          },
+          {
+            title: "Efficacité Energy Star® et Subventions",
+            desc: "Verre énergétique à faible émissivité avec gaz argon réduisant les factures de chauffage et admissible aux programmes Rénoclimat et LogisVert."
+          },
+          {
+            title: "Agrandissement d'Ouvertures et Maçonnerie",
+            desc: "En tant qu'entrepreneur général RBQ (5778-4803-01), nous modifions ou agrandissons vos ouvertures dans la brique, la pierre et le béton de fondation."
+          }
+        ],
+        geoRegions: "Grand Montréal, Laval, Ouest-de-l'Île, Longueuil, Brossard et Montérégie",
+        galleryTitle: "Notre Savoir-Faire en Installation de Fenêtres",
+        galleryDesc: "De la préparation méticuleuse sur chantier au calfeutrage d'étanchéité et aux finitions architecturales."
       }
     },
     faq: {

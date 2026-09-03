@@ -18,6 +18,7 @@ const SLUG_MAP: Record<string, keyof typeof translations.en.servicePages> = {
   "home-expansion": "homeExpansion",
   "renovation": "renovation",
   "landscaping": "landscaping",
+  "window-installation": "windowInstallation",
 };
 
 export async function generateStaticParams() {
@@ -31,14 +32,54 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const tKey = SLUG_MAP[slug];
   if (!tKey) return { title: "Not Found" };
   
-  // Using English for static metadata title
-  const t = translations.en.servicePages[tKey];
+  const t = translations.en.servicePages[tKey] as any;
+  const title = t.metaTitle || `BATI VERT | ${slug.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase())}`;
+  const description = t.metaDescription || t.solution || "Bativert Construction Services";
   
+  const keywords = slug === "window-installation" ? [
+    "window installation Montreal",
+    "installation fenetres Montreal",
+    "window replacement Montreal",
+    "remplacement fenetres Montreal",
+    "energy efficient windows Quebec",
+    "Energy Star windows Montreal",
+    "calfeutrage fenetres Montreal",
+    "RBQ window contractor Laval",
+    "window installation Longueuil",
+    "portes et fenetres Bativert"
+  ] : [
+    `${slug.replace(/-/g, ' ')} Montreal`,
+    "Bativert Construction",
+    "General contractor Montreal",
+    "RBQ certified contractor"
+  ];
+
+  const ogImage = slug === "window-installation" 
+    ? "/services/window-installation-1.png" 
+    : "/home-hero-new.jpg";
+
   return {
-    title: `BATI VERT | ${slug.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase())}`,
-    description: (t as any).solution || "Bativert Construction Services",
+    title,
+    description,
+    keywords,
     alternates: {
       canonical: `/services/${slug}`
+    },
+    openGraph: {
+      title,
+      description,
+      url: `https://bativertconstruction.org/services/${slug}`,
+      siteName: "BATI VERT Construction",
+      images: [
+        {
+          url: ogImage,
+          width: 1200,
+          height: 630,
+          alt: title,
+        }
+      ],
+      locale: "en_CA",
+      type: "website"
     }
   };
 }
