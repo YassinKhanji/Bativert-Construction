@@ -304,15 +304,15 @@ export default function ServicePageClient({ slug, tKey }: { slug: string, tKey: 
         <section className="bg-(--color-primary) py-16 px-6 lg:px-12 text-white">
           <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center divide-y md:divide-y-0 md:divide-x divide-white/20">
             <div className="py-4">
-              <h4 className="text-2xl font-bold serif-heading mb-2">RBQ Certified</h4>
-              <p className="text-sm text-white/80">License: 5778-4803-01</p>
+              <h4 className="text-2xl font-bold serif-heading mb-2">{language === 'en' ? 'RBQ Certified' : 'Certifié RBQ'}</h4>
+              <p className="text-sm text-white/80">{language === 'en' ? 'License: 5778-4803-01' : 'Licence : 5778-4803-01'}</p>
             </div>
             <div className="py-4">
-              <h4 className="text-2xl font-bold serif-heading mb-2">Fully Insured</h4>
+              <h4 className="text-2xl font-bold serif-heading mb-2">{language === 'en' ? 'Fully Insured' : 'Pleinement Assuré'}</h4>
               <p className="text-sm text-white/80">{language === 'en' ? 'Comprehensive commercial coverage' : 'Couverture commerciale complète'}</p>
             </div>
             <div className="py-4">
-              <h4 className="text-2xl font-bold serif-heading mb-2">Quality Guarantee</h4>
+              <h4 className="text-2xl font-bold serif-heading mb-2">{language === 'en' ? 'Quality Guarantee' : 'Garantie de Qualité'}</h4>
               <p className="text-sm text-white/80">{language === 'en' ? 'Built to last generations' : 'Construit pour durer des générations'}</p>
             </div>
           </div>
@@ -321,7 +321,7 @@ export default function ServicePageClient({ slug, tKey }: { slug: string, tKey: 
         {/* CTA */}
         <section className="py-32 px-6 lg:px-12 text-center max-w-3xl mx-auto">
           <h2 className="serif-heading text-4xl lg:text-5xl mb-8 text-(--color-on-surface)">
-            {language === 'en' ? 'Ready to upgrade your windows?' : 'Prêt à remplacer vos fenêtres ?'}
+            {service.ctaHeading || (language === 'en' ? 'Ready to start your project?' : 'Prêt à démarrer votre projet ?')}
           </h2>
           <Link 
             href="/contact" 
