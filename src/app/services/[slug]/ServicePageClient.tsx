@@ -11,11 +11,22 @@ export default function ServicePageClient({ slug, tKey }: { slug: string, tKey: 
   const service = t.servicePages[tKey] as any;
   const title = slug.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
 
-  // Determine an image based on the slug
-  let imagePath = "/services/service-1.jpg";
-  if (slug === "high-end-renovations") imagePath = "/projects/residential-1.jpg";
-  if (slug === "turnkey-construction") imagePath = "/projects/commercial-1.jpg";
-  if (slug === "window-installation") imagePath = "/services/window-installation-1.png";
+  // Dedicated verified image for every service page
+  const SERVICE_IMAGES: Record<string, string> = {
+    "turnkey-construction": "/services/turnkey-construction.png",
+    "high-end-renovations": "/services/high-end-renovations.png",
+    "window-installation": "/services/window-installation-1.png",
+    "conception": "/home-innovation-cropped.jpg",
+    "architectural-design": "/services/service-1.jpg",
+    "interior-design": "/about/project-1.jpg",
+    "engineering": "/home-innovation.jpg",
+    "new-construction": "/projects/3-plex-Berri.jpg",
+    "home-expansion": "/projects/3-plex-Henessy.jpeg",
+    "renovation": "/services/service-2.jpg",
+    "landscaping": "/projects/St-Mark.jpg",
+  };
+
+  const imagePath = SERVICE_IMAGES[slug] || "/services/service-1.jpg";
 
   const isWindowInstallation = slug === "window-installation";
 

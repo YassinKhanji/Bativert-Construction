@@ -114,21 +114,21 @@ export const translations = {
             desc: "Complete project management from conceptual blueprints and permits to final luxury delivery under one roof.",
             slug: "turnkey-construction",
             badge: "Turnkey",
-            image: "/projects/commercial-1.jpg"
+            image: "/services/turnkey-construction.png"
           },
           {
             title: "High-End Renovation",
             desc: "Revitalizing existing residential structures with meticulous detail, premium materials, and modern additions.",
             slug: "high-end-renovations",
             badge: "Luxury",
-            image: "/projects/residential-1.jpg"
+            image: "/services/high-end-renovations.png"
           },
           {
             title: "Home Expansion & Additions",
             desc: "Seamlessly adding square footage, second-story expansions, and foundation modifications.",
             slug: "home-expansion",
             badge: "Structural",
-            image: "/services/service-1.jpg"
+            image: "/projects/3-plex-Henessy.jpeg"
           }
         ]
       }
@@ -575,21 +575,21 @@ export const translations = {
             desc: "Prise en charge complète, des plans d'architecte et permis jusqu'à la livraison finale clé en main sous un même toit.",
             slug: "turnkey-construction",
             badge: "Clé en Main",
-            image: "/projects/commercial-1.jpg"
+            image: "/services/turnkey-construction.png"
           },
           {
             title: "Rénovation Haut de Gamme",
             desc: "Revitalisation d'espaces de prestige avec une attention méticuleuse aux détails et aux matériaux nobles.",
             slug: "high-end-renovations",
             badge: "Luxe",
-            image: "/projects/residential-1.jpg"
+            image: "/services/high-end-renovations.png"
           },
           {
             title: "Agrandissement de Maison",
             desc: "Ajout harmonieux de superficie habitable, surélévation d'étage et modifications structurales certifiées.",
             slug: "home-expansion",
             badge: "Structural",
-            image: "/services/service-1.jpg"
+            image: "/projects/3-plex-Henessy.jpeg"
           }
         ]
       }

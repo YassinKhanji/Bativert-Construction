@@ -72,7 +72,7 @@ export default function Services() {
               <Button href="/contact" variant="outline">{t.service2Btn}</Button>
             </div>
             <div className="aspect-square bg-(--color-surface-container) half-frame-accent order-1 md:order-2">
-               <img src="/services/service-2.jpg" alt={t.service2Title} className="w-full h-full object-cover" />
+               <img src="/services/high-end-renovations.png" alt={t.service2Title} className="w-full h-full object-cover" />
             </div>
           </div>
           

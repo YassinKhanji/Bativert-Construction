@@ -54,9 +54,21 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     "RBQ certified contractor"
   ];
 
-  const ogImage = slug === "window-installation" 
-    ? "/services/window-installation-1.png" 
-    : "/home-hero-new.jpg";
+  const SERVICE_OG_IMAGES: Record<string, string> = {
+    "turnkey-construction": "/services/turnkey-construction.png",
+    "high-end-renovations": "/services/high-end-renovations.png",
+    "window-installation": "/services/window-installation-1.png",
+    "conception": "/home-innovation-cropped.jpg",
+    "architectural-design": "/services/service-1.jpg",
+    "interior-design": "/about/project-1.jpg",
+    "engineering": "/home-innovation.jpg",
+    "new-construction": "/projects/3-plex-Berri.jpg",
+    "home-expansion": "/projects/3-plex-Henessy.jpeg",
+    "renovation": "/services/service-2.jpg",
+    "landscaping": "/projects/St-Mark.jpg",
+  };
+
+  const ogImage = SERVICE_OG_IMAGES[slug] || "/home-hero-new.jpg";
 
   return {
     title,
